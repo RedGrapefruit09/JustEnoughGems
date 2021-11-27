@@ -1,0 +1,38 @@
+{
+    "schemaVersion": 1,
+    "id": "jeg",
+    "version": "${version}",
+    "name": "JEG",
+    "description": "JEG is a mod that adds a bunch of new gems with special abilities, armor, tools and food.",
+    "authors": [
+        "RedGrapefruit09"
+    ],
+    "contact": {
+        "repo": "https://github.com/RedGrapefruit09/JustEnoughGems"
+    },
+    "license": "MIT",
+    "icon": "assets/justenoughgems/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "client": [
+            {
+                "adapter": "kotlin",
+                "value": "com.redgrapefruit.justenoughgems.client.JEGClient"
+            }
+        ],
+        "main": [
+            {
+                "adapter": "kotlin",
+                "value": "com.redgrapefruit.justenoughgems.JEG"
+            }
+        ]
+    },
+    "mixins": [
+        "justenoughgems.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.12.5",
+        "fabric": "*",
+        "minecraft": "1.17.1"
+    }
+}
