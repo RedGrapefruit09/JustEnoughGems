@@ -2,11 +2,7 @@ package com.redgrapefruit.justenoughgems.item
 
 import com.redgrapefruit.itemnbt3.CustomData
 import com.redgrapefruit.itemnbt3.DataClient
-import com.redgrapefruit.justenoughgems.Chance
-import com.redgrapefruit.justenoughgems.ModItem
-import com.redgrapefruit.justenoughgems.Range
-import com.redgrapefruit.justenoughgems.decrement
-import com.redgrapefruit.justenoughgems.util.RomanNumber
+import com.redgrapefruit.justenoughgems.util.*
 import net.minecraft.client.item.TooltipContext
 import net.minecraft.client.world.ClientWorld
 import net.minecraft.entity.Entity
@@ -126,6 +122,7 @@ class GemItem(private val config: GemItemConfig, private val tier: Int) : Item(S
         config.effects.forEach { effect ->
             tooltip += LiteralText("- ")
                 .append(TranslatableText(effect.statusEffect.translationKey))
+                .append(LiteralText(" (${effect.chance.format()}% chance)"))
         }
     }
 
@@ -171,19 +168,25 @@ data class GemItemConfig(
 ) {
     companion object {
         val QUARTZ = GemItemConfig(
-            reloadTime = 200,
+            reloadTime = 1200,
             effects = listOf(
                 GemItemEffect(
                     statusEffect = StatusEffects.SPEED,
-                    duration = Range(100, 200),
-                    amplifier = Range(0, 1),
+                    duration = Range(75, 150),
+                    amplifier = Range.nonRandom(0),
                     chance = Chance(50)
-                ),
+                )
+            )
+        )
+
+        val ANDALUSITE = GemItemConfig(
+            reloadTime = 1000,
+            effects = listOf(
                 GemItemEffect(
                     statusEffect = StatusEffects.REGENERATION,
-                    duration = Range(150, 300),
-                    amplifier = Range(1, 2),
-                    chance = Chance(40)
+                    duration = Range(90, 180),
+                    amplifier = Range(0, 1),
+                    chance = Chance(75)
                 )
             )
         )
