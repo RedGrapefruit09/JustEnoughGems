@@ -8,6 +8,12 @@ version = project.mod_version
 group = project.maven_group
 
 repositories {
+    maven {
+        url = "https://redgrapefruit09.github.io/maven"
+        content {
+            includeGroup "com.redgrapefruit.itemnbt"
+        }
+    }
 }
 
 dependencies {
@@ -17,6 +23,9 @@ dependencies {
 
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
     modImplementation "net.fabricmc:fabric-language-kotlin:${project.flk_version}"
+
+    modImplementation "com.redgrapefruit.itemnbt:itemnbt:${project.itemnbt_version}"
+    include "com.redgrapefruit.itemnbt:itemnbt:${project.itemnbt_version}"
 }
 
 processResources {
