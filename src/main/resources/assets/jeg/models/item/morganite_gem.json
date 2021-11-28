@@ -1,0 +1,32 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "jeg:item/morganite_gem_0"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "usage": 0.1
+            },
+            "model": "jeg:item/morganite_gem_0"
+        },
+        {
+            "predicate": {
+                "usage": 0.2
+            },
+            "model": "jeg:item/morganite_gem_1"
+        },
+        {
+            "predicate": {
+                "usage": 0.3
+            },
+            "model": "jeg:item/morganite_gem_2"
+        },
+        {
+            "predicate": {
+                "usage": 0.4
+            },
+            "model": "jeg:item/morganite_gem_3"
+        }
+    ]
+}

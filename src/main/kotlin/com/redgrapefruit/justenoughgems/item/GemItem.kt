@@ -190,6 +190,24 @@ data class GemItemConfig(
                 )
             )
         )
+
+        val MORGANITE = GemItemConfig(
+            reloadTime = 900,
+            effects = listOf(
+                GemItemEffect(
+                    statusEffect = StatusEffects.FIRE_RESISTANCE,
+                    duration = Range(150, 230),
+                    amplifier = Range.nonRandom(0),
+                    chance = Chance(90)
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.ABSORPTION,
+                    duration = Range(100, 200),
+                    amplifier = Range(0, 1),
+                    chance = Chance(75)
+                )
+            )
+        )
     }
 }
 

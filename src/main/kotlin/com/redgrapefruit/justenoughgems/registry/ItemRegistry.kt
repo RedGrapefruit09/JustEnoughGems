@@ -12,10 +12,12 @@ import net.minecraft.util.registry.Registry
 object ItemRegistry : IRegistry {
     val QUARTZ_GEM = GemItem(GemItemConfig.QUARTZ, 1)
     val ANDALUSITE_GEM = GemItem(GemItemConfig.ANDALUSITE, 2)
+    val MORGANITE_GEM = GemItem(GemItemConfig.MORGANITE, 3)
 
     override fun register() {
         register("quartz_gem", QUARTZ_GEM)
         register("andalusite_gem", ANDALUSITE_GEM)
+        register("morganite_gem", MORGANITE_GEM)
     }
 
     private fun register(name: String, item: Item) {
