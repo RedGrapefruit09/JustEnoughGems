@@ -30,16 +30,21 @@ import net.minecraft.world.World
 // Implementation
 
 class GemItem(private val config: GemItemConfig, private val tier: Int) : Item(Settings().group(ItemGroup.MISC).maxCount(1)) {
-    private var readyForUsage: Boolean = false
+    private fun readyForUsage(stack: ItemStack): Boolean {
+        var out = false
+
+        DataClient.use(::GemItemState, stack) { state ->
+            out = state.reload >= config.reloadTime
+        }
+
+        return out
+    }
 
     override fun inventoryTick(stack: ItemStack, world: World, entity: Entity, slot: Int, selected: Boolean) {
         super.inventoryTick(stack, world, entity, slot, selected)
 
         DataClient.use(::GemItemState, stack) { state ->
-            readyForUsage = if (state.reload < config.reloadTime) {
-                ++state.reload
-                false
-            } else true
+            ++state.reload
 
             if (state.uses == 0) {
                 stack.decrement()
@@ -48,11 +53,12 @@ class GemItem(private val config: GemItemConfig, private val tier: Int) : Item(S
     }
 
     override fun use(world: World, user: PlayerEntity, hand: Hand): TypedActionResult<ItemStack> {
+        val stack = user.getStackInHand(hand)
+
         // Validation
 
-        if (!readyForUsage) return super.use(world, user, hand)
+        if (!readyForUsage(stack)) return super.use(world, user, hand)
 
-        val stack = user.getStackInHand(hand)
         var outOfUses = false
 
         DataClient.use(::GemItemState, stack) { state ->
@@ -67,7 +73,6 @@ class GemItem(private val config: GemItemConfig, private val tier: Int) : Item(S
 
         // Count in usage
 
-        readyForUsage = false
         DataClient.use(::GemItemState, stack) { state ->
             state.reload = 0
             --state.uses
@@ -97,7 +102,7 @@ class GemItem(private val config: GemItemConfig, private val tier: Int) : Item(S
             .append(LiteralText(RomanNumber.toRoman(tier)))
             .formatted(Formatting.BLUE)
 
-        if (readyForUsage) {
+        if (readyForUsage(stack)) {
             tooltip += TranslatableText("misc.jeg.ready_to_use")
                 .formatted(Formatting.GREEN)
         } else {
