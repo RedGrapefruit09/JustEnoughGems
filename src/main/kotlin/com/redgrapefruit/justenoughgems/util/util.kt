@@ -32,6 +32,10 @@ value class Chance(private val chance: Int) {
     }
 
     fun format(): String = chance.toString()
+
+    companion object {
+        val always = Chance(100)
+    }
 }
 
 fun ItemStack.decrement() = decrement(1)

@@ -168,41 +168,47 @@ data class GemItemConfig(
 ) {
     companion object {
         val QUARTZ = GemItemConfig(
-            reloadTime = 1200,
+            reloadTime = 480,
             effects = listOf(
                 GemItemEffect(
                     statusEffect = StatusEffects.SPEED,
-                    duration = Range(75, 150),
+                    duration = Range(100, 200),
                     amplifier = Range.nonRandom(0),
-                    chance = Chance(50)
-                )
-            )
-        )
-
-        val ANDALUSITE = GemItemConfig(
-            reloadTime = 1000,
-            effects = listOf(
-                GemItemEffect(
-                    statusEffect = StatusEffects.REGENERATION,
-                    duration = Range(90, 180),
-                    amplifier = Range(0, 1),
                     chance = Chance(75)
                 )
             )
         )
 
-        val MORGANITE = GemItemConfig(
-            reloadTime = 900,
+        val ANDALUSITE = GemItemConfig(
+            reloadTime = 450,
             effects = listOf(
                 GemItemEffect(
-                    statusEffect = StatusEffects.FIRE_RESISTANCE,
-                    duration = Range(150, 230),
+                    statusEffect = StatusEffects.SPEED,
+                    duration = Range(150, 300),
+                    amplifier = Range(0, 1),
+                    chance = Chance(85)
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.REGENERATION,
+                    duration = Range(200, 400),
                     amplifier = Range.nonRandom(0),
+                    chance = Chance(60)
+                )
+            )
+        )
+
+        val MORGANITE = GemItemConfig(
+            reloadTime = 420,
+            effects = listOf(
+                GemItemEffect(
+                    statusEffect = StatusEffects.SPEED,
+                    duration = Range(250, 350),
+                    amplifier = Range.nonRandom(1),
                     chance = Chance(90)
                 ),
                 GemItemEffect(
-                    statusEffect = StatusEffects.ABSORPTION,
-                    duration = Range(100, 200),
+                    statusEffect = StatusEffects.REGENERATION,
+                    duration = Range(300, 450),
                     amplifier = Range(0, 1),
                     chance = Chance(75)
                 )
