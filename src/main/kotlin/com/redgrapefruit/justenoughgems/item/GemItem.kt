@@ -263,6 +263,36 @@ data class GemItemConfig(
             )
         )
 
+        val EUCLASE = GemItemConfig(
+            reloadTime = 330,
+            effects = listOf(
+                GemItemEffect(
+                    statusEffect = StatusEffects.SPEED,
+                    duration = Range(400, 550).scaled(),
+                    amplifier = Range(2, 3),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.REGENERATION,
+                    duration = Range(550, 700).scaled(),
+                    amplifier = Range.nonRandom(2),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.ABSORPTION,
+                    duration = Range(250, 400).scaled(),
+                    amplifier = Range.nonRandom(1),
+                    chance = Chance(60)
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.FIRE_RESISTANCE,
+                    duration = Range(150, 300).scaled(),
+                    amplifier = Range.nonRandom(0),
+                    chance = Chance(30)
+                )
+            )
+        )
+
         // Apply a constant multiplier to all durations to speed up & unify balancing changes
         private const val MULTIPLIER = 15
 
