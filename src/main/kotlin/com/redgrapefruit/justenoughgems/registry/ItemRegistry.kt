@@ -14,12 +14,14 @@ object ItemRegistry : IRegistry {
     val ANDALUSITE_GEM = GemItem(GemItemConfig.ANDALUSITE, 2)
     val MORGANITE_GEM = GemItem(GemItemConfig.MORGANITE, 3)
     val TAAFFEITE_GEM = GemItem(GemItemConfig.TAAFFEITE, 4)
+    val PINK_QUARTZ_GEM = GemItem(GemItemConfig.PINK_QUARTZ, 5)
 
     override fun register() {
         register("quartz_gem", QUARTZ_GEM)
         register("andalusite_gem", ANDALUSITE_GEM)
         register("morganite_gem", MORGANITE_GEM)
         register("taaffeite_gem", TAAFFEITE_GEM)
+        register("pink_quartz_gem", PINK_QUARTZ_GEM)
     }
 
     private fun register(name: String, item: Item) {

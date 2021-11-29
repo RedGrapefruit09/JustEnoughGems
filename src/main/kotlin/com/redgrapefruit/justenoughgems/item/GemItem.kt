@@ -239,6 +239,31 @@ data class GemItemConfig(
             )
         )
 
+        val PINK_QUARTZ = GemItemConfig(
+            reloadTime = 360,
+            effects = listOf(
+                GemItemEffect(
+                    statusEffect = StatusEffects.SPEED,
+                    duration = Range(350, 500).scaled(),
+                    amplifier = Range.nonRandom(2),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.REGENERATION,
+                    duration = Range(500, 550).scaled(),
+                    amplifier = Range(1, 2),
+                    chance = Chance(95)
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.ABSORPTION,
+                    duration = Range(200, 300).scaled(),
+                    amplifier = Range(0, 1),
+                    chance = Chance(50)
+                )
+            )
+        )
+
+        // Apply a constant multiplier to all durations to speed up & unify balancing changes
         private const val MULTIPLIER = 15
 
         private fun Range.scaled(): Range {
