@@ -1,12 +1,11 @@
 package com.redgrapefruit.justenoughgems.util
 
-import net.minecraft.item.Item
-import net.minecraft.item.ItemGroup
 import net.minecraft.item.ItemStack
 import net.minecraft.util.Identifier
+import org.apache.logging.log4j.LogManager
 import kotlin.random.Random
 
-abstract class ModItem : Item(Settings().group(ItemGroup.MISC))
+val LOGGER = LogManager.getLogger("JEG")
 
 open class Range(
     val min: Int,

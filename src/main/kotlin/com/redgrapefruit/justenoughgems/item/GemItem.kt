@@ -172,7 +172,7 @@ data class GemItemConfig(
             effects = listOf(
                 GemItemEffect(
                     statusEffect = StatusEffects.SPEED,
-                    duration = Range(100, 200),
+                    duration = Range(100, 200).scaled(),
                     amplifier = Range.nonRandom(0),
                     chance = Chance(75)
                 )
@@ -184,13 +184,13 @@ data class GemItemConfig(
             effects = listOf(
                 GemItemEffect(
                     statusEffect = StatusEffects.SPEED,
-                    duration = Range(150, 300),
+                    duration = Range(150, 300).scaled(),
                     amplifier = Range(0, 1),
                     chance = Chance(85)
                 ),
                 GemItemEffect(
                     statusEffect = StatusEffects.REGENERATION,
-                    duration = Range(200, 400),
+                    duration = Range(200, 400).scaled(),
                     amplifier = Range.nonRandom(0),
                     chance = Chance(60)
                 )
@@ -202,18 +202,48 @@ data class GemItemConfig(
             effects = listOf(
                 GemItemEffect(
                     statusEffect = StatusEffects.SPEED,
-                    duration = Range(250, 350),
+                    duration = Range(250, 350).scaled(),
                     amplifier = Range.nonRandom(1),
                     chance = Chance(90)
                 ),
                 GemItemEffect(
                     statusEffect = StatusEffects.REGENERATION,
-                    duration = Range(300, 450),
+                    duration = Range(300, 450).scaled(),
                     amplifier = Range(0, 1),
                     chance = Chance(75)
                 )
             )
         )
+
+        val TAAFFEITE = GemItemConfig(
+            reloadTime = 390,
+            effects = listOf(
+                GemItemEffect(
+                    statusEffect = StatusEffects.SPEED,
+                    duration = Range(300, 400).scaled(),
+                    amplifier = Range(1, 2),
+                    chance = Chance(95)
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.REGENERATION,
+                    duration = Range(400, 500).scaled(),
+                    amplifier = Range.nonRandom(1),
+                    chance = Chance(85)
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.ABSORPTION,
+                    duration = Range(100, 250).scaled(),
+                    amplifier = Range.nonRandom(0),
+                    chance = Chance(35)
+                )
+            )
+        )
+
+        private const val MULTIPLIER = 15
+
+        private fun Range.scaled(): Range {
+            return Range(min * MULTIPLIER, max * MULTIPLIER)
+        }
     }
 }
 
