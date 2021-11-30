@@ -358,6 +358,54 @@ data class GemItemConfig(
             )
         )
 
+        val TSAVORITE = GemItemConfig(
+            reloadTime = 120,
+            effects = listOf(
+                GemItemEffect(
+                    statusEffect = StatusEffects.SPEED,
+                    duration = Range(800, 850).scaled(),
+                    amplifier = Range.nonRandom(6),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.REGENERATION,
+                    duration = Range(950, 1000).scaled(),
+                    amplifier = Range.nonRandom(5),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.ABSORPTION,
+                    duration = Range(700, 800).scaled(),
+                    amplifier = Range(4, 5),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.FIRE_RESISTANCE,
+                    duration = Range(500, 700).scaled(),
+                    amplifier = Range.nonRandom(0),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.STRENGTH,
+                    duration = Range(400, 600).scaled(),
+                    amplifier = Range(2, 3),
+                    chance = Chance(75)
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.JUMP_BOOST,
+                    duration = Range(300, 450).scaled(),
+                    amplifier = Range.nonRandom(1),
+                    chance = Chance(50)
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.HEALTH_BOOST,
+                    duration = Range(100, 150).scaled(),
+                    amplifier = Range.nonRandom(0),
+                    chance = Chance(30)
+                )
+            )
+        )
+
         // Apply a constant multiplier to all durations to speed up & unify balancing changes
         private const val MULTIPLIER = 15
 
