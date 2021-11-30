@@ -316,6 +316,48 @@ data class GemItemConfig(
             )
         )
 
+        val TANZANITE = GemItemConfig(
+            reloadTime = 150,
+            effects = listOf(
+                GemItemEffect(
+                    statusEffect = StatusEffects.SPEED,
+                    duration = Range(750, 800).scaled(),
+                    amplifier = Range(5, 6),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.REGENERATION,
+                    duration = Range(900, 1000).scaled(),
+                    amplifier = Range(4, 5),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.ABSORPTION,
+                    duration = Range(650, 700).scaled(),
+                    amplifier = Range.nonRandom(4),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.FIRE_RESISTANCE,
+                    duration = Range(500, 700).scaled(),
+                    amplifier = Range.nonRandom(0),
+                    chance = Chance(85)
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.STRENGTH,
+                    duration = Range(350, 550).scaled(),
+                    amplifier = Range.nonRandom(2),
+                    chance = Chance(65)
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.JUMP_BOOST,
+                    duration = Range(250, 400).scaled(),
+                    amplifier = Range(0, 1),
+                    chance = Chance(40)
+                )
+            )
+        )
+
         // Apply a constant multiplier to all durations to speed up & unify balancing changes
         private const val MULTIPLIER = 15
 
