@@ -238,6 +238,42 @@ data class GemItemConfig(
             )
         )
 
+        val RUBY = GemItemConfig(
+            reloadTime = 210,
+            effects = listOf(
+                GemItemEffect(
+                    statusEffect = StatusEffects.SPEED,
+                    duration = Range(650, 800).scaled(),
+                    amplifier = Range(4, 5),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.REGENERATION,
+                    duration = Range(800, 900).scaled(),
+                    amplifier = Range(3, 4),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.ABSORPTION,
+                    duration = Range(550, 600).scaled(),
+                    amplifier = Range.nonRandom(3),
+                    chance = Chance(90)
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.FIRE_RESISTANCE,
+                    duration = Range(350, 500).scaled(),
+                    amplifier = Range.nonRandom(0),
+                    chance = Chance(70)
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.STRENGTH,
+                    duration = Range(200, 400).scaled(),
+                    amplifier = Range.nonRandom(1),
+                    chance = Chance(40)
+                )
+            )
+        )
+
         // Apply a constant multiplier to all durations to speed up & unify balancing changes
         private const val MULTIPLIER = 15
 
