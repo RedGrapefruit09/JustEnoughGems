@@ -202,6 +202,42 @@ data class GemItemConfig(
             )
         )
 
+        val HELIODORE = GemItemConfig(
+            reloadTime = 240,
+            effects = listOf(
+                GemItemEffect(
+                    statusEffect = StatusEffects.SPEED,
+                    duration = Range(600, 750).scaled(),
+                    amplifier = Range.nonRandom(4),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.REGENERATION,
+                    duration = Range(800, 900).scaled(),
+                    amplifier = Range(3, 4),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.ABSORPTION,
+                    duration = Range(500, 550).scaled(),
+                    amplifier = Range(2, 3),
+                    chance = Chance(85)
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.FIRE_RESISTANCE,
+                    duration = Range(300, 450).scaled(),
+                    amplifier = Range.nonRandom(0),
+                    chance = Chance(60)
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.STRENGTH,
+                    duration = Range(150, 300).scaled(),
+                    amplifier = Range(0, 1),
+                    chance = Chance(25)
+                )
+            )
+        )
+
         // Apply a constant multiplier to all durations to speed up & unify balancing changes
         private const val MULTIPLIER = 15
 
