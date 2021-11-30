@@ -17,6 +17,7 @@ object ItemRegistry : IRegistry {
     val PINK_QUARTZ_GEM = GemItem(GemItemConfig.PINK_QUARTZ, 5)
     val EUCLASE_GEM = GemItem(GemItemConfig.EUCLASE, 6)
     val CHRYSOLITE_GEM = GemItem(GemItemConfig.CHRYSOLITE, 7)
+    val SAPPHIRE_GEM = GemItem(GemItemConfig.SAPPHIRE, 8)
 
     override fun register() {
         register("quartz_gem", QUARTZ_GEM)
@@ -26,6 +27,7 @@ object ItemRegistry : IRegistry {
         register("pink_quartz_gem", PINK_QUARTZ_GEM)
         register("euclase_gem", EUCLASE_GEM)
         register("chrysolite_gem", CHRYSOLITE_GEM)
+        register("sapphire_gem", SAPPHIRE_GEM)
     }
 
     private fun register(name: String, item: Item) {

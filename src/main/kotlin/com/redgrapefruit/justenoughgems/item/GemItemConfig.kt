@@ -166,6 +166,42 @@ data class GemItemConfig(
             )
         )
 
+        val SAPPHIRE = GemItemConfig(
+            reloadTime = 270,
+            effects = listOf(
+                GemItemEffect(
+                    statusEffect = StatusEffects.SPEED,
+                    duration = Range(550, 700).scaled(),
+                    amplifier = Range(3, 4),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.REGENERATION,
+                    duration = Range(700, 850).scaled(),
+                    amplifier = Range.nonRandom(3),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.ABSORPTION,
+                    duration = Range(400, 500).scaled(),
+                    amplifier = Range.nonRandom(2),
+                    chance = Chance(80)
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.FIRE_RESISTANCE,
+                    duration = Range(250, 400).scaled(),
+                    amplifier = Range.nonRandom(0),
+                    chance = Chance(50)
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.STRENGTH,
+                    duration = Range(100, 150).scaled(),
+                    amplifier = Range.nonRandom(0),
+                    chance = Chance(15)
+                )
+            )
+        )
+
         // Apply a constant multiplier to all durations to speed up & unify balancing changes
         private const val MULTIPLIER = 15
 
