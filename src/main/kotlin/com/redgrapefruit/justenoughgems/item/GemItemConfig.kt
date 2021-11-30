@@ -274,6 +274,48 @@ data class GemItemConfig(
             )
         )
 
+        val AQUAMARINE = GemItemConfig(
+            reloadTime = 180,
+            effects = listOf(
+                GemItemEffect(
+                    statusEffect = StatusEffects.SPEED,
+                    duration = Range(700, 800).scaled(),
+                    amplifier = Range.nonRandom(5),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.REGENERATION,
+                    duration = Range(850, 950).scaled(),
+                    amplifier = Range.nonRandom(4),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.ABSORPTION,
+                    duration = Range(600, 650).scaled(),
+                    amplifier = Range(3, 4),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.FIRE_RESISTANCE,
+                    duration = Range(400, 550).scaled(),
+                    amplifier = Range.nonRandom(0),
+                    chance = Chance(75)
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.STRENGTH,
+                    duration = Range(250, 450).scaled(),
+                    amplifier = Range(1, 2),
+                    chance = Chance(50)
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.JUMP_BOOST,
+                    duration = Range(100, 200).scaled(),
+                    amplifier = Range.nonRandom(0),
+                    chance = Chance(25)
+                )
+            )
+        )
+
         // Apply a constant multiplier to all durations to speed up & unify balancing changes
         private const val MULTIPLIER = 15
 
