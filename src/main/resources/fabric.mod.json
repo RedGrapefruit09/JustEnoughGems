@@ -1,7 +1,7 @@
 {
     "schemaVersion": 1,
     "id": "jeg",
-    "version": "${version}",
+    "version": "1.0",
     "name": "JEG",
     "description": "JEG is a mod that adds a bunch of new gems with special abilities, armor, tools and food.",
     "authors": [
@@ -31,8 +31,8 @@
         "justenoughgems.mixins.json"
     ],
     "depends": {
-        "fabricloader": ">=0.12.5",
+        "fabricloader": ">=0.12.11",
         "fabric": "*",
-        "minecraft": "1.18"
+        "minecraft": ">=1.18.1"
     }
 }
