@@ -12,6 +12,25 @@
 - Armor
 - Food
 
+And there are **16 different gems**:
+
+- Quartz
+- Andalusite
+- Morganite
+- Taaffeite
+- Pink Quartz
+- Euclase
+- Chrysolite
+- Sapphire
+- Heliodore
+- Ruby
+- Aquamarine
+- Tanzanite
+- Tsavorite
+- Verdelite
+- Indigolite
+- Opal
+
 (_Disclaimer_: not all of these features are ready, the mod is still in active development).
 
 The mod is planned to be released in **Q1-2022**, however you can **try it out right now!**\
