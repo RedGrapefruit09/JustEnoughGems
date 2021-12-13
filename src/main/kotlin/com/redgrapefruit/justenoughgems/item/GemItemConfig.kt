@@ -490,6 +490,48 @@ data class GemItemConfig(
             )
         )
 
+        val OPAL = GemItemConfig(
+            reloadTime = 30,
+            effects = listOf(
+                GemItemEffect(
+                    statusEffect = StatusEffects.SPEED,
+                    duration = Range(1000, 1250).scaled(),
+                    amplifier = Range(7, 8),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.REGENERATION,
+                    duration = Range(1300, 1500).scaled(),
+                    amplifier = Range(6, 7),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.FIRE_RESISTANCE,
+                    duration = Range(850, 1000).scaled(),
+                    amplifier = Range.nonRandom(0),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.STRENGTH,
+                    duration = Range(650, 1000).scaled(),
+                    amplifier = Range(4, 5),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.JUMP_BOOST,
+                    duration = Range(500, 800).scaled(),
+                    amplifier = Range(3, 5),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.HEALTH_BOOST,
+                    duration = Range(500, 750).scaled(),
+                    amplifier = Range(2, 4),
+                    chance = Chance.always
+                )
+            )
+        )
+
         // Apply a constant multiplier to all durations to speed up & unify balancing changes
         private const val MULTIPLIER = 15
 
