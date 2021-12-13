@@ -448,6 +448,48 @@ data class GemItemConfig(
             )
         )
 
+        val INDIGOLITE = GemItemConfig(
+            reloadTime = 60,
+            effects = listOf(
+                GemItemEffect(
+                    statusEffect = StatusEffects.SPEED,
+                    duration = Range(900, 1100).scaled(),
+                    amplifier = Range.nonRandom(7),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.REGENERATION,
+                    duration = Range(1100, 1250).scaled(),
+                    amplifier = Range.nonRandom(6),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.FIRE_RESISTANCE,
+                    duration = Range(700, 900).scaled(),
+                    amplifier = Range.nonRandom(0),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.STRENGTH,
+                    duration = Range(550, 900).scaled(),
+                    amplifier = Range(3, 4),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.JUMP_BOOST,
+                    duration = Range(350, 550).scaled(),
+                    amplifier = Range(2, 4),
+                    chance = Chance(75)
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.HEALTH_BOOST,
+                    duration = Range(400, 650).scaled(),
+                    amplifier = Range(1, 3),
+                    chance = Chance(55)
+                )
+            )
+        )
+
         // Apply a constant multiplier to all durations to speed up & unify balancing changes
         private const val MULTIPLIER = 15
 
