@@ -406,6 +406,48 @@ data class GemItemConfig(
             )
         )
 
+        val VERDELITE = GemItemConfig(
+            reloadTime = 90,
+            effects = listOf(
+                GemItemEffect(
+                    statusEffect = StatusEffects.SPEED,
+                    duration = Range(850, 1000).scaled(),
+                    amplifier = Range(6, 7),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.REGENERATION,
+                    duration = Range(1000, 1100).scaled(),
+                    amplifier = Range(5, 6),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.FIRE_RESISTANCE,
+                    duration = Range(600, 800).scaled(),
+                    amplifier = Range.nonRandom(0),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.STRENGTH,
+                    duration = Range(450, 750).scaled(),
+                    amplifier = Range.nonRandom(3),
+                    chance = Chance(85)
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.JUMP_BOOST,
+                    duration = Range(350, 550).scaled(),
+                    amplifier = Range(1, 3),
+                    chance = Chance(65)
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.HEALTH_BOOST,
+                    duration = Range(250, 400).scaled(),
+                    amplifier = Range(0, 2),
+                    chance = Chance(45)
+                )
+            )
+        )
+
         // Apply a constant multiplier to all durations to speed up & unify balancing changes
         private const val MULTIPLIER = 15
 
