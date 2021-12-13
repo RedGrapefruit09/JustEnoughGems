@@ -422,6 +422,12 @@ data class GemItemConfig(
                     chance = Chance.always
                 ),
                 GemItemEffect(
+                    statusEffect = StatusEffects.ABSORPTION,
+                    duration = Range(850, 950).scaled(),
+                    amplifier = Range(5, 6),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
                     statusEffect = StatusEffects.FIRE_RESISTANCE,
                     duration = Range(600, 800).scaled(),
                     amplifier = Range.nonRandom(0),
@@ -464,6 +470,12 @@ data class GemItemConfig(
                     chance = Chance.always
                 ),
                 GemItemEffect(
+                    statusEffect = StatusEffects.ABSORPTION,
+                    duration = Range(1000, 1100).scaled(),
+                    amplifier = Range(6, 7),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
                     statusEffect = StatusEffects.FIRE_RESISTANCE,
                     duration = Range(700, 900).scaled(),
                     amplifier = Range.nonRandom(0),
@@ -503,6 +515,12 @@ data class GemItemConfig(
                     statusEffect = StatusEffects.REGENERATION,
                     duration = Range(1300, 1500).scaled(),
                     amplifier = Range(6, 7),
+                    chance = Chance.always
+                ),
+                GemItemEffect(
+                    statusEffect = StatusEffects.ABSORPTION,
+                    duration = Range(1100, 1300).scaled(),
+                    amplifier = Range(7, 8),
                     chance = Chance.always
                 ),
                 GemItemEffect(
