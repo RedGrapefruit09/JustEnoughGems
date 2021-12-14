@@ -59,7 +59,7 @@ class GemAmulet(private val config: GemAmuletConfig, private val tier: Int) : It
         config.effects.forEach { (effect, amplifier) ->
             tooltip += LiteralText("- ")
                 .append(TranslatableText(effect.translationKey))
-                .append(LiteralText(" ${RomanNumber.toRoman(amplifier)}"))
+                .append(LiteralText(" ${RomanNumber.toRoman(amplifier + 1)}"))
         }
     }
 
