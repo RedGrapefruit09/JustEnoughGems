@@ -12,6 +12,7 @@ data class GemAmuletConfig(
         // NOTE:
         // Initial durability = 6000 + t * 1200
         // Expiry time = t * 20
+        // Amplifiers are capped at 8
 
         val QUARTZ = GemAmuletConfig(
             initialDurability = 7200,
@@ -68,6 +69,67 @@ data class GemAmuletConfig(
                 StatusEffects.REGENERATION to 5,
                 StatusEffects.ABSORPTION to 2,
                 StatusEffects.FIRE_RESISTANCE to 0
+            )
+        )
+
+        val CHRYSOLITE = GemAmuletConfig(
+            initialDurability = 14400,
+            expiryTime = 140,
+            effects = mapOf(
+                StatusEffects.SPEED to 6,
+                StatusEffects.REGENERATION to 6,
+                StatusEffects.ABSORPTION to 3,
+                StatusEffects.FIRE_RESISTANCE to 0
+            )
+        )
+
+        val SAPPHIRE = GemAmuletConfig(
+            initialDurability = 15600,
+            expiryTime = 160,
+            effects = mapOf(
+                StatusEffects.SPEED to 7,
+                StatusEffects.REGENERATION to 7,
+                StatusEffects.ABSORPTION to 4,
+                StatusEffects.FIRE_RESISTANCE to 0,
+                StatusEffects.STRENGTH to 0
+            )
+        )
+
+        val HELIODORE = GemAmuletConfig(
+            initialDurability = 16800,
+            expiryTime = 180,
+            effects = mapOf(
+                StatusEffects.SPEED to 8,
+                StatusEffects.REGENERATION to 8,
+                StatusEffects.ABSORPTION to 5,
+                StatusEffects.FIRE_RESISTANCE to 0,
+                StatusEffects.STRENGTH to 1
+            )
+        )
+
+
+        val RUBY = GemAmuletConfig(
+            initialDurability = 18000,
+            expiryTime = 200,
+            effects = mapOf(
+                StatusEffects.SPEED to 8,
+                StatusEffects.REGENERATION to 8,
+                StatusEffects.ABSORPTION to 6,
+                StatusEffects.FIRE_RESISTANCE to 0,
+                StatusEffects.STRENGTH to 2
+            )
+        )
+
+        val AQUAMARINE = GemAmuletConfig(
+            initialDurability = 19200,
+            expiryTime = 220,
+            effects = mapOf(
+                StatusEffects.SPEED to 8,
+                StatusEffects.REGENERATION to 8,
+                StatusEffects.ABSORPTION to 7,
+                StatusEffects.FIRE_RESISTANCE to 0,
+                StatusEffects.STRENGTH to 3,
+                StatusEffects.JUMP_BOOST to 0
             )
         )
     }
