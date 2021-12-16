@@ -6,7 +6,8 @@ import net.minecraft.entity.effect.StatusEffects
 data class GemAmuletConfig(
     val initialDurability: Int,
     val expiryTime: Int,
-    val effects: Map<StatusEffect, Int>
+    val effects: Map<StatusEffect, Int>,
+    val onInsertEffects: Map<StatusEffect, Int> = mapOf()
 ) {
     companion object {
         // NOTE:
@@ -46,7 +47,9 @@ data class GemAmuletConfig(
             expiryTime = 80,
             effects = mapOf(
                 StatusEffects.SPEED to 3,
-                StatusEffects.REGENERATION to 3,
+                StatusEffects.REGENERATION to 3
+            ),
+            onInsertEffects = mapOf(
                 StatusEffects.ABSORPTION to 0
             )
         )
@@ -56,7 +59,9 @@ data class GemAmuletConfig(
             expiryTime = 100,
             effects = mapOf(
                 StatusEffects.SPEED to 4,
-                StatusEffects.REGENERATION to 4,
+                StatusEffects.REGENERATION to 4
+            ),
+            onInsertEffects = mapOf(
                 StatusEffects.ABSORPTION to 1
             )
         )
@@ -67,8 +72,10 @@ data class GemAmuletConfig(
             effects = mapOf(
                 StatusEffects.SPEED to 5,
                 StatusEffects.REGENERATION to 5,
-                StatusEffects.ABSORPTION to 2,
                 StatusEffects.FIRE_RESISTANCE to 0
+            ),
+            onInsertEffects = mapOf(
+                StatusEffects.ABSORPTION to 2
             )
         )
 
@@ -78,8 +85,10 @@ data class GemAmuletConfig(
             effects = mapOf(
                 StatusEffects.SPEED to 6,
                 StatusEffects.REGENERATION to 6,
-                StatusEffects.ABSORPTION to 3,
                 StatusEffects.FIRE_RESISTANCE to 0
+            ),
+            onInsertEffects = mapOf(
+                StatusEffects.ABSORPTION to 3
             )
         )
 
@@ -89,9 +98,11 @@ data class GemAmuletConfig(
             effects = mapOf(
                 StatusEffects.SPEED to 7,
                 StatusEffects.REGENERATION to 7,
-                StatusEffects.ABSORPTION to 4,
                 StatusEffects.FIRE_RESISTANCE to 0,
                 StatusEffects.STRENGTH to 0
+            ),
+            onInsertEffects = mapOf(
+                StatusEffects.ABSORPTION to 4
             )
         )
 
@@ -101,9 +112,11 @@ data class GemAmuletConfig(
             effects = mapOf(
                 StatusEffects.SPEED to 8,
                 StatusEffects.REGENERATION to 8,
-                StatusEffects.ABSORPTION to 5,
                 StatusEffects.FIRE_RESISTANCE to 0,
                 StatusEffects.STRENGTH to 1
+            ),
+            onInsertEffects = mapOf(
+                StatusEffects.ABSORPTION to 5
             )
         )
 
@@ -114,9 +127,11 @@ data class GemAmuletConfig(
             effects = mapOf(
                 StatusEffects.SPEED to 8,
                 StatusEffects.REGENERATION to 8,
-                StatusEffects.ABSORPTION to 6,
                 StatusEffects.FIRE_RESISTANCE to 0,
                 StatusEffects.STRENGTH to 2
+            ),
+            onInsertEffects = mapOf(
+                StatusEffects.ABSORPTION to 6
             )
         )
 
@@ -126,10 +141,12 @@ data class GemAmuletConfig(
             effects = mapOf(
                 StatusEffects.SPEED to 8,
                 StatusEffects.REGENERATION to 8,
-                StatusEffects.ABSORPTION to 7,
                 StatusEffects.FIRE_RESISTANCE to 0,
                 StatusEffects.STRENGTH to 3,
                 StatusEffects.JUMP_BOOST to 0
+            ),
+            onInsertEffects = mapOf(
+                StatusEffects.ABSORPTION to 7
             )
         )
 
@@ -139,10 +156,12 @@ data class GemAmuletConfig(
             effects = mapOf(
                 StatusEffects.SPEED to 8,
                 StatusEffects.REGENERATION to 8,
-                StatusEffects.ABSORPTION to 8,
                 StatusEffects.FIRE_RESISTANCE to 0,
                 StatusEffects.STRENGTH to 4,
                 StatusEffects.JUMP_BOOST to 1
+            ),
+            onInsertEffects = mapOf(
+                StatusEffects.ABSORPTION to 8
             )
         )
 
@@ -152,10 +171,12 @@ data class GemAmuletConfig(
             effects = mapOf(
                 StatusEffects.SPEED to 8,
                 StatusEffects.REGENERATION to 8,
-                StatusEffects.ABSORPTION to 8,
                 StatusEffects.FIRE_RESISTANCE to 0,
                 StatusEffects.STRENGTH to 5,
-                StatusEffects.JUMP_BOOST to 2,
+                StatusEffects.JUMP_BOOST to 2
+            ),
+            onInsertEffects = mapOf(
+                StatusEffects.ABSORPTION to 8,
                 StatusEffects.HEALTH_BOOST to 2
             )
         )
@@ -166,10 +187,12 @@ data class GemAmuletConfig(
             effects = mapOf(
                 StatusEffects.SPEED to 8,
                 StatusEffects.REGENERATION to 8,
-                StatusEffects.ABSORPTION to 8,
                 StatusEffects.FIRE_RESISTANCE to 0,
                 StatusEffects.STRENGTH to 6,
-                StatusEffects.JUMP_BOOST to 3,
+                StatusEffects.JUMP_BOOST to 3
+            ),
+            onInsertEffects = mapOf(
+                StatusEffects.ABSORPTION to 8,
                 StatusEffects.HEALTH_BOOST to 4
             )
         )
@@ -180,10 +203,12 @@ data class GemAmuletConfig(
             effects = mapOf(
                 StatusEffects.SPEED to 8,
                 StatusEffects.REGENERATION to 8,
-                StatusEffects.ABSORPTION to 8,
                 StatusEffects.FIRE_RESISTANCE to 0,
                 StatusEffects.STRENGTH to 7,
-                StatusEffects.JUMP_BOOST to 4,
+                StatusEffects.JUMP_BOOST to 4
+            ),
+            onInsertEffects = mapOf(
+                StatusEffects.ABSORPTION to 8,
                 StatusEffects.HEALTH_BOOST to 6
             )
         )
@@ -194,10 +219,12 @@ data class GemAmuletConfig(
             effects = mapOf(
                 StatusEffects.SPEED to 8,
                 StatusEffects.REGENERATION to 8,
-                StatusEffects.ABSORPTION to 8,
                 StatusEffects.FIRE_RESISTANCE to 0,
                 StatusEffects.STRENGTH to 8,
-                StatusEffects.JUMP_BOOST to 5,
+                StatusEffects.JUMP_BOOST to 5
+            ),
+            onInsertEffects = mapOf(
+                StatusEffects.ABSORPTION to 8,
                 StatusEffects.HEALTH_BOOST to 8
             )
         )

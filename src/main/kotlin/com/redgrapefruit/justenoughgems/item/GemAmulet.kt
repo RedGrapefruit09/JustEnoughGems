@@ -18,12 +18,26 @@ import net.minecraft.text.TranslatableText
 import net.minecraft.util.Formatting
 import net.minecraft.world.World
 
-class GemAmulet(private val config: GemAmuletConfig, private val tier: Int) : Item(Settings().group(ItemGroup.MISC).maxCount(1)) {
+class GemAmulet(val config: GemAmuletConfig, private val tier: Int) : Item(Settings().group(ItemGroup.MISC).maxCount(1)) {
     override fun inventoryTick(stack: ItemStack, world: World, entity: Entity, slot: Int, selected: Boolean) {
         if (entity !is PlayerEntity) return
 
         DataClient.use(::GemAmuletState, stack) { state ->
             state.decreaseInDurability++
+
+            if (!state.initialized) {
+                config.onInsertEffects.forEach { (effect, amplifier) ->
+                    val instance = StatusEffectInstance(effect, Int.MAX_VALUE, amplifier)
+
+                    if (entity.hasStatusEffect(effect)) {
+                        entity.removeStatusEffect(effect)
+                    }
+
+                    entity.addStatusEffect(instance)
+                }
+
+                state.initialized = true
+            }
 
             if (state.decreaseInDurability >= config.initialDurability) {
                 stack.decrement()
@@ -93,14 +107,19 @@ class GemAmulet(private val config: GemAmuletConfig, private val tier: Int) : It
     }
 }
 
-data class GemAmuletState(var decreaseInDurability: Int = 0) : CustomData {
+data class GemAmuletState(
+    var decreaseInDurability: Int = 0,
+    var initialized: Boolean = false /* https://github.com/RedGrapefruit09/JustEnoughGems/issues/1#issuecomment-995539643 */ )
+: CustomData {
     override fun getNbtCategory(): String = "GemAmuletState"
 
     override fun readNbt(nbt: NbtCompound) {
         decreaseInDurability = nbt.getInt("Durability Decrease")
+        initialized = nbt.getBoolean("Initialized")
     }
 
     override fun writeNbt(nbt: NbtCompound) {
         nbt.putInt("Durability Decrease", decreaseInDurability)
+        nbt.putBoolean("Initialized", initialized)
     }
 }
