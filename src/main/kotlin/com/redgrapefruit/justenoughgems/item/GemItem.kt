@@ -21,7 +21,7 @@ import net.minecraft.util.Hand
 import net.minecraft.util.TypedActionResult
 import net.minecraft.world.World
 
-class GemItem(private val config: GemItemConfig, private val tier: Int) : Item(Settings().group(ItemGroup.MISC).maxCount(1)) {
+class GemItem(private val config: GemItemConfig, tier: Int) : BaseItem(tier, true) {
     private fun readyForUsage(stack: ItemStack): Boolean {
         var out = false
 
@@ -90,9 +90,7 @@ class GemItem(private val config: GemItemConfig, private val tier: Int) : Item(S
         tooltip: MutableList<Text>,
         context: TooltipContext
     ) {
-        tooltip += TranslatableText("misc.jeg.tier")
-            .append(LiteralText(RomanNumber.toRoman(tier)))
-            .formatted(Formatting.BLUE)
+        super.appendTooltip(stack, world, tooltip, context)
 
         if (readyForUsage(stack)) {
             tooltip += TranslatableText("misc.jeg.ready_to_use")

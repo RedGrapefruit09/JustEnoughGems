@@ -8,8 +8,6 @@ import net.minecraft.client.item.TooltipContext
 import net.minecraft.entity.Entity
 import net.minecraft.entity.effect.StatusEffectInstance
 import net.minecraft.entity.player.PlayerEntity
-import net.minecraft.item.Item
-import net.minecraft.item.ItemGroup
 import net.minecraft.item.ItemStack
 import net.minecraft.nbt.NbtCompound
 import net.minecraft.text.LiteralText
@@ -18,7 +16,7 @@ import net.minecraft.text.TranslatableText
 import net.minecraft.util.Formatting
 import net.minecraft.world.World
 
-class GemAmulet(val config: GemAmuletConfig, private val tier: Int) : Item(Settings().group(ItemGroup.MISC).maxCount(1)) {
+class GemAmulet(val config: GemAmuletConfig, tier: Int) : BaseItem(tier, true) {
     override fun inventoryTick(stack: ItemStack, world: World, entity: Entity, slot: Int, selected: Boolean) {
         if (entity !is PlayerEntity) return
 
@@ -57,9 +55,7 @@ class GemAmulet(val config: GemAmuletConfig, private val tier: Int) : Item(Setti
         tooltip: MutableList<Text>,
         context: TooltipContext
     ) {
-        tooltip += TranslatableText("misc.jeg.tier")
-            .append(LiteralText(RomanNumber.toRoman(tier)))
-            .formatted(Formatting.BLUE)
+        super.appendTooltip(stack, world, tooltip, context)
 
         DataClient.use(::GemAmuletState, stack) { state ->
             tooltip += TranslatableText("misc.jeg.durability")
