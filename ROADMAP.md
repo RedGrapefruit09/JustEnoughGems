@@ -9,8 +9,8 @@ Here's the full status on releases:
 | Index | Summary | Availability |
 |-|-|-|
 | v0.1 | Gems | :white_check_mark: |
-| v0.2 | Amulets | 🚧 |
-| v0.3 | Weapons | :x: |
+| v0.2 | Amulets | :white_check_mark: |
+| v0.3 | Weapons | 🚧 |
 | v0.4 | Shields | :x: |
 | v0.5 | Ores, Mining system | :x: |
 | v0.6 | Tools | :x: |
