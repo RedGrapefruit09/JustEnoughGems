@@ -40,6 +40,11 @@ object ItemRegistry : IRegistry {
     val HELIODORE_AMULET = GemAmulet(GemAmuletConfig.HELIODORE, 9)
     val RUBY_AMULET = GemAmulet(GemAmuletConfig.RUBY, 10)
     val AQUAMARINE_AMULET = GemAmulet(GemAmuletConfig.AQUAMARINE, 11)
+    val TANZANITE_AMULET = GemAmulet(GemAmuletConfig.TANZANITE, 12)
+    val TSAVORITE_AMULET = GemAmulet(GemAmuletConfig.TSAVORITE, 13)
+    val VERDELITE_AMULET = GemAmulet(GemAmuletConfig.VERDELITE, 14)
+    val INDIGOLITE_AMULET = GemAmulet(GemAmuletConfig.INDIGOLITE, 15)
+    val OPAL_AMULET = GemAmulet(GemAmuletConfig.OPAL, 16)
 
     override fun register() {
         register("quartz_gem", QUARTZ_GEM)
@@ -70,6 +75,11 @@ object ItemRegistry : IRegistry {
         register("heliodore_amulet", HELIODORE_AMULET)
         register("ruby_amulet", RUBY_AMULET)
         register("aquamarine_amulet", AQUAMARINE_AMULET)
+        register("tanzanite_amulet", TANZANITE_AMULET)
+        register("tsavorite_amulet", TSAVORITE_AMULET)
+        register("verdelite_amulet", VERDELITE_AMULET)
+        register("indigolite_amulet", INDIGOLITE_AMULET)
+        register("opal_amulet", OPAL_AMULET)
     }
 
     private fun register(name: String, item: Item) {

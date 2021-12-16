@@ -132,5 +132,74 @@ data class GemAmuletConfig(
                 StatusEffects.JUMP_BOOST to 0
             )
         )
+
+        val TANZANITE = GemAmuletConfig(
+            initialDurability = 20400,
+            expiryTime = 240,
+            effects = mapOf(
+                StatusEffects.SPEED to 8,
+                StatusEffects.REGENERATION to 8,
+                StatusEffects.ABSORPTION to 8,
+                StatusEffects.FIRE_RESISTANCE to 0,
+                StatusEffects.STRENGTH to 4,
+                StatusEffects.JUMP_BOOST to 1
+            )
+        )
+
+        val TSAVORITE = GemAmuletConfig(
+            initialDurability = 21600,
+            expiryTime = 260,
+            effects = mapOf(
+                StatusEffects.SPEED to 8,
+                StatusEffects.REGENERATION to 8,
+                StatusEffects.ABSORPTION to 8,
+                StatusEffects.FIRE_RESISTANCE to 0,
+                StatusEffects.STRENGTH to 5,
+                StatusEffects.JUMP_BOOST to 2,
+                StatusEffects.HEALTH_BOOST to 2
+            )
+        )
+
+        val VERDELITE = GemAmuletConfig(
+            initialDurability = 22800,
+            expiryTime = 280,
+            effects = mapOf(
+                StatusEffects.SPEED to 8,
+                StatusEffects.REGENERATION to 8,
+                StatusEffects.ABSORPTION to 8,
+                StatusEffects.FIRE_RESISTANCE to 0,
+                StatusEffects.STRENGTH to 6,
+                StatusEffects.JUMP_BOOST to 3,
+                StatusEffects.HEALTH_BOOST to 4
+            )
+        )
+
+        val INDIGOLITE = GemAmuletConfig(
+            initialDurability = 24000,
+            expiryTime = 300,
+            effects = mapOf(
+                StatusEffects.SPEED to 8,
+                StatusEffects.REGENERATION to 8,
+                StatusEffects.ABSORPTION to 8,
+                StatusEffects.FIRE_RESISTANCE to 0,
+                StatusEffects.STRENGTH to 7,
+                StatusEffects.JUMP_BOOST to 4,
+                StatusEffects.HEALTH_BOOST to 6
+            )
+        )
+
+        val OPAL = GemAmuletConfig(
+            initialDurability = 25200,
+            expiryTime = 320,
+            effects = mapOf(
+                StatusEffects.SPEED to 8,
+                StatusEffects.REGENERATION to 8,
+                StatusEffects.ABSORPTION to 8,
+                StatusEffects.FIRE_RESISTANCE to 0,
+                StatusEffects.STRENGTH to 8,
+                StatusEffects.JUMP_BOOST to 5,
+                StatusEffects.HEALTH_BOOST to 8
+            )
+        )
     }
 }
