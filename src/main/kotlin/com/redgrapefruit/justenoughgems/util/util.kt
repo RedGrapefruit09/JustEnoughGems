@@ -1,11 +1,21 @@
 package com.redgrapefruit.justenoughgems.util
 
+import com.redgrapefruit.justenoughgems.registry.ItemRegistry
+import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder
+import net.minecraft.item.ItemGroup
 import net.minecraft.item.ItemStack
 import net.minecraft.util.Identifier
 import org.apache.logging.log4j.LogManager
 import kotlin.random.Random
 
 val LOGGER = LogManager.getLogger("JEG")
+
+val MOD_ITEM_GROUP: ItemGroup by lazy {
+    FabricItemGroupBuilder
+        .create("item_group".toId())
+        .icon { ItemRegistry.OPAL_GEM.defaultStack }
+        .build()
+}
 
 open class Range(
     val min: Int,

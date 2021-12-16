@@ -1,9 +1,9 @@
 package com.redgrapefruit.justenoughgems.item
 
+import com.redgrapefruit.justenoughgems.util.MOD_ITEM_GROUP
 import com.redgrapefruit.justenoughgems.util.RomanNumber
 import net.minecraft.client.item.TooltipContext
 import net.minecraft.item.Item
-import net.minecraft.item.ItemGroup
 import net.minecraft.item.ItemStack
 import net.minecraft.text.LiteralText
 import net.minecraft.text.Text
@@ -15,7 +15,7 @@ abstract class BaseItem(
     private val tier: Int,
     notStackable: Boolean = false)
     : Item(Settings()
-        .group(ItemGroup.MISC)
+        .group(MOD_ITEM_GROUP)
         .maxCount(if (notStackable) 1 else 64)) {
 
     override fun appendTooltip(
