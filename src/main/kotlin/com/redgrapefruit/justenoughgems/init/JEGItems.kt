@@ -1,4 +1,4 @@
-package com.redgrapefruit.justenoughgems.registry
+package com.redgrapefruit.justenoughgems.init
 
 import com.redgrapefruit.justenoughgems.item.GemAmulet
 import com.redgrapefruit.justenoughgems.item.GemAmuletConfig
@@ -11,7 +11,8 @@ import net.fabricmc.fabric.api.`object`.builder.v1.client.model.FabricModelPredi
 import net.minecraft.item.Item
 import net.minecraft.util.registry.Registry
 
-object ItemRegistry : IRegistry {
+object JEGItems : IRegistry {
+    // Gems
     val QUARTZ_GEM = GemItem(GemItemConfig.QUARTZ, 1)
     val ANDALUSITE_GEM = GemItem(GemItemConfig.ANDALUSITE, 2)
     val MORGANITE_GEM = GemItem(GemItemConfig.MORGANITE, 3)
@@ -29,6 +30,7 @@ object ItemRegistry : IRegistry {
     val INDIGOLITE_GEM = GemItem(GemItemConfig.INDIGOLITE, 15)
     val OPAL_GEM = GemItem(GemItemConfig.OPAL, 16)
 
+    // Amulets
     val QUARTZ_AMULET = GemAmulet(GemAmuletConfig.QUARTZ, 1)
     val ANDALUSITE_AMULET = GemAmulet(GemAmuletConfig.ANDALUSITE, 2)
     val MORGANITE_AMULET = GemAmulet(GemAmuletConfig.MORGANITE, 3)
