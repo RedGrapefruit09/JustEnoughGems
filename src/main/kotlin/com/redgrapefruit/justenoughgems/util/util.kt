@@ -5,6 +5,8 @@ import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder
 import net.minecraft.item.Item
 import net.minecraft.item.ItemGroup
 import net.minecraft.item.ItemStack
+import net.minecraft.text.LiteralText
+import net.minecraft.text.Text
 import net.minecraft.util.Identifier
 import org.apache.logging.log4j.LogManager
 import kotlin.random.Random
@@ -66,3 +68,7 @@ fun avg(vararg numbers: Int): Int {
 fun avg(r: Range) = avg(r.min, r.max)
 
 fun ticksToSeconds(t: Int) = t / 20
+
+fun MutableList<Text>.newLine() {
+    add(LiteralText(""))
+}
