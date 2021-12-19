@@ -45,6 +45,24 @@ object JEGWeapons : IRegistry {
     val INDIGOLITE_AXE = GemAxe(JEGToolMaterials.INDIGOLITE, 47f, -2.65f, GemWeaponConfig.INDIGOLITE, 15)
     val OPAL_AXE = GemAxe(JEGToolMaterials.OPAL, 50f, -2.65f, GemWeaponConfig.OPAL, 16)
 
+    // Double swords
+    val QUARTZ_DOUBLE_SWORD = GemSword(JEGToolMaterials.QUARTZ, 12, -2.0f, GemWeaponConfig.QUARTZ, 1)
+    val ANDALUSITE_DOUBLE_SWORD = GemSword(JEGToolMaterials.ANDALUSITE, 15, -2.0f, GemWeaponConfig.ANDALUSITE, 2)
+    val MORGANITE_DOUBLE_SWORD = GemSword(JEGToolMaterials.MORGANITE, 18, -1.95f, GemWeaponConfig.MORGANITE, 3)
+    val TAAFFEITE_DOUBLE_SWORD = GemSword(JEGToolMaterials.TAAFFEITE, 21, -1.95f, GemWeaponConfig.TAAFFEITE, 4)
+    val PINK_QUARTZ_DOUBLE_SWORD = GemSword(JEGToolMaterials.PINK_QUARTZ, 24, -1.9f, GemWeaponConfig.PINK_QUARTZ, 5)
+    val EUCLASE_DOUBLE_SWORD = GemSword(JEGToolMaterials.EUCLASE, 27, -1.9f, GemWeaponConfig.EUCLASE, 6)
+    val CHRYSOLITE_DOUBLE_SWORD = GemSword(JEGToolMaterials.CHRYSOLITE, 30, -1.85f, GemWeaponConfig.CHRYSOLITE, 7)
+    val SAPPHIRE_DOUBLE_SWORD = GemSword(JEGToolMaterials.SAPPHIRE, 33, -1.85f, GemWeaponConfig.SAPPHIRE, 8)
+    val HELIODORE_DOUBLE_SWORD = GemSword(JEGToolMaterials.HELIODORE, 36, -1.8f, GemWeaponConfig.HELIODORE, 9)
+    val RUBY_DOUBLE_SWORD = GemSword(JEGToolMaterials.RUBY, 39, -1.8f, GemWeaponConfig.RUBY, 10)
+    val AQUAMARINE_DOUBLE_SWORD = GemSword(JEGToolMaterials.AQUAMARINE, 42, -1.75f, GemWeaponConfig.AQUAMARINE, 11)
+    val TANZANITE_DOUBLE_SWORD = GemSword(JEGToolMaterials.TANZANITE, 45, -1.75f, GemWeaponConfig.TANZANITE, 12)
+    val TSAVORITE_DOUBLE_SWORD = GemSword(JEGToolMaterials.TSAVORITE, 48, -1.7f, GemWeaponConfig.TSAVORITE, 13)
+    val VERDELITE_DOUBLE_SWORD = GemSword(JEGToolMaterials.VERDELITE, 51, -1.7f, GemWeaponConfig.VERDELITE, 14)
+    val INDIGOLITE_DOUBLE_SWORD = GemSword(JEGToolMaterials.INDIGOLITE, 54, -1.65f, GemWeaponConfig.INDIGOLITE, 15)
+    val OPAL_DOUBLE_SWORD = GemSword(JEGToolMaterials.OPAL, 57, -1.65f, GemWeaponConfig.OPAL, 16)
+
     override fun register() {
         register("quartz_sword", QUARTZ_SWORD)
         register("andalusite_sword", ANDALUSITE_SWORD)
@@ -79,6 +97,23 @@ object JEGWeapons : IRegistry {
         register("verdelite_axe", VERDELITE_AXE)
         register("indigolite_axe", INDIGOLITE_AXE)
         register("opal_axe", OPAL_AXE)
+
+        register("quartz_double_sword", QUARTZ_DOUBLE_SWORD)
+        register("andalusite_double_sword", ANDALUSITE_DOUBLE_SWORD)
+        register("morganite_double_sword", MORGANITE_DOUBLE_SWORD)
+        register("taaffeite_double_sword", TAAFFEITE_DOUBLE_SWORD)
+        register("pink_quartz_double_sword", PINK_QUARTZ_DOUBLE_SWORD)
+        register("euclase_double_sword", EUCLASE_DOUBLE_SWORD)
+        register("chrysolite_double_sword", CHRYSOLITE_DOUBLE_SWORD)
+        register("sapphire_double_sword", SAPPHIRE_DOUBLE_SWORD)
+        register("heliodore_double_sword", HELIODORE_DOUBLE_SWORD)
+        register("ruby_double_sword", RUBY_DOUBLE_SWORD)
+        register("aquamarine_double_sword", AQUAMARINE_DOUBLE_SWORD)
+        register("tanzanite_double_sword", TANZANITE_DOUBLE_SWORD)
+        register("tsavorite_double_sword", TSAVORITE_DOUBLE_SWORD)
+        register("verdelite_double_sword", VERDELITE_DOUBLE_SWORD)
+        register("indigolite_double_sword", INDIGOLITE_DOUBLE_SWORD)
+        register("opal_double_sword", OPAL_DOUBLE_SWORD)
     }
 
     private fun register(name: String, item: Item) {
