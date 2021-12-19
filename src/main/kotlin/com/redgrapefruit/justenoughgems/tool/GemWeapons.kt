@@ -44,7 +44,7 @@ private object GemWeapons {
         config.toTarget.forEach { effect ->
             tooltip += LiteralText("- ")
                 .append(TranslatableText(effect.effectType.translationKey))
-                .append(LiteralText(" (${effect.duration}, x${effect.amplifier})"))
+                .append(LiteralText(" (${effect.duration}, x${effect.amplifier + 1})"))
         }
     }
 

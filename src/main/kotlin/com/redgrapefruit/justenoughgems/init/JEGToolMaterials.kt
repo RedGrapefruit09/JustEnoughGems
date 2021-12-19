@@ -1,6 +1,6 @@
 package com.redgrapefruit.justenoughgems.init
 
-import com.redgrapefruit.justenoughgems.util.toolMaterial
+import com.redgrapefruit.justenoughgems.tool.toolMaterial
 
 object JEGToolMaterials {
     // TODO (v0.5): add ingots and set them as repair materials
