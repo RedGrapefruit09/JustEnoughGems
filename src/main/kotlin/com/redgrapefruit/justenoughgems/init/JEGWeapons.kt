@@ -1,5 +1,6 @@
 package com.redgrapefruit.justenoughgems.init
 
+import com.redgrapefruit.justenoughgems.tool.ModAxe
 import com.redgrapefruit.justenoughgems.util.IRegistry
 import com.redgrapefruit.justenoughgems.util.defaultItemSettings
 import com.redgrapefruit.justenoughgems.util.toId
@@ -26,6 +27,24 @@ object JEGWeapons : IRegistry {
     val INDIGOLITE_SWORD = SwordItem(JEGToolMaterials.INDIGOLITE, 31, -1.25f, defaultItemSettings)
     val OPAL_SWORD = SwordItem(JEGToolMaterials.OPAL, 33, -1.25f, defaultItemSettings)
 
+    // Axes (simple)
+    val QUARTZ_AXE = ModAxe(JEGToolMaterials.QUARTZ, 5f, -3f)
+    val ANDALUSITE_AXE = ModAxe(JEGToolMaterials.ANDALUSITE, 8f, -3f)
+    val MORGANITE_AXE = ModAxe(JEGToolMaterials.MORGANITE, 11f, -2.95f)
+    val TAAFFEITE_AXE = ModAxe(JEGToolMaterials.TAAFFEITE, 14f, -2.95f)
+    val PINK_QUARTZ_AXE = ModAxe(JEGToolMaterials.PINK_QUARTZ, 17f, -2.9f)
+    val EUCLASE_AXE = ModAxe(JEGToolMaterials.EUCLASE, 20f, -2.9f)
+    val CHRYSOLITE_AXE = ModAxe(JEGToolMaterials.CHRYSOLITE, 23f, -2.85f)
+    val SAPPHIRE_AXE = ModAxe(JEGToolMaterials.SAPPHIRE, 26f, -2.85f)
+    val HELIODORE_AXE = ModAxe(JEGToolMaterials.HELIODORE, 29f, -2.8f)
+    val RUBY_AXE = ModAxe(JEGToolMaterials.RUBY, 32f, -2.8f)
+    val AQUAMARINE_AXE = ModAxe(JEGToolMaterials.AQUAMARINE, 35f, -2.75f)
+    val TANZANITE_AXE = ModAxe(JEGToolMaterials.TANZANITE, 38f, -2.75f)
+    val TSAVORITE_AXE = ModAxe(JEGToolMaterials.TSAVORITE, 41f, -2.7f)
+    val VERDELITE_AXE = ModAxe(JEGToolMaterials.VERDELITE, 44f, -2.7f)
+    val INDIGOLITE_AXE = ModAxe(JEGToolMaterials.INDIGOLITE, 47f, -2.65f)
+    val OPAL_AXE = ModAxe(JEGToolMaterials.OPAL, 50f, -2.65f)
+
     override fun register() {
         register("quartz_sword", QUARTZ_SWORD)
         register("andalusite_sword", ANDALUSITE_SWORD)
@@ -43,6 +62,23 @@ object JEGWeapons : IRegistry {
         register("verdelite_sword", VERDELITE_SWORD)
         register("indigolite_sword", INDIGOLITE_SWORD)
         register("opal_sword", OPAL_SWORD)
+
+        register("quartz_axe", QUARTZ_AXE)
+        register("andalusite_axe", ANDALUSITE_AXE)
+        register("morganite_axe", MORGANITE_AXE)
+        register("taaffeite_axe", TAAFFEITE_AXE)
+        register("pink_quartz_axe", PINK_QUARTZ_AXE)
+        register("euclase_axe", EUCLASE_AXE)
+        register("chrysolite_axe", CHRYSOLITE_AXE)
+        register("sapphire_axe", SAPPHIRE_AXE)
+        register("heliodore_axe", HELIODORE_AXE)
+        register("ruby_axe", RUBY_AXE)
+        register("aquamarine_axe", AQUAMARINE_AXE)
+        register("tanzanite_axe", TANZANITE_AXE)
+        register("tsavorite_axe", TSAVORITE_AXE)
+        register("verdelite_axe", VERDELITE_AXE)
+        register("indigolite_axe", INDIGOLITE_AXE)
+        register("opal_axe", OPAL_AXE)
     }
 
     private fun register(name: String, item: Item) {
