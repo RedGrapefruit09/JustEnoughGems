@@ -6,8 +6,8 @@
     "misc.jeg.effects": "Effects:",
     "misc.jeg.chance": "chance",
     "misc.jeg.durability": "Durability: ",
-    "misc.jeg.effects_on_attacker": "Effects applied on the player: ",
-    "misc.jeg.effects_on_mob": "Effects applied on the mob: ",
+    "misc.jeg.effects_on_attacker": "Effects applied on the player",
+    "misc.jeg.effects_on_mob": "Effects applied on the mob",
     "misc.jeg.chance_full": "Chance: ",
 
     "itemGroup.jeg.item_group": "Just Enough Gems",

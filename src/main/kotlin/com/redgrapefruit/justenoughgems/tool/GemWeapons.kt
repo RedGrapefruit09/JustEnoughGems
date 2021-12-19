@@ -29,7 +29,11 @@ private object GemWeapons {
 
         tooltip.newLine()
 
-        tooltip += TranslatableText("misc.jeg.effects_on_attacker").formatted(Formatting.GRAY)
+        tooltip += TranslatableText("misc.jeg.effects_on_attacker")
+            .append(LiteralText(" (${config.attackerChance.format()}% "))
+            .append(TranslatableText("misc.jeg.chance"))
+            .append(LiteralText("):"))
+            .formatted(Formatting.GRAY)
 
         config.toAttacker.forEach { effect ->
             tooltip += LiteralText("- ")
@@ -39,7 +43,11 @@ private object GemWeapons {
 
         tooltip.newLine()
 
-        tooltip += TranslatableText("misc.jeg.effects_on_mob").formatted(Formatting.GRAY)
+        tooltip += TranslatableText("misc.jeg.effects_on_mob")
+            .append(LiteralText(" (${config.targetChance.format()}% "))
+            .append(TranslatableText("misc.jeg.chance"))
+            .append(LiteralText("):"))
+            .formatted(Formatting.GRAY)
 
         config.toTarget.forEach { effect ->
             tooltip += LiteralText("- ")
