@@ -2,6 +2,7 @@ package com.redgrapefruit.justenoughgems.util
 
 import com.redgrapefruit.justenoughgems.init.JEGItems
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.minecraft.item.Item
 import net.minecraft.item.ItemGroup
 import net.minecraft.item.ItemStack
@@ -20,7 +21,7 @@ val MOD_ITEM_GROUP: ItemGroup by lazy {
         .build()
 }
 
-val defaultItemSettings: Item.Settings = Item.Settings().group(MOD_ITEM_GROUP)
+val defaultItemSettings: FabricItemSettings = FabricItemSettings().group(MOD_ITEM_GROUP)
 
 open class Range(
     val min: Int,
