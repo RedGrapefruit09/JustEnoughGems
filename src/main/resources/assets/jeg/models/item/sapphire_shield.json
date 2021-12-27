@@ -1,0 +1,14 @@
+{
+    "parent": "fabricshieldlib:item/fabric_shield",
+    "textures": {
+        "shield": "jeg:item/sapphire_shield"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "blocking": 1
+            },
+            "model": "jeg:item/sapphire_shield_blocking"
+        }
+    ]
+}

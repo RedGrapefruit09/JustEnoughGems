@@ -1,0 +1,14 @@
+{
+    "parent": "fabricshieldlib:item/fabric_shield",
+    "textures": {
+        "shield": "jeg:item/opal_shield"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "blocking": 1
+            },
+            "model": "jeg:item/opal_shield_blocking"
+        }
+    ]
+}
