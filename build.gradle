@@ -36,7 +36,6 @@ dependencies {
     modImplementation "net.fabricmc:fabric-language-kotlin:${project.flk_version}"
     // ItemNBT. Item NBT serialization features
     modImplementation "com.redgrapefruit.itemnbt:itemnbt:${project.itemnbt_version}"
-    include "com.redgrapefruit.itemnbt:itemnbt:${project.itemnbt_version}"
     // Fabric Shield Lib. Create shields without conflicts.
     // Uses CurseMaven because official JitPack artifact is currently broken
     modImplementation "curse.maven:fabricshieldlib-${project.shieldlib_pid}:${project.shieldlib_fid}"
