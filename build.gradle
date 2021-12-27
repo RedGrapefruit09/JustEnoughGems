@@ -15,33 +15,34 @@ repositories {
             includeGroup "forked.crimsondawn45.fabricshieldlib"
         }
     }
+
+    maven {
+        url = "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
 }
 
-allprojects { repositories { maven { url 'https://jitpack.io' } } }
-
 dependencies {
-    // Separate install:
-    // - Fabric API
-    // - Fabric Language Kotlin
-    // Bundled:
-    // - ItemNBT
-    // - FabricShieldLib
-
+    // Core components
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
+    // Fabric API. Common development hooks and APIs
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-
+    // Fabric Language Kotlin. Kotlin modding support
     modImplementation "net.fabricmc:fabric-language-kotlin:${project.flk_version}"
-
+    // ItemNBT. Item NBT serialization features
     modImplementation "com.redgrapefruit.itemnbt:itemnbt:${project.itemnbt_version}"
     include "com.redgrapefruit.itemnbt:itemnbt:${project.itemnbt_version}"
-
-    //modImplementation "curse.maven:fabricshieldlib-${project.shieldlib_pid}:${project.shieldlib_fid}"
-    //include "curse.maven:fabricshieldlib-${project.shieldlib_pid}:${project.shieldlib_fid}"
-
-    modImplementation "forked.crimsondawn45.fabricshieldlib:fabricshieldlib:1.4.5-1.18"
+    // Fabric Shield Lib. Create shields without conflicts.
+    // Uses CurseMaven because official JitPack artifact is currently broken
+    modImplementation "curse.maven:fabricshieldlib-${project.shieldlib_pid}:${project.shieldlib_fid}"
+    // ToolTipFix. A small third-party mod to fix some longer tooltips of this mod.
+    // Uses CurseMaven because no official artifact is provided
+    modRuntimeOnly "curse.maven:tooltipfix-${project.tooltipfix_pid}:${project.tooltipfix_fid}"
 }
 
 processResources {
