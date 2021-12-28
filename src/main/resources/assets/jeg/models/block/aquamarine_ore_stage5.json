@@ -1,0 +1,6 @@
+{
+    "parent": "jeg:block/ore_stage5",
+    "textures": {
+        "main": "jeg:block/aquamarine_ore"
+    }
+}

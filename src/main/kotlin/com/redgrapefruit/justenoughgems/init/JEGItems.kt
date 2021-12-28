@@ -47,6 +47,21 @@ object JEGItems : IRegistry {
 
     // Fragments
     val QUARTZ_FRAGMENT = BaseItem(1)
+    val ANDALUSITE_FRAGMENT = BaseItem(2)
+    val MORGANITE_FRAGMENT = BaseItem(3)
+    val TAAFFEITE_FRAGMENT = BaseItem(4)
+    val PINK_QUARTZ_FRAGMENT = BaseItem(5)
+    val EUCLASE_FRAGMENT = BaseItem(6)
+    val CHRYSOLITE_FRAGMENT = BaseItem(7)
+    val SAPPHIRE_FRAGMENT = BaseItem(8)
+    val HELIODORE_FRAGMENT = BaseItem(9)
+    val RUBY_FRAGMENT = BaseItem(10)
+    val AQUAMARINE_FRAGMENT = BaseItem(11)
+    val TANZANITE_FRAGMENT = BaseItem(12)
+    val TSAVORITE_FRAGMENT = BaseItem(13)
+    val VERDELITE_FRAGMENT = BaseItem(14)
+    val INDIGOLITE_FRAGMENT = BaseItem(15)
+    val OPAL_FRAGMENT = BaseItem(16)
 
     override fun register() {
         register("quartz_gem", QUARTZ_GEM)
@@ -84,6 +99,21 @@ object JEGItems : IRegistry {
         register("opal_amulet", OPAL_AMULET)
 
         register("quartz_fragment", QUARTZ_FRAGMENT)
+        register("andalusite_fragment", ANDALUSITE_FRAGMENT)
+        register("morganite_fragment", MORGANITE_FRAGMENT)
+        register("taaffeite_fragment", TAAFFEITE_FRAGMENT)
+        register("pink_quartz_fragment", PINK_QUARTZ_FRAGMENT)
+        register("euclase_fragment", EUCLASE_FRAGMENT)
+        register("chrysolite_fragment", CHRYSOLITE_FRAGMENT)
+        register("sapphire_fragment", SAPPHIRE_FRAGMENT)
+        register("heliodore_fragment", HELIODORE_FRAGMENT)
+        register("ruby_fragment", RUBY_FRAGMENT)
+        register("aquamarine_fragment", AQUAMARINE_FRAGMENT)
+        register("tanzanite_fragment", TANZANITE_FRAGMENT)
+        register("tsavorite_fragment", TSAVORITE_FRAGMENT)
+        register("verdelite_fragment", VERDELITE_FRAGMENT)
+        register("indigolite_fragment", INDIGOLITE_FRAGMENT)
+        register("opal_fragment", OPAL_FRAGMENT)
     }
 
     private fun register(name: String, item: Item) {

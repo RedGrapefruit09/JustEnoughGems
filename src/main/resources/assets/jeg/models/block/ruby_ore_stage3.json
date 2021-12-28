@@ -1,0 +1,6 @@
+{
+    "parent": "jeg:block/ore_stage3",
+    "textures": {
+        "main": "jeg:block/ruby_ore"
+    }
+}

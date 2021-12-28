@@ -17,7 +17,7 @@ import net.minecraft.util.shape.VoxelShape
 import net.minecraft.world.BlockView
 import net.minecraft.world.World
 
-class OreBlock(settings: FabricBlockSettings, private val fragment: Item, private val amount: Range) : Block(settings) {
+class OreBlock(settings: FabricBlockSettings, private val fragment: Item, private val amount: Range = Range(0, 2)) : Block(settings) {
     companion object {
         val stageProperty: IntProperty = IntProperty.of("stage", 0, 5)
     }

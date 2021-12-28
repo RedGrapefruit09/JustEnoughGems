@@ -1,0 +1,6 @@
+{
+    "parent": "jeg:block/ore_stage2",
+    "textures": {
+        "main": "jeg:block/tanzanite_ore"
+    }
+}

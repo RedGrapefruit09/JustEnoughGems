@@ -1,0 +1,6 @@
+{
+    "parent": "jeg:block/ore_stage0",
+    "textures": {
+        "main": "jeg:block/verdelite_ore"
+    }
+}
