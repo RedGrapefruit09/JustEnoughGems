@@ -148,5 +148,9 @@
     "item.jeg.tsavorite_shield": "Tsavorite Shield",
     "item.jeg.verdelite_shield": "Verdelite Shield",
     "item.jeg.indigolite_shield": "Indigolite Shield",
-    "item.jeg.opal_shield": "Opal Shield"
+    "item.jeg.opal_shield": "Opal Shield",
+
+    "block.jeg.quartz_ore": "Quartz Ore",
+
+    "item.jeg.quartz_fragment": "Quartz Fragment"
 }

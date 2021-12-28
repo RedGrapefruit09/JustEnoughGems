@@ -1,5 +1,6 @@
 package com.redgrapefruit.justenoughgems
 
+import com.redgrapefruit.justenoughgems.init.JEGBlocks
 import com.redgrapefruit.justenoughgems.init.JEGItems
 import com.redgrapefruit.justenoughgems.init.JEGShields
 import com.redgrapefruit.justenoughgems.init.JEGWeapons
@@ -10,5 +11,6 @@ object JEG : ModInitializer {
         JEGItems.register()
         JEGWeapons.register()
         JEGShields.register()
+        JEGBlocks.register()
     }
 }

@@ -12,7 +12,6 @@ repositories {
         url = "https://redgrapefruit09.github.io/maven"
         content {
             includeGroup "com.redgrapefruit.itemnbt"
-            includeGroup "forked.crimsondawn45.fabricshieldlib"
         }
     }
 

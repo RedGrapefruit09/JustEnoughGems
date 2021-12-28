@@ -1,9 +1,6 @@
 package com.redgrapefruit.justenoughgems.init
 
-import com.redgrapefruit.justenoughgems.item.GemAmulet
-import com.redgrapefruit.justenoughgems.item.GemAmuletConfig
-import com.redgrapefruit.justenoughgems.item.GemItem
-import com.redgrapefruit.justenoughgems.item.GemItemConfig
+import com.redgrapefruit.justenoughgems.item.*
 import com.redgrapefruit.justenoughgems.util.IRegistry
 import com.redgrapefruit.justenoughgems.util.toId
 import com.redgrapefruit.justenoughgems.util.toLocalId
@@ -48,7 +45,8 @@ object JEGItems : IRegistry {
     val INDIGOLITE_AMULET = GemAmulet(GemAmuletConfig.INDIGOLITE, 15)
     val OPAL_AMULET = GemAmulet(GemAmuletConfig.OPAL, 16)
 
-    // Shields
+    // Fragments
+    val QUARTZ_FRAGMENT = BaseItem(1)
 
     override fun register() {
         register("quartz_gem", QUARTZ_GEM)
@@ -84,6 +82,8 @@ object JEGItems : IRegistry {
         register("verdelite_amulet", VERDELITE_AMULET)
         register("indigolite_amulet", INDIGOLITE_AMULET)
         register("opal_amulet", OPAL_AMULET)
+
+        register("quartz_fragment", QUARTZ_FRAGMENT)
     }
 
     private fun register(name: String, item: Item) {
