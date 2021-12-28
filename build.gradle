@@ -21,6 +21,10 @@ repositories {
             includeGroup "curse.maven"
         }
     }
+
+    maven {
+        url = "https://jitpack.io"
+    }
 }
 
 dependencies {
@@ -36,8 +40,7 @@ dependencies {
     // ItemNBT. Item NBT serialization features
     modImplementation "com.redgrapefruit.itemnbt:itemnbt:${project.itemnbt_version}"
     // Fabric Shield Lib. Create shields without conflicts.
-    // Uses CurseMaven because official JitPack artifact is currently broken
-    modImplementation "curse.maven:fabricshieldlib-${project.shieldlib_pid}:${project.shieldlib_fid}"
+    modImplementation "com.github.CrimsonDawn45:Fabric-Shield-Lib:${project.shieldlib_version}"
     // ToolTipFix. A small third-party mod to fix some longer tooltips of this mod.
     // Uses CurseMaven because no official artifact is provided
     modRuntimeOnly "curse.maven:tooltipfix-${project.tooltipfix_pid}:${project.tooltipfix_fid}"
