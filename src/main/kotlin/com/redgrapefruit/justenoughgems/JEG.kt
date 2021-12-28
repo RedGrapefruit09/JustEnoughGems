@@ -1,9 +1,6 @@
 package com.redgrapefruit.justenoughgems
 
-import com.redgrapefruit.justenoughgems.init.JEGBlocks
-import com.redgrapefruit.justenoughgems.init.JEGItems
-import com.redgrapefruit.justenoughgems.init.JEGShields
-import com.redgrapefruit.justenoughgems.init.JEGWeapons
+import com.redgrapefruit.justenoughgems.init.*
 import net.fabricmc.api.ModInitializer
 
 object JEG : ModInitializer {
@@ -12,5 +9,6 @@ object JEG : ModInitializer {
         JEGWeapons.register()
         JEGShields.register()
         JEGBlocks.register()
+        JEGWorldgen.register()
     }
 }
