@@ -16,7 +16,7 @@ import net.minecraft.text.TranslatableText
 import net.minecraft.util.Formatting
 import net.minecraft.world.World
 
-class GemAmulet(val config: GemAmuletConfig, tier: Int) : BaseItem(tier, true) {
+class GemAmulet(val config: GemAmuletConfig, tier: Int) : ModItem(tier, true) {
     override fun inventoryTick(stack: ItemStack, world: World, entity: Entity, slot: Int, selected: Boolean) {
         if (entity !is PlayerEntity) return
 

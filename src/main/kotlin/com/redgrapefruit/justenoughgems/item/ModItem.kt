@@ -11,7 +11,7 @@ import net.minecraft.text.TranslatableText
 import net.minecraft.util.Formatting
 import net.minecraft.world.World
 
-open class BaseItem(
+open class ModItem(
     private val tier: Int,
     notStackable: Boolean = false)
     : Item(Settings()

@@ -9,8 +9,6 @@ import net.minecraft.entity.Entity
 import net.minecraft.entity.LivingEntity
 import net.minecraft.entity.effect.StatusEffectInstance
 import net.minecraft.entity.player.PlayerEntity
-import net.minecraft.item.Item
-import net.minecraft.item.ItemGroup
 import net.minecraft.item.ItemStack
 import net.minecraft.nbt.NbtCompound
 import net.minecraft.text.LiteralText
@@ -21,7 +19,7 @@ import net.minecraft.util.Hand
 import net.minecraft.util.TypedActionResult
 import net.minecraft.world.World
 
-class GemItem(private val config: GemItemConfig, tier: Int) : BaseItem(tier, true) {
+class GemItem(private val config: GemItemConfig, tier: Int) : ModItem(tier, true) {
     private fun readyForUsage(stack: ItemStack): Boolean {
         var out = false
 
