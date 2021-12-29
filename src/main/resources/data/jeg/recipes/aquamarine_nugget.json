@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:smelting",
+    "group": "jeg_smelting",
+    "ingredient": {
+        "item": "jeg:aquamarine_fragment"
+    },
+    "result": "jeg:aquamarine_nugget",
+    "experience": 3.0,
+    "cookingtime": 300
+}

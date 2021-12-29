@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:smelting",
+    "group": "jeg_smelting",
+    "ingredient": {
+        "item": "jeg:sapphire_fragment"
+    },
+    "result": "jeg:sapphire_nugget",
+    "experience": 2.4,
+    "cookingtime": 285
+}

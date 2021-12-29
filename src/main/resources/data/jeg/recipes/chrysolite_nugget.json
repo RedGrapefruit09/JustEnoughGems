@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:smelting",
+    "group": "jeg_smelting",
+    "ingredient": {
+        "item": "jeg:chrysolite_fragment"
+    },
+    "result": "jeg:chrysolite_nugget",
+    "experience": 2.2,
+    "cookingtime": 280
+}

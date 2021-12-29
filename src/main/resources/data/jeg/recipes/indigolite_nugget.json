@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:smelting",
+    "group": "jeg_smelting",
+    "ingredient": {
+        "item": "jeg:indigolite_fragment"
+    },
+    "result": "jeg:indigolite_nugget",
+    "experience": 3.8,
+    "cookingtime": 320
+}
