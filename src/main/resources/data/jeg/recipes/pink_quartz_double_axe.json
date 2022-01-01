@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "III",
+        "ISI",
+        " S "
+    ],
+    "key": {
+        "I": {
+            "item": "jeg:pink_quartz_ingot"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "jeg:pink_quartz_double_axe",
+        "count": 1
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        " I ",
+        " S "
+    ],
+    "key": {
+        "I": {
+            "item": "jeg:quartz_ingot"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "jeg:quartz_dagger",
+        "count": 1
+    }
+}
