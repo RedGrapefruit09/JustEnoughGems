@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " I ",
+        "I I",
+        " I "
+    ],
+    "key": {
+        "I": {
+            "item": "jeg:quartz_ingot"
+        }
+    },
+    "result": {
+        "item": "jeg:quartz_gem",
+        "count": 2
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " I ",
+        "I I",
+        " I "
+    ],
+    "key": {
+        "I": {
+            "item": "jeg:verdelite_ingot"
+        }
+    },
+    "result": {
+        "item": "jeg:verdelite_gem",
+        "count": 2
+    }
+}

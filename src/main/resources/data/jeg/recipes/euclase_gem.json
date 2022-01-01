@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " I ",
+        "I I",
+        " I "
+    ],
+    "key": {
+        "I": {
+            "item": "jeg:euclase_ingot"
+        }
+    },
+    "result": {
+        "item": "jeg:euclase_gem",
+        "count": 2
+    }
+}
