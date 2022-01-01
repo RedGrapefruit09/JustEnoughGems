@@ -1,9 +1,9 @@
 {
     "schemaVersion": 1,
     "id": "jeg",
-    "version": "1.0",
+    "version": "0.5",
     "name": "JEG",
-    "description": "JEG is a mod that adds a bunch of new gems with special abilities, armor, tools and food.",
+    "description": "JEG (JustEnoughGems) is a mod that adds a bunch of new gems with special abilities, armor, tools and food.",
     "authors": [
         "RedGrapefruit09"
     ],
@@ -33,6 +33,6 @@
     "depends": {
         "fabricloader": ">=0.12.12",
         "fabric": "*",
-        "minecraft": ">=1.18.1"
+        "minecraft": "1.18.x"
     }
 }

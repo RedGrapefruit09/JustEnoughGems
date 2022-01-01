@@ -46,5 +46,5 @@ The mod is planned to be released in **Q1-2022**, however you can **try it out r
 Experimental in-dev builds are available in this repository's
 [releases page](https://github.com/RedGrapefruit09/JustEnoughGems/releases).
 
-There's also a [roadmap](https://github.com/RedGrapefruit09/JustEnoughGems/blob/master/ROADMAP.md)
+There's also a [roadmap](https://github.com/RedGrapefruit09/JustEnoughGems/blob/v0.5/ROADMAP.md)
 where you can find out about the plans regarding this mod and the current development status.
