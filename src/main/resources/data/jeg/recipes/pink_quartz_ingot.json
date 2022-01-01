@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "FFF",
+        "FFF",
+        "FFF"
+    ],
+    "key": {
+        "F": {
+            "item": "jeg:pink_quartz_fragment"
+        }
+    },
+    "result": {
+        "item": "jeg:pink_quartz_ingot",
+        "count": 1
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "FFF",
+        "FFF",
+        "FFF"
+    ],
+    "key": {
+        "F": {
+            "item": "jeg:tsavorite_fragment"
+        }
+    },
+    "result": {
+        "item": "jeg:tsavorite_ingot",
+        "count": 1
+    }
+}

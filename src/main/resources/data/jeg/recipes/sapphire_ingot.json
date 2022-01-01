@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "FFF",
+        "FFF",
+        "FFF"
+    ],
+    "key": {
+        "F": {
+            "item": "jeg:sapphire_fragment"
+        }
+    },
+    "result": {
+        "item": "jeg:sapphire_ingot",
+        "count": 1
+    }
+}

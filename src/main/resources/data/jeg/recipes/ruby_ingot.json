@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "FFF",
+        "FFF",
+        "FFF"
+    ],
+    "key": {
+        "F": {
+            "item": "jeg:ruby_fragment"
+        }
+    },
+    "result": {
+        "item": "jeg:ruby_ingot",
+        "count": 1
+    }
+}

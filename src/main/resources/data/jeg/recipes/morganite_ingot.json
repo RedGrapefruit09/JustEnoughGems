@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "FFF",
+        "FFF",
+        "FFF"
+    ],
+    "key": {
+        "F": {
+            "item": "jeg:morganite_fragment"
+        }
+    },
+    "result": {
+        "item": "jeg:morganite_ingot",
+        "count": 1
+    }
+}

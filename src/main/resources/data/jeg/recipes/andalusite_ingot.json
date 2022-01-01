@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "FFF",
+        "FFF",
+        "FFF"
+    ],
+    "key": {
+        "F": {
+            "item": "jeg:andalusite_fragment"
+        }
+    },
+    "result": {
+        "item": "jeg:andalusite_ingot",
+        "count": 1
+    }
+}

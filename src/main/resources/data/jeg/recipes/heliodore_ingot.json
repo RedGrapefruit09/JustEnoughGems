@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "FFF",
+        "FFF",
+        "FFF"
+    ],
+    "key": {
+        "F": {
+            "item": "jeg:heliodore_fragment"
+        }
+    },
+    "result": {
+        "item": "jeg:heliodore_ingot",
+        "count": 1
+    }
+}

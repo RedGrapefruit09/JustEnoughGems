@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "FFF",
+        "FFF",
+        "FFF"
+    ],
+    "key": {
+        "F": {
+            "item": "jeg:indigolite_fragment"
+        }
+    },
+    "result": {
+        "item": "jeg:indigolite_ingot",
+        "count": 1
+    }
+}

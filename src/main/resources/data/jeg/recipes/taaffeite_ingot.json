@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "FFF",
+        "FFF",
+        "FFF"
+    ],
+    "key": {
+        "F": {
+            "item": "jeg:taaffeite_fragment"
+        }
+    },
+    "result": {
+        "item": "jeg:taaffeite_ingot",
+        "count": 1
+    }
+}

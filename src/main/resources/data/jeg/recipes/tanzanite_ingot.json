@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "FFF",
+        "FFF",
+        "FFF"
+    ],
+    "key": {
+        "F": {
+            "item": "jeg:tanzanite_fragment"
+        }
+    },
+    "result": {
+        "item": "jeg:tanzanite_ingot",
+        "count": 1
+    }
+}
