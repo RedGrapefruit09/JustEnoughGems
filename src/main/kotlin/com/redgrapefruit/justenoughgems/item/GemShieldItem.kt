@@ -6,6 +6,7 @@ import com.redgrapefruit.justenoughgems.util.RomanNumber
 import com.redgrapefruit.justenoughgems.util.newLine
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.minecraft.client.item.TooltipContext
+import net.minecraft.item.Item
 import net.minecraft.item.ItemStack
 import net.minecraft.text.LiteralText
 import net.minecraft.text.Text
@@ -20,7 +21,8 @@ class GemShieldItem(
     val reflectPercent: Int,
     maxDamage: Int,
     cooldownTicks: Int,
-    enchantability: Int) : FabricShieldItem(FabricItemSettings().maxDamage(maxDamage).group(MOD_ITEM_GROUP), cooldownTicks, enchantability) {
+    enchantability: Int,
+    repairItem: Item) : FabricShieldItem(FabricItemSettings().maxDamage(maxDamage).group(MOD_ITEM_GROUP), cooldownTicks, enchantability, repairItem) {
 
     override fun appendTooltip(
         stack: ItemStack,

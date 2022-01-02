@@ -3,8 +3,6 @@ package com.redgrapefruit.justenoughgems.init
 import com.redgrapefruit.justenoughgems.tool.toolMaterial
 
 object JEGToolMaterials {
-    // TODO (v0.5): add ingots and set them as repair materials
-
     // Spec:
     // durability += 300
     // mining speed += 2.5f
@@ -17,7 +15,7 @@ object JEGToolMaterials {
         attackDamage = 4.5f
         miningLevel = 4
         enchantability = 18
-        placeholderRepairIngredient()
+        repairWith(JEGItems.QUARTZ_INGOT)
     }
 
     val ANDALUSITE = toolMaterial {
@@ -26,7 +24,7 @@ object JEGToolMaterials {
         attackDamage = 7f
         miningLevel = 4
         enchantability = 21
-        placeholderRepairIngredient()
+        repairWith(JEGItems.ANDALUSITE_INGOT)
     }
 
     val MORGANITE = toolMaterial {
@@ -35,7 +33,7 @@ object JEGToolMaterials {
         attackDamage = 9.5f
         miningLevel = 4
         enchantability = 24
-        placeholderRepairIngredient()
+        repairWith(JEGItems.MORGANITE_INGOT)
     }
 
     val TAAFFEITE = toolMaterial {
@@ -44,7 +42,7 @@ object JEGToolMaterials {
         attackDamage = 12f
         miningLevel = 4
         enchantability = 27
-        placeholderRepairIngredient()
+        repairWith(JEGItems.TAAFFEITE_INGOT)
     }
 
     val PINK_QUARTZ = toolMaterial {
@@ -53,7 +51,7 @@ object JEGToolMaterials {
         attackDamage = 14.5f
         miningLevel = 4
         enchantability = 30
-        placeholderRepairIngredient()
+        repairWith(JEGItems.PINK_QUARTZ_INGOT)
     }
 
     val EUCLASE = toolMaterial {
@@ -62,7 +60,7 @@ object JEGToolMaterials {
         attackDamage = 17f
         miningLevel = 4
         enchantability = 33
-        placeholderRepairIngredient()
+        repairWith(JEGItems.EUCLASE_INGOT)
     }
 
     val CHRYSOLITE = toolMaterial {
@@ -71,7 +69,7 @@ object JEGToolMaterials {
         attackDamage = 19.5f
         miningLevel = 4
         enchantability = 36
-        placeholderRepairIngredient()
+        repairWith(JEGItems.CHRYSOLITE_INGOT)
     }
 
     val SAPPHIRE = toolMaterial {
@@ -80,7 +78,7 @@ object JEGToolMaterials {
         attackDamage = 22f
         miningLevel = 4
         enchantability = 39
-        placeholderRepairIngredient()
+        repairWith(JEGItems.SAPPHIRE_INGOT)
     }
 
     val HELIODORE = toolMaterial {
@@ -89,7 +87,7 @@ object JEGToolMaterials {
         attackDamage = 24.5f
         miningLevel = 4
         enchantability = 42
-        placeholderRepairIngredient()
+        repairWith(JEGItems.HELIODORE_INGOT)
     }
 
     val RUBY = toolMaterial {
@@ -98,7 +96,7 @@ object JEGToolMaterials {
         attackDamage = 27f
         miningLevel = 4
         enchantability = 45
-        placeholderRepairIngredient()
+        repairWith(JEGItems.RUBY_INGOT)
     }
 
     val AQUAMARINE = toolMaterial {
@@ -107,7 +105,7 @@ object JEGToolMaterials {
         attackDamage = 29.5f
         miningLevel = 4
         enchantability = 48
-        placeholderRepairIngredient()
+        repairWith(JEGItems.AQUAMARINE_INGOT)
     }
 
     val TANZANITE = toolMaterial {
@@ -116,7 +114,7 @@ object JEGToolMaterials {
         attackDamage = 32f
         miningLevel = 4
         enchantability = 51
-        placeholderRepairIngredient()
+        repairWith(JEGItems.TANZANITE_INGOT)
     }
 
     val TSAVORITE = toolMaterial {
@@ -125,7 +123,7 @@ object JEGToolMaterials {
         attackDamage = 34.5f
         miningLevel = 4
         enchantability = 54
-        placeholderRepairIngredient()
+        repairWith(JEGItems.TSAVORITE_INGOT)
     }
 
     val VERDELITE = toolMaterial {
@@ -134,7 +132,7 @@ object JEGToolMaterials {
         attackDamage = 37f
         miningLevel = 4
         enchantability = 57
-        placeholderRepairIngredient()
+        repairWith(JEGItems.VERDELITE_INGOT)
     }
 
     val INDIGOLITE = toolMaterial {
@@ -143,7 +141,7 @@ object JEGToolMaterials {
         attackDamage = 39.5f
         miningLevel = 4
         enchantability = 60
-        placeholderRepairIngredient()
+        repairWith(JEGItems.INDIGOLITE_INGOT)
     }
 
     val OPAL = toolMaterial {
@@ -152,6 +150,6 @@ object JEGToolMaterials {
         attackDamage = 42f
         miningLevel = 4
         enchantability = 63
-        placeholderRepairIngredient()
+        repairWith(JEGItems.OPAL_INGOT)
     }
 }

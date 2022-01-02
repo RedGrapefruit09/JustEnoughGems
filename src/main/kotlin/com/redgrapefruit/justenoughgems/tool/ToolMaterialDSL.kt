@@ -1,5 +1,6 @@
 package com.redgrapefruit.justenoughgems.tool
 
+import net.minecraft.item.Item
 import net.minecraft.item.Items
 import net.minecraft.item.ToolMaterial
 import net.minecraft.recipe.Ingredient
@@ -20,10 +21,14 @@ class ToolMaterialScope(
     var attackDamage: Float? = null,
     var miningLevel: Int? = null,
     var enchantability: Int? = null,
-    var repairIngredient: Ingredient? = null
+    private var repairIngredient: Ingredient? = null
 ) {
     fun placeholderRepairIngredient() {
         repairIngredient = Ingredient.ofItems(Items.BEDROCK)
+    }
+
+    fun repairWith(item: Item) {
+        repairIngredient = Ingredient.ofItems(item)
     }
 
     fun create(): ToolMaterial {
