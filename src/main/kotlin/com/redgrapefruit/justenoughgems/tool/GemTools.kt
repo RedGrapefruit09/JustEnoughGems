@@ -29,6 +29,12 @@ private object GemToolCommons {
             .append(TranslatableText("misc.jeg.chance"))
             .append(LiteralText("):"))
             .formatted(Formatting.GRAY)
+
+        config.effects.forEach { effect ->
+            tooltip += LiteralText("- ")
+                .append(TranslatableText(effect.effectType.translationKey))
+                .append(LiteralText(" (${effect.duration}, x${effect.amplifier + 1})"))
+        }
     }
 
     fun postMine(config: GemToolConfig, miner: LivingEntity) {
