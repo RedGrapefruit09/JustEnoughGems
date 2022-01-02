@@ -8,6 +8,7 @@
     "misc.jeg.durability": "Durability: ",
     "misc.jeg.effects_on_attacker": "Effects applied on the player",
     "misc.jeg.effects_on_mob": "Effects applied on the mob",
+    "misc.jeg.effects_on_miner": "Effects applied to the miner",
     "misc.jeg.chance_full": "Chance: ",
     "misc.jeg.reflect_damage_pt1": "Reflects ",
     "misc.jeg.reflect_damage_pt2": "% of the damage back to the attacker",
