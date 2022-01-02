@@ -3,14 +3,17 @@ package com.redgrapefruit.justenoughgems.util
 import com.redgrapefruit.justenoughgems.init.JEGItems
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
-import net.minecraft.item.Item
 import net.minecraft.item.ItemGroup
 import net.minecraft.item.ItemStack
 import net.minecraft.text.LiteralText
 import net.minecraft.text.Text
 import net.minecraft.util.Identifier
 import org.apache.logging.log4j.LogManager
+import java.io.IOException
+import java.net.MalformedURLException
+import java.net.URL
 import kotlin.random.Random
+
 
 val LOGGER = LogManager.getLogger("JEG")
 
@@ -55,10 +58,6 @@ value class Chance(private val chance: Int) {
 
 fun ItemStack.decrement() = decrement(1)
 
-interface IRegistry {
-    fun register()
-}
-
 fun String.toId() = Identifier("jeg", this)
 fun String.toLocalId() = Identifier(this)
 
@@ -72,4 +71,27 @@ fun ticksToSeconds(t: Int) = t / 20
 
 fun MutableList<Text>.newLine() {
     add(LiteralText(""))
+}
+
+fun download(link: String): String {
+    var out: String
+
+    URL(link).openStream().use { input ->
+        out = input.readBytes().decodeToString()
+    }
+
+    return out
+}
+
+fun internetConnected(): Boolean {
+    return try {
+        val url = URL("http://www.google.com")
+        val connection = url.openConnection()
+        connection.connect()
+        true
+    } catch (e: MalformedURLException) {
+        false
+    } catch (e: IOException) {
+        false
+    }
 }

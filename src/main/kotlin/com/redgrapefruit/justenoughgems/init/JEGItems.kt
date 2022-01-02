@@ -1,14 +1,10 @@
 package com.redgrapefruit.justenoughgems.init
 
 import com.redgrapefruit.justenoughgems.item.*
-import com.redgrapefruit.justenoughgems.util.IRegistry
-import com.redgrapefruit.justenoughgems.util.toId
-import com.redgrapefruit.justenoughgems.util.toLocalId
-import net.fabricmc.fabric.api.`object`.builder.v1.client.model.FabricModelPredicateProviderRegistry
-import net.minecraft.item.Item
-import net.minecraft.util.registry.Registry
+import com.redgrapefruit.justenoughgems.util.IInitializer
+import com.redgrapefruit.justenoughgems.util.register
 
-object JEGItems : IRegistry {
+object JEGItems : IInitializer {
     // Gems
     val QUARTZ_GEM = GemOrbItem(GemOrbConfig.QUARTZ, 1)
     val ANDALUSITE_GEM = GemOrbItem(GemOrbConfig.ANDALUSITE, 2)
@@ -99,7 +95,7 @@ object JEGItems : IRegistry {
     val INDIGOLITE_NUGGET = ModItem(15)
     val OPAL_NUGGET = ModItem(16)
 
-    override fun register() {
+    override fun initialize() {
         register("quartz_gem", QUARTZ_GEM)
         register("andalusite_gem", ANDALUSITE_GEM)
         register("morganite_gem", MORGANITE_GEM)
@@ -184,13 +180,5 @@ object JEGItems : IRegistry {
         register("verdelite_nugget", VERDELITE_NUGGET)
         register("indigolite_nugget", INDIGOLITE_NUGGET)
         register("opal_nugget", OPAL_NUGGET)
-    }
-
-    private fun register(name: String, item: Item) {
-        Registry.register(Registry.ITEM, name.toId(), item)
-
-        if (item is GemOrbItem) {
-            FabricModelPredicateProviderRegistry.register(item, "usage".toLocalId(), GemOrbItem::modelPredicateProvider)
-        }
     }
 }

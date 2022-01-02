@@ -2,15 +2,13 @@ package com.redgrapefruit.justenoughgems.init
 
 import com.github.crimsondawn45.fabricshieldlib.lib.event.ShieldBlockCallback
 import com.redgrapefruit.justenoughgems.item.GemShieldItem
-import com.redgrapefruit.justenoughgems.util.IRegistry
-import com.redgrapefruit.justenoughgems.util.toId
+import com.redgrapefruit.justenoughgems.util.IInitializer
+import com.redgrapefruit.justenoughgems.util.register
 import net.minecraft.entity.damage.DamageSource
 import net.minecraft.entity.player.PlayerEntity
-import net.minecraft.item.Item
 import net.minecraft.util.ActionResult
-import net.minecraft.util.registry.Registry
 
-object JEGShields: IRegistry {
+object JEGShields: IInitializer {
     val QUARTZ_SHIELD = GemShieldItem(1, 50, 2500, 95, 16, JEGItems.QUARTZ_INGOT)
     val ANDALUSITE_SHIELD = GemShieldItem(2, 60, 2750, 90, 17, JEGItems.ANDALUSITE_INGOT)
     val MORGANITE_SHIELD = GemShieldItem(3, 70, 3000, 85, 18, JEGItems.MORGANITE_INGOT)
@@ -28,7 +26,7 @@ object JEGShields: IRegistry {
     val INDIGOLITE_SHIELD = GemShieldItem(15, 190, 6000, 25, 30, JEGItems.INDIGOLITE_INGOT)
     val OPAL_SHIELD = GemShieldItem(16, 200, 6250, 20, 31, JEGItems.OPAL_INGOT)
 
-    override fun register() {
+    override fun initialize() {
         register("quartz_shield", QUARTZ_SHIELD)
         register("andalusite_shield", ANDALUSITE_SHIELD)
         register("morganite_shield", MORGANITE_SHIELD)
@@ -57,9 +55,5 @@ object JEGShields: IRegistry {
 
             ActionResult.PASS
         }
-    }
-
-    private fun register(name: String, item: Item) {
-        Registry.register(Registry.ITEM, name.toId(), item)
     }
 }

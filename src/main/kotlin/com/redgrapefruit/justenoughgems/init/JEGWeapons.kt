@@ -3,12 +3,10 @@ package com.redgrapefruit.justenoughgems.init
 import com.redgrapefruit.justenoughgems.tool.GemAxeItem
 import com.redgrapefruit.justenoughgems.tool.GemSwordItem
 import com.redgrapefruit.justenoughgems.tool.GemWeaponConfig
-import com.redgrapefruit.justenoughgems.util.IRegistry
-import com.redgrapefruit.justenoughgems.util.toId
-import net.minecraft.item.Item
-import net.minecraft.util.registry.Registry
+import com.redgrapefruit.justenoughgems.util.IInitializer
+import com.redgrapefruit.justenoughgems.util.register
 
-object JEGWeapons : IRegistry {
+object JEGWeapons : IInitializer {
     // Swords (simple)
     val QUARTZ_SWORD = GemSwordItem(JEGToolMaterials.QUARTZ, 3, -1.6f, GemWeaponConfig.QUARTZ, 1)
     val ANDALUSITE_SWORD = GemSwordItem(JEGToolMaterials.ANDALUSITE, 5, -1.6f, GemWeaponConfig.ANDALUSITE, 2)
@@ -99,7 +97,7 @@ object JEGWeapons : IRegistry {
     val INDIGOLITE_DAGGER = GemSwordItem(JEGToolMaterials.INDIGOLITE, 17, -1.5f, GemWeaponConfig.INDIGOLITE, 15)
     val OPAL_DAGGER = GemSwordItem(JEGToolMaterials.OPAL, 18, -1.5f, GemWeaponConfig.OPAL, 16)
 
-    override fun register() {
+    override fun initialize() {
         register("quartz_sword", QUARTZ_SWORD)
         register("andalusite_sword", ANDALUSITE_SWORD)
         register("morganite_sword", MORGANITE_SWORD)
@@ -184,9 +182,5 @@ object JEGWeapons : IRegistry {
         register("verdelite_dagger", VERDELITE_DAGGER)
         register("indigolite_dagger", INDIGOLITE_DAGGER)
         register("opal_dagger", OPAL_DAGGER)
-    }
-
-    private fun register(name: String, item: Item) {
-        Registry.register(Registry.ITEM, name.toId(), item)
     }
 }

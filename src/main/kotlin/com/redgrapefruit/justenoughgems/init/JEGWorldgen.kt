@@ -1,21 +1,15 @@
 package com.redgrapefruit.justenoughgems.init
 
-import com.redgrapefruit.justenoughgems.util.IRegistry
-import com.redgrapefruit.justenoughgems.util.toId
-import net.fabricmc.fabric.api.biome.v1.BiomeModifications
-import net.fabricmc.fabric.api.biome.v1.BiomeSelectors
+import com.redgrapefruit.justenoughgems.util.IInitializer
+import com.redgrapefruit.justenoughgems.util.register
 import net.minecraft.block.Block
-import net.minecraft.util.registry.BuiltinRegistries
-import net.minecraft.util.registry.Registry
-import net.minecraft.util.registry.RegistryKey
-import net.minecraft.world.gen.GenerationStep
 import net.minecraft.world.gen.YOffset
 import net.minecraft.world.gen.decorator.CountPlacementModifier
 import net.minecraft.world.gen.decorator.HeightRangePlacementModifier
 import net.minecraft.world.gen.decorator.SquarePlacementModifier
 import net.minecraft.world.gen.feature.*
 
-object JEGWorldgen : IRegistry {
+object JEGWorldgen : IInitializer {
     val QUARTZ_ORE = createOreConfig(JEGBlocks.QUARTZ_ORE, 9, 20, 50)
     val ANDALUSITE_ORE = createOreConfig(JEGBlocks.ANDALUSITE_ORE, 9, 19, 45)
     val MORGANITE_ORE = createOreConfig(JEGBlocks.MORGANITE_ORE, 8, 18, 40)
@@ -33,7 +27,7 @@ object JEGWorldgen : IRegistry {
     val INDIGOLITE_ORE = createOreConfig(JEGBlocks.INDIGOLITE_ORE, 2, 6, -20)
     val OPAL_ORE = createOreConfig(JEGBlocks.OPAL_ORE, 2, 5, -25)
 
-    override fun register() {
+    override fun initialize() {
         register("quartz_ore_overworld", QUARTZ_ORE)
         register("andalusite_ore_overworld", ANDALUSITE_ORE)
         register("morganite_ore_overworld", MORGANITE_ORE)
@@ -50,17 +44,6 @@ object JEGWorldgen : IRegistry {
         register("verdelite_ore_overworld", VERDELITE_ORE)
         register("indigolite_ore_overworld", INDIGOLITE_ORE)
         register("opal_ore_overworld", OPAL_ORE)
-    }
-
-    private fun register(name: String, config: OreConfiguration) {
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, name.toId(), config.configured)
-
-        Registry.register(BuiltinRegistries.PLACED_FEATURE, name.toId(), config.placed)
-
-        BiomeModifications.addFeature(
-            BiomeSelectors.foundInOverworld(),
-            GenerationStep.Feature.UNDERGROUND_ORES,
-            RegistryKey.of(Registry.PLACED_FEATURE_KEY, name.toId()))
     }
 }
 
