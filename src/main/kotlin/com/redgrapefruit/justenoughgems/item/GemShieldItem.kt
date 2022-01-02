@@ -15,7 +15,7 @@ import net.minecraft.world.World
 
 // TODO: add repair items in v0.5
 
-class GemShield(
+class GemShieldItem(
     private val tier: Int,
     val reflectPercent: Int,
     maxDamage: Int,

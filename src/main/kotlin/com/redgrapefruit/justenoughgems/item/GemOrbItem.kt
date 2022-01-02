@@ -19,7 +19,7 @@ import net.minecraft.util.Hand
 import net.minecraft.util.TypedActionResult
 import net.minecraft.world.World
 
-class GemItem(private val config: GemItemConfig, tier: Int) : ModItem(tier, true) {
+class GemOrbItem(private val config: GemOrbConfig, tier: Int) : ModItem(tier, true) {
     private fun readyForUsage(stack: ItemStack): Boolean {
         var out = false
 

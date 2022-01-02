@@ -10,40 +10,40 @@ import net.minecraft.util.registry.Registry
 
 object JEGItems : IRegistry {
     // Gems
-    val QUARTZ_GEM = GemItem(GemItemConfig.QUARTZ, 1)
-    val ANDALUSITE_GEM = GemItem(GemItemConfig.ANDALUSITE, 2)
-    val MORGANITE_GEM = GemItem(GemItemConfig.MORGANITE, 3)
-    val TAAFFEITE_GEM = GemItem(GemItemConfig.TAAFFEITE, 4)
-    val PINK_QUARTZ_GEM = GemItem(GemItemConfig.PINK_QUARTZ, 5)
-    val EUCLASE_GEM = GemItem(GemItemConfig.EUCLASE, 6)
-    val CHRYSOLITE_GEM = GemItem(GemItemConfig.CHRYSOLITE, 7)
-    val SAPPHIRE_GEM = GemItem(GemItemConfig.SAPPHIRE, 8)
-    val HELIODORE_GEM = GemItem(GemItemConfig.HELIODORE, 9)
-    val RUBY_GEM = GemItem(GemItemConfig.RUBY, 10)
-    val AQUAMARINE_GEM = GemItem(GemItemConfig.AQUAMARINE, 11)
-    val TANZANITE_GEM = GemItem(GemItemConfig.TANZANITE, 12)
-    val TSAVORITE_GEM = GemItem(GemItemConfig.TSAVORITE, 13)
-    val VERDELITE_GEM = GemItem(GemItemConfig.VERDELITE, 14)
-    val INDIGOLITE_GEM = GemItem(GemItemConfig.INDIGOLITE, 15)
-    val OPAL_GEM = GemItem(GemItemConfig.OPAL, 16)
+    val QUARTZ_GEM = GemOrbItem(GemOrbConfig.QUARTZ, 1)
+    val ANDALUSITE_GEM = GemOrbItem(GemOrbConfig.ANDALUSITE, 2)
+    val MORGANITE_GEM = GemOrbItem(GemOrbConfig.MORGANITE, 3)
+    val TAAFFEITE_GEM = GemOrbItem(GemOrbConfig.TAAFFEITE, 4)
+    val PINK_QUARTZ_GEM = GemOrbItem(GemOrbConfig.PINK_QUARTZ, 5)
+    val EUCLASE_GEM = GemOrbItem(GemOrbConfig.EUCLASE, 6)
+    val CHRYSOLITE_GEM = GemOrbItem(GemOrbConfig.CHRYSOLITE, 7)
+    val SAPPHIRE_GEM = GemOrbItem(GemOrbConfig.SAPPHIRE, 8)
+    val HELIODORE_GEM = GemOrbItem(GemOrbConfig.HELIODORE, 9)
+    val RUBY_GEM = GemOrbItem(GemOrbConfig.RUBY, 10)
+    val AQUAMARINE_GEM = GemOrbItem(GemOrbConfig.AQUAMARINE, 11)
+    val TANZANITE_GEM = GemOrbItem(GemOrbConfig.TANZANITE, 12)
+    val TSAVORITE_GEM = GemOrbItem(GemOrbConfig.TSAVORITE, 13)
+    val VERDELITE_GEM = GemOrbItem(GemOrbConfig.VERDELITE, 14)
+    val INDIGOLITE_GEM = GemOrbItem(GemOrbConfig.INDIGOLITE, 15)
+    val OPAL_GEM = GemOrbItem(GemOrbConfig.OPAL, 16)
 
     // Amulets
-    val QUARTZ_AMULET = GemAmulet(GemAmuletConfig.QUARTZ, 1)
-    val ANDALUSITE_AMULET = GemAmulet(GemAmuletConfig.ANDALUSITE, 2)
-    val MORGANITE_AMULET = GemAmulet(GemAmuletConfig.MORGANITE, 3)
-    val TAAFFEITE_AMULET = GemAmulet(GemAmuletConfig.TAAFFEITE, 4)
-    val PINK_QUARTZ_AMULET = GemAmulet(GemAmuletConfig.PINK_QUARTZ, 5)
-    val EUCLASE_AMULET = GemAmulet(GemAmuletConfig.EUCLASE, 6)
-    val CHRYSOLITE_AMULET = GemAmulet(GemAmuletConfig.CHRYSOLITE, 7)
-    val SAPPHIRE_AMULET = GemAmulet(GemAmuletConfig.SAPPHIRE, 8)
-    val HELIODORE_AMULET = GemAmulet(GemAmuletConfig.HELIODORE, 9)
-    val RUBY_AMULET = GemAmulet(GemAmuletConfig.RUBY, 10)
-    val AQUAMARINE_AMULET = GemAmulet(GemAmuletConfig.AQUAMARINE, 11)
-    val TANZANITE_AMULET = GemAmulet(GemAmuletConfig.TANZANITE, 12)
-    val TSAVORITE_AMULET = GemAmulet(GemAmuletConfig.TSAVORITE, 13)
-    val VERDELITE_AMULET = GemAmulet(GemAmuletConfig.VERDELITE, 14)
-    val INDIGOLITE_AMULET = GemAmulet(GemAmuletConfig.INDIGOLITE, 15)
-    val OPAL_AMULET = GemAmulet(GemAmuletConfig.OPAL, 16)
+    val QUARTZ_AMULET = GemAmuletItem(GemAmuletConfig.QUARTZ, 1)
+    val ANDALUSITE_AMULET = GemAmuletItem(GemAmuletConfig.ANDALUSITE, 2)
+    val MORGANITE_AMULET = GemAmuletItem(GemAmuletConfig.MORGANITE, 3)
+    val TAAFFEITE_AMULET = GemAmuletItem(GemAmuletConfig.TAAFFEITE, 4)
+    val PINK_QUARTZ_AMULET = GemAmuletItem(GemAmuletConfig.PINK_QUARTZ, 5)
+    val EUCLASE_AMULET = GemAmuletItem(GemAmuletConfig.EUCLASE, 6)
+    val CHRYSOLITE_AMULET = GemAmuletItem(GemAmuletConfig.CHRYSOLITE, 7)
+    val SAPPHIRE_AMULET = GemAmuletItem(GemAmuletConfig.SAPPHIRE, 8)
+    val HELIODORE_AMULET = GemAmuletItem(GemAmuletConfig.HELIODORE, 9)
+    val RUBY_AMULET = GemAmuletItem(GemAmuletConfig.RUBY, 10)
+    val AQUAMARINE_AMULET = GemAmuletItem(GemAmuletConfig.AQUAMARINE, 11)
+    val TANZANITE_AMULET = GemAmuletItem(GemAmuletConfig.TANZANITE, 12)
+    val TSAVORITE_AMULET = GemAmuletItem(GemAmuletConfig.TSAVORITE, 13)
+    val VERDELITE_AMULET = GemAmuletItem(GemAmuletConfig.VERDELITE, 14)
+    val INDIGOLITE_AMULET = GemAmuletItem(GemAmuletConfig.INDIGOLITE, 15)
+    val OPAL_AMULET = GemAmuletItem(GemAmuletConfig.OPAL, 16)
 
     // Fragments
     val QUARTZ_FRAGMENT = ModItem(1)
@@ -189,8 +189,8 @@ object JEGItems : IRegistry {
     private fun register(name: String, item: Item) {
         Registry.register(Registry.ITEM, name.toId(), item)
 
-        if (item is GemItem) {
-            FabricModelPredicateProviderRegistry.register(item, "usage".toLocalId(), GemItem::modelPredicateProvider)
+        if (item is GemOrbItem) {
+            FabricModelPredicateProviderRegistry.register(item, "usage".toLocalId(), GemOrbItem::modelPredicateProvider)
         }
     }
 }

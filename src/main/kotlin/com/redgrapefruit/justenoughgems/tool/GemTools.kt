@@ -14,7 +14,7 @@ import net.minecraft.util.Formatting
 import net.minecraft.util.math.BlockPos
 import net.minecraft.world.World
 
-private object GemTools {
+private object GemToolCommons {
     fun renderTooltip(tooltip: MutableList<Text>, config: GemToolConfig, tier: Int) {
         tooltip.newLine()
 
@@ -38,47 +38,47 @@ private object GemTools {
     }
 }
 
-class GemPickaxe(material: ToolMaterial, attackDamage: Int, attackSpeed: Float, private val config: GemToolConfig, private val tier: Int)
+class GemPickaxeItem(material: ToolMaterial, attackDamage: Int, attackSpeed: Float, private val config: GemToolConfig, private val tier: Int)
     : PickaxeItem(material, attackDamage, attackSpeed, defaultItemSettings) {
 
     override fun appendTooltip(stack: ItemStack, world: World?, tooltip: MutableList<Text>, context: TooltipContext) {
         super.appendTooltip(stack, world, tooltip, context)
-        GemTools.renderTooltip(tooltip, config, tier)
+        GemToolCommons.renderTooltip(tooltip, config, tier)
     }
 
     override fun postMine(stack: ItemStack, world: World?, state: BlockState, pos: BlockPos, miner: LivingEntity): Boolean {
         super.postMine(stack, world, state, pos, miner)
-        GemTools.postMine(config, miner)
+        GemToolCommons.postMine(config, miner)
         return true
     }
 }
 
-class GemHoe(material: ToolMaterial, attackDamage: Int, attackSpeed: Float, private val config: GemToolConfig, private val tier: Int)
+class GemHoeItem(material: ToolMaterial, attackDamage: Int, attackSpeed: Float, private val config: GemToolConfig, private val tier: Int)
     : HoeItem(material, attackDamage, attackSpeed, defaultItemSettings) {
 
     override fun appendTooltip(stack: ItemStack, world: World?, tooltip: MutableList<Text>, context: TooltipContext) {
         super.appendTooltip(stack, world, tooltip, context)
-        GemTools.renderTooltip(tooltip, config, tier)
+        GemToolCommons.renderTooltip(tooltip, config, tier)
     }
 
     override fun postMine(stack: ItemStack, world: World?, state: BlockState, pos: BlockPos, miner: LivingEntity): Boolean {
         super.postMine(stack, world, state, pos, miner)
-        GemTools.postMine(config, miner)
+        GemToolCommons.postMine(config, miner)
         return true
     }
 }
 
-class GemShovel(material: ToolMaterial, attackDamage: Float, attackSpeed: Float, private val config: GemToolConfig, private val tier: Int)
+class GemShovelItem(material: ToolMaterial, attackDamage: Float, attackSpeed: Float, private val config: GemToolConfig, private val tier: Int)
     : ShovelItem(material, attackDamage, attackSpeed, defaultItemSettings) {
 
     override fun appendTooltip(stack: ItemStack, world: World?, tooltip: MutableList<Text>, context: TooltipContext) {
         super.appendTooltip(stack, world, tooltip, context)
-        GemTools.renderTooltip(tooltip, config, tier)
+        GemToolCommons.renderTooltip(tooltip, config, tier)
     }
 
     override fun postMine(stack: ItemStack, world: World?, state: BlockState, pos: BlockPos, miner: LivingEntity): Boolean {
         super.postMine(stack, world, state, pos, miner)
-        GemTools.postMine(config, miner)
+        GemToolCommons.postMine(config, miner)
         return true
     }
 }

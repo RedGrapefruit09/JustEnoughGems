@@ -15,7 +15,7 @@ import net.minecraft.text.TranslatableText
 import net.minecraft.util.Formatting
 import net.minecraft.world.World
 
-private object GemWeapons {
+private object GemWeaponCommons {
     fun renderTooltip(tooltip: MutableList<Text>, config: GemWeaponConfig, tier: Int) {
         tooltip.newLine()
 
@@ -67,7 +67,7 @@ private object GemWeapons {
     }
 }
 
-class GemSword(
+class GemSwordItem(
     toolMaterial: ToolMaterial,
     attackDamage: Int,
     attackSpeed: Float,
@@ -77,7 +77,7 @@ class GemSword(
 
     override fun postHit(stack: ItemStack, target: LivingEntity, attacker: LivingEntity): Boolean {
         super.postHit(stack, target, attacker)
-        GemWeapons.postHit(target, attacker, config)
+        GemWeaponCommons.postHit(target, attacker, config)
         return true
     }
 
@@ -88,11 +88,11 @@ class GemSword(
         context: TooltipContext
     ) {
         super.appendTooltip(stack, world, tooltip, context)
-        GemWeapons.renderTooltip(tooltip, config, tier)
+        GemWeaponCommons.renderTooltip(tooltip, config, tier)
     }
 }
 
-class GemAxe(
+class GemAxeItem(
     toolMaterial: ToolMaterial,
     attackDamage: Float,
     attackSpeed: Float,
@@ -102,7 +102,7 @@ class GemAxe(
 
     override fun postHit(stack: ItemStack, target: LivingEntity, attacker: LivingEntity): Boolean {
         super.postHit(stack, target, attacker)
-        GemWeapons.postHit(target, attacker, config)
+        GemWeaponCommons.postHit(target, attacker, config)
         return true
     }
 
@@ -113,6 +113,6 @@ class GemAxe(
         context: TooltipContext
     ) {
         super.appendTooltip(stack, world, tooltip, context)
-        GemWeapons.renderTooltip(tooltip, config, tier)
+        GemWeaponCommons.renderTooltip(tooltip, config, tier)
     }
 }

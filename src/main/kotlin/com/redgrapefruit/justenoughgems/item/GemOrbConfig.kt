@@ -5,12 +5,12 @@ import com.redgrapefruit.justenoughgems.util.Range
 import net.minecraft.entity.effect.StatusEffect
 import net.minecraft.entity.effect.StatusEffects
 
-data class GemItemConfig(
+data class GemOrbConfig(
     val reloadTime: Int,
     val effects: List<GemItemEffect>
 ) {
     companion object {
-        val QUARTZ = GemItemConfig(
+        val QUARTZ = GemOrbConfig(
             reloadTime = 480,
             effects = listOf(
                 GemItemEffect(
@@ -22,7 +22,7 @@ data class GemItemConfig(
             )
         )
 
-        val ANDALUSITE = GemItemConfig(
+        val ANDALUSITE = GemOrbConfig(
             reloadTime = 450,
             effects = listOf(
                 GemItemEffect(
@@ -40,7 +40,7 @@ data class GemItemConfig(
             )
         )
 
-        val MORGANITE = GemItemConfig(
+        val MORGANITE = GemOrbConfig(
             reloadTime = 420,
             effects = listOf(
                 GemItemEffect(
@@ -58,7 +58,7 @@ data class GemItemConfig(
             )
         )
 
-        val TAAFFEITE = GemItemConfig(
+        val TAAFFEITE = GemOrbConfig(
             reloadTime = 390,
             effects = listOf(
                 GemItemEffect(
@@ -82,7 +82,7 @@ data class GemItemConfig(
             )
         )
 
-        val PINK_QUARTZ = GemItemConfig(
+        val PINK_QUARTZ = GemOrbConfig(
             reloadTime = 360,
             effects = listOf(
                 GemItemEffect(
@@ -106,7 +106,7 @@ data class GemItemConfig(
             )
         )
 
-        val EUCLASE = GemItemConfig(
+        val EUCLASE = GemOrbConfig(
             reloadTime = 330,
             effects = listOf(
                 GemItemEffect(
@@ -136,7 +136,7 @@ data class GemItemConfig(
             )
         )
 
-        val CHRYSOLITE = GemItemConfig(
+        val CHRYSOLITE = GemOrbConfig(
             reloadTime = 300,
             effects = listOf(
                 GemItemEffect(
@@ -166,7 +166,7 @@ data class GemItemConfig(
             )
         )
 
-        val SAPPHIRE = GemItemConfig(
+        val SAPPHIRE = GemOrbConfig(
             reloadTime = 270,
             effects = listOf(
                 GemItemEffect(
@@ -202,7 +202,7 @@ data class GemItemConfig(
             )
         )
 
-        val HELIODORE = GemItemConfig(
+        val HELIODORE = GemOrbConfig(
             reloadTime = 240,
             effects = listOf(
                 GemItemEffect(
@@ -238,7 +238,7 @@ data class GemItemConfig(
             )
         )
 
-        val RUBY = GemItemConfig(
+        val RUBY = GemOrbConfig(
             reloadTime = 210,
             effects = listOf(
                 GemItemEffect(
@@ -274,7 +274,7 @@ data class GemItemConfig(
             )
         )
 
-        val AQUAMARINE = GemItemConfig(
+        val AQUAMARINE = GemOrbConfig(
             reloadTime = 180,
             effects = listOf(
                 GemItemEffect(
@@ -316,7 +316,7 @@ data class GemItemConfig(
             )
         )
 
-        val TANZANITE = GemItemConfig(
+        val TANZANITE = GemOrbConfig(
             reloadTime = 150,
             effects = listOf(
                 GemItemEffect(
@@ -358,7 +358,7 @@ data class GemItemConfig(
             )
         )
 
-        val TSAVORITE = GemItemConfig(
+        val TSAVORITE = GemOrbConfig(
             reloadTime = 120,
             effects = listOf(
                 GemItemEffect(
@@ -406,7 +406,7 @@ data class GemItemConfig(
             )
         )
 
-        val VERDELITE = GemItemConfig(
+        val VERDELITE = GemOrbConfig(
             reloadTime = 90,
             effects = listOf(
                 GemItemEffect(
@@ -454,7 +454,7 @@ data class GemItemConfig(
             )
         )
 
-        val INDIGOLITE = GemItemConfig(
+        val INDIGOLITE = GemOrbConfig(
             reloadTime = 60,
             effects = listOf(
                 GemItemEffect(
@@ -502,7 +502,7 @@ data class GemItemConfig(
             )
         )
 
-        val OPAL = GemItemConfig(
+        val OPAL = GemOrbConfig(
             reloadTime = 30,
             effects = listOf(
                 GemItemEffect(
