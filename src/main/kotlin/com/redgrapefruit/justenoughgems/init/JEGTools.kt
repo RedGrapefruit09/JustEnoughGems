@@ -8,6 +8,7 @@ import com.redgrapefruit.justenoughgems.util.register
 object JEGTools : IInitializer {
     // Pickaxes
     val QUARTZ_PICKAXE = GemPickaxeItem(JEGToolMaterials.QUARTZ, 2, -2.0f, GemToolConfig.QUARTZ, 1)
+    //val ANDALUSITE_PICKAXE = GemPickaxeItem(JEGToolMaterials.ANDALUSITE, 3, -2.0f, GemToolConfig.)
 
     override fun initialize() {
         register("quartz_pickaxe", QUARTZ_PICKAXE)
