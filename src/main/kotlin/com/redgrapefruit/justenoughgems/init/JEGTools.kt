@@ -1,5 +1,6 @@
 package com.redgrapefruit.justenoughgems.init
 
+import com.redgrapefruit.justenoughgems.tool.GemHoeItem
 import com.redgrapefruit.justenoughgems.tool.GemPickaxeItem
 import com.redgrapefruit.justenoughgems.tool.GemShovelItem
 import com.redgrapefruit.justenoughgems.tool.GemToolConfig
@@ -43,6 +44,24 @@ object JEGTools : IInitializer {
     val INDIGOLITE_SHOVEL = GemShovelItem(JEGToolMaterials.INDIGOLITE, 8f, -1.1f, GemToolConfig.INDIGOLITE, 15)
     val OPAL_SHOVEL = GemShovelItem(JEGToolMaterials.OPAL, 8.5f, -1.1f, GemToolConfig.OPAL, 16)
 
+    // Hoes
+    val QUARTZ_HOE = GemHoeItem(JEGToolMaterials.QUARTZ, 1, -1.3f, GemToolConfig.QUARTZ, 1)
+    val ANDALUSITE_HOE = GemHoeItem(JEGToolMaterials.ANDALUSITE, 1, -1.3f, GemToolConfig.ANDALUSITE, 2)
+    val MORGANITE_HOE = GemHoeItem(JEGToolMaterials.MORGANITE, 1, -1.3f, GemToolConfig.MORGANITE, 3)
+    val TAAFFEITE_HOE = GemHoeItem(JEGToolMaterials.TAAFFEITE, 2, -1.3f, GemToolConfig.TAAFFEITE, 4)
+    val PINK_QUARTZ_HOE = GemHoeItem(JEGToolMaterials.PINK_QUARTZ, 2, -1.3f, GemToolConfig.PINK_QUARTZ, 5)
+    val EUCLASE_HOE = GemHoeItem(JEGToolMaterials.EUCLASE, 2, -1.3f, GemToolConfig.EUCLASE, 6)
+    val CHRYSOLITE_HOE = GemHoeItem(JEGToolMaterials.CHRYSOLITE, 3, -1.3f, GemToolConfig.CHRYSOLITE, 7)
+    val SAPPHIRE_HOE = GemHoeItem(JEGToolMaterials.SAPPHIRE, 3, -1.3f, GemToolConfig.SAPPHIRE, 8)
+    val HELIODORE_HOE = GemHoeItem(JEGToolMaterials.HELIODORE, 3, -1.3f, GemToolConfig.HELIODORE, 9)
+    val RUBY_HOE = GemHoeItem(JEGToolMaterials.RUBY, 4, -1.3f, GemToolConfig.RUBY, 10)
+    val AQUAMARINE_HOE = GemHoeItem(JEGToolMaterials.AQUAMARINE, 4, -1.3f, GemToolConfig.AQUAMARINE, 11)
+    val TANZANITE_HOE = GemHoeItem(JEGToolMaterials.TANZANITE, 4, -1.3f, GemToolConfig.TANZANITE, 12)
+    val TSAVORITE_HOE = GemHoeItem(JEGToolMaterials.TSAVORITE, 5, -1.3f, GemToolConfig.TSAVORITE, 13)
+    val VERDELITE_HOE = GemHoeItem(JEGToolMaterials.VERDELITE, 5, -1.3f, GemToolConfig.VERDELITE, 14)
+    val INDIGOLITE_HOE = GemHoeItem(JEGToolMaterials.INDIGOLITE, 5, -1.3f, GemToolConfig.INDIGOLITE, 15)
+    val OPAL_HOE = GemHoeItem(JEGToolMaterials.OPAL, 6, -1.3f, GemToolConfig.OPAL, 16)
+
     override fun initialize() {
         register("quartz_pickaxe", QUARTZ_PICKAXE)
         register("andalusite_pickaxe", ANDALUSITE_PICKAXE)
@@ -77,5 +96,22 @@ object JEGTools : IInitializer {
         register("verdelite_shovel", VERDELITE_SHOVEL)
         register("indigolite_shovel", INDIGOLITE_SHOVEL)
         register("opal_shovel", OPAL_SHOVEL)
+
+        register("quartz_hoe", QUARTZ_HOE)
+        register("andalusite_hoe", ANDALUSITE_HOE)
+        register("morganite_hoe", MORGANITE_HOE)
+        register("taaffeite_hoe", TAAFFEITE_HOE)
+        register("pink_quartz_hoe", PINK_QUARTZ_HOE)
+        register("euclase_hoe", EUCLASE_HOE)
+        register("chrysolite_hoe", CHRYSOLITE_HOE)
+        register("sapphire_hoe", SAPPHIRE_HOE)
+        register("heliodore_hoe", HELIODORE_HOE)
+        register("ruby_hoe", RUBY_HOE)
+        register("aquamarine_hoe", AQUAMARINE_HOE)
+        register("tanzanite_hoe", TANZANITE_HOE)
+        register("tsavorite_hoe", TSAVORITE_HOE)
+        register("verdelite_hoe", VERDELITE_HOE)
+        register("indigolite_hoe", INDIGOLITE_HOE)
+        register("opal_hoe", OPAL_HOE)
     }
 }
