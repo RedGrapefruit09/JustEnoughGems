@@ -1,6 +1,7 @@
 package com.redgrapefruit.justenoughgems.init
 
 import com.redgrapefruit.justenoughgems.tool.GemPickaxeItem
+import com.redgrapefruit.justenoughgems.tool.GemShovelItem
 import com.redgrapefruit.justenoughgems.tool.GemToolConfig
 import com.redgrapefruit.justenoughgems.util.IInitializer
 import com.redgrapefruit.justenoughgems.util.register
@@ -24,6 +25,24 @@ object JEGTools : IInitializer {
     val INDIGOLITE_PICKAXE = GemPickaxeItem(JEGToolMaterials.INDIGOLITE, 16, -2.0f, GemToolConfig.INDIGOLITE, 15)
     val OPAL_PICKAXE = GemPickaxeItem(JEGToolMaterials.OPAL, 17, -2.0f, GemToolConfig.OPAL, 16)
 
+    // Shovels
+    val QUARTZ_SHOVEL = GemShovelItem(JEGToolMaterials.QUARTZ, 1f, -1.1f, GemToolConfig.QUARTZ, 1)
+    val ANDALUSITE_SHOVEL = GemShovelItem(JEGToolMaterials.ANDALUSITE, 1.5f, -1.1f, GemToolConfig.ANDALUSITE, 2)
+    val MORGANITE_SHOVEL = GemShovelItem(JEGToolMaterials.MORGANITE, 2f, -1.1f, GemToolConfig.MORGANITE, 3)
+    val TAAFFEITE_SHOVEL = GemShovelItem(JEGToolMaterials.TAAFFEITE, 2.5f, -1.1f, GemToolConfig.TAAFFEITE, 4)
+    val PINK_QUARTZ_SHOVEL = GemShovelItem(JEGToolMaterials.PINK_QUARTZ, 3f, -1.1f, GemToolConfig.PINK_QUARTZ, 5)
+    val EUCLASE_SHOVEL = GemShovelItem(JEGToolMaterials.EUCLASE, 3.5f, -1.1f, GemToolConfig.EUCLASE, 6)
+    val CHRYSOLITE_SHOVEL = GemShovelItem(JEGToolMaterials.CHRYSOLITE, 4f, -1.1f, GemToolConfig.CHRYSOLITE, 7)
+    val SAPPHIRE_SHOVEL = GemShovelItem(JEGToolMaterials.SAPPHIRE, 4.5f, -1.1f, GemToolConfig.SAPPHIRE, 8)
+    val HELIODORE_SHOVEL = GemShovelItem(JEGToolMaterials.HELIODORE, 5f, -1.1f, GemToolConfig.HELIODORE, 9)
+    val RUBY_SHOVEL = GemShovelItem(JEGToolMaterials.RUBY, 5.5f, -1.1f, GemToolConfig.RUBY, 10)
+    val AQUAMARINE_SHOVEL = GemShovelItem(JEGToolMaterials.AQUAMARINE, 6f, -1.1f, GemToolConfig.AQUAMARINE, 11)
+    val TANZANITE_SHOVEL = GemShovelItem(JEGToolMaterials.TANZANITE, 6.5f, -1.1f, GemToolConfig.TANZANITE, 12)
+    val TSAVORITE_SHOVEL = GemShovelItem(JEGToolMaterials.TSAVORITE, 7f, -1.1f, GemToolConfig.TSAVORITE, 13)
+    val VERDELITE_SHOVEL = GemShovelItem(JEGToolMaterials.VERDELITE, 7.5f, -1.1f, GemToolConfig.VERDELITE, 14)
+    val INDIGOLITE_SHOVEL = GemShovelItem(JEGToolMaterials.INDIGOLITE, 8f, -1.1f, GemToolConfig.INDIGOLITE, 15)
+    val OPAL_SHOVEL = GemShovelItem(JEGToolMaterials.OPAL, 8.5f, -1.1f, GemToolConfig.OPAL, 16)
+
     override fun initialize() {
         register("quartz_pickaxe", QUARTZ_PICKAXE)
         register("andalusite_pickaxe", ANDALUSITE_PICKAXE)
@@ -41,5 +60,22 @@ object JEGTools : IInitializer {
         register("verdelite_pickaxe", VERDELITE_PICKAXE)
         register("indigolite_pickaxe", INDIGOLITE_PICKAXE)
         register("opal_pickaxe", OPAL_PICKAXE)
+
+        register("quartz_shovel", QUARTZ_SHOVEL)
+        register("andalusite_shovel", ANDALUSITE_SHOVEL)
+        register("morganite_shovel", MORGANITE_SHOVEL)
+        register("taaffeite_shovel", TAAFFEITE_SHOVEL)
+        register("pink_quartz_shovel", PINK_QUARTZ_SHOVEL)
+        register("euclase_shovel", EUCLASE_SHOVEL)
+        register("chrysolite_shovel", CHRYSOLITE_SHOVEL)
+        register("sapphire_shovel", SAPPHIRE_SHOVEL)
+        register("heliodore_shovel", HELIODORE_SHOVEL)
+        register("ruby_shovel", RUBY_SHOVEL)
+        register("aquamarine_shovel", AQUAMARINE_SHOVEL)
+        register("tanzanite_shovel", TANZANITE_SHOVEL)
+        register("tsavorite_shovel", TSAVORITE_SHOVEL)
+        register("verdelite_shovel", VERDELITE_SHOVEL)
+        register("indigolite_shovel", INDIGOLITE_SHOVEL)
+        register("opal_shovel", OPAL_SHOVEL)
     }
 }

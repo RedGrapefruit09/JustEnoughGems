@@ -2,8 +2,8 @@
     "schemaVersion": 1,
     "id": "jeg",
     "version": "0.6-SNAPSHOT",
-    "name": "JEG",
-    "description": "JEG (JustEnoughGems) is a mod that adds a bunch of new gems with special abilities, armor, tools and food.",
+    "name": "JustEnoughGems",
+    "description": "JustEnoughGems is a mod that adds a bunch of new gems with special abilities, armor, tools and food.",
     "authors": [
         "RedGrapefruit09"
     ],
@@ -11,7 +11,6 @@
         "repo": "https://github.com/RedGrapefruit09/JustEnoughGems"
     },
     "license": "MIT",
-    "icon": "assets/justenoughgems/icon.png",
     "environment": "*",
     "entrypoints": {
         "client": [
