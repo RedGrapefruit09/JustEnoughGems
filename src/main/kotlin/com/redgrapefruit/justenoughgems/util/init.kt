@@ -17,11 +17,17 @@ interface IInitializer {
     fun initialize()
 }
 
+private val orbs: MutableSet<GemOrbItem> = mutableSetOf()
+
 fun register(name: String, item: Item) {
     Registry.register(Registry.ITEM, name.toId(), item)
 
-    if (item is GemOrbItem) {
-        FabricModelPredicateProviderRegistry.register(item, "usage".toLocalId(), GemOrbItem::modelPredicateProvider)
+    if (item is GemOrbItem) orbs += item
+}
+
+fun registerOrbModelPredicateProviders() {
+    orbs.forEach {
+        FabricModelPredicateProviderRegistry.register(it, "usage".toLocalId(), GemOrbItem::modelPredicateProvider)
     }
 }
 

@@ -1,8 +1,10 @@
 package com.redgrapefruit.justenoughgems.util
 
 import com.redgrapefruit.justenoughgems.init.JEGItems
+import net.fabricmc.api.EnvType
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
+import net.fabricmc.loader.api.FabricLoader
 import net.minecraft.item.ItemGroup
 import net.minecraft.item.ItemStack
 import net.minecraft.text.LiteralText
@@ -94,4 +96,12 @@ fun internetConnected(): Boolean {
     } catch (e: IOException) {
         false
     }
+}
+
+inline fun clientSide(action: () -> Unit) {
+    if (FabricLoader.getInstance().environmentType == EnvType.CLIENT) action()
+}
+
+inline fun serverSide(action: () -> Unit) {
+    if (FabricLoader.getInstance().environmentType == EnvType.SERVER) action()
 }
