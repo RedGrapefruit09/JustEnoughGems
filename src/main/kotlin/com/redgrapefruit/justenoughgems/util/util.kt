@@ -105,3 +105,55 @@ inline fun clientSide(action: () -> Unit) {
 inline fun serverSide(action: () -> Unit) {
     if (FabricLoader.getInstance().environmentType == EnvType.SERVER) action()
 }
+
+data class SemanticVersion(
+    val major: Int,
+    val minor: Int,
+    val patch: Int
+) {
+    // Basic semantic comparison
+    fun compare(other: SemanticVersion): ComparisonResult {
+        if (this.major > other.major || this.minor > other.minor || this.patch > other.patch) {
+            return ComparisonResult.BIGGER
+        }
+
+        if (this.major < other.major || this.minor < other.minor || this.patch < other.patch) {
+            return ComparisonResult.LESS
+        }
+
+        return ComparisonResult.EQUAL
+    }
+
+    // Formatting
+    fun formatToString(): String {
+        return "v$major.$minor.$patch"
+    }
+
+    companion object {
+        // Legacy versions need to be normalized, since before v0.6.0 JustEnoughGems used a scuffed semantic versioning model,
+        // so we have versions like these:
+        // - v0.5 (no patch component)
+        // - 0.4.0 (no v prefix)
+        // This also removes the -SNAPSHOT suffix, the mechanism will determine if it's an unreleased version anyway
+        fun from(str: String): SemanticVersion {
+            var target = str
+
+            target = target.replace("v", "")
+            target = target.removeSuffix("-SNAPSHOT")
+
+            if (target.split(".").size == 2) {
+                target = "$target.0"
+            }
+
+            val components = target.split(".")
+
+            return SemanticVersion(components[0].toInt(), components[1].toInt(), components[2].toInt())
+        }
+    }
+}
+
+enum class ComparisonResult {
+    EQUAL,
+    BIGGER,
+    LESS
+}
