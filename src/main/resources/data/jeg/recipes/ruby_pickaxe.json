@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "III",
+        " S ",
+        " S "
+    ],
+    "key": {
+        "I": {
+            "item": "jeg:ruby_ingot"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "jeg:ruby_pickaxe",
+        "count": 1
+    }
+}

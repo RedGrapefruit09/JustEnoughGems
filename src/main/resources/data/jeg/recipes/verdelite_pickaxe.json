@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "III",
+        " S ",
+        " S "
+    ],
+    "key": {
+        "I": {
+            "item": "jeg:verdelite_ingot"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "jeg:verdelite_pickaxe",
+        "count": 1
+    }
+}
