@@ -19,7 +19,7 @@ object JEG : ModInitializer {
 
         // Log version data
         val version = FabricLoader.getInstance().getModContainer("jeg").get().metadata.version.friendlyString
-        LOGGER.info("Loaded JustEnoughGems $version.")
+        logger.info("Loaded JustEnoughGems $version.")
         // Check for updates
         checkForUpdates(version)
     }
@@ -39,17 +39,17 @@ object JEG : ModInitializer {
             // Compare
             when (expectedVersion.compare(actualVersion)) {
                 ComparisonResult.EQUAL -> {
-                    LOGGER.info("Running an up-to-date version of JustEnoughGems!")
+                    logger.info("Running an up-to-date version of JustEnoughGems!")
                 }
                 ComparisonResult.BIGGER -> {
-                    LOGGER.warn("Running an outdated version of JustEnoughGems! Please, update to version ${expectedVersion.formatToString()}.")
+                    logger.warn("Running an outdated version of JustEnoughGems! Please, update to version ${expectedVersion.formatToString()}.")
                 }
                 ComparisonResult.LESS -> {
-                    LOGGER.warn("Running an unreleased version of JustEnoughGems! Latest released version is ${expectedVersion.formatToString()}, downgrade to it if needed.")
+                    logger.warn("Running an unreleased version of JustEnoughGems! Latest released version is ${expectedVersion.formatToString()}, downgrade to it if needed.")
                 }
             }
         } else {
-            LOGGER.warn("Internet is unavailable. Cannot check for updates!")
+            logger.warn("Internet is unavailable. Cannot check for updates!")
         }
     }
 }

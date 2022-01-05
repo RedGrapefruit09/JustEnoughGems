@@ -1,3 +1,5 @@
+@file:JvmName("Utils")
+
 package com.redgrapefruit.justenoughgems.util
 
 import com.redgrapefruit.justenoughgems.init.JEGItems
@@ -17,7 +19,7 @@ import java.net.URL
 import kotlin.random.Random
 
 
-val LOGGER = LogManager.getLogger("JEG")
+val logger = LogManager.getLogger("JEG")
 
 val MOD_ITEM_GROUP: ItemGroup by lazy {
     FabricItemGroupBuilder

@@ -1,14 +1,10 @@
-package com.redgrapefruit.justenoughgems.util
+package com.redgrapefruit.justenoughgems.armor
 
 import net.minecraft.entity.EquipmentSlot
 import net.minecraft.item.ArmorMaterial
-import net.minecraft.item.Items
-import net.minecraft.item.ToolMaterial
 import net.minecraft.recipe.Ingredient
 import net.minecraft.sound.SoundEvent
 import net.minecraft.sound.SoundEvents
-
-// Kotlin DSLs for Armor and Tool Materials. Copied from the tutorials in my private vault
 
 @DslMarker
 annotation class ArmorMaterialDsl
