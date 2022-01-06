@@ -9,7 +9,9 @@
   </a>
 </p>
 
-**JustEnoughGems** is a Fabric 1.18 mod in development that adds tons of new gem-related contents:
+### About
+
+**JustEnoughGems** is a _Fabric_ 1.18 mod in development that adds tons of new gem-related contents:
 
 - Gems
 - Amulets
@@ -21,30 +23,32 @@
 - Armor
 - Food
 
-And there are **16 different gems**:
+For **16 different gems**.
 
-- Quartz
-- Andalusite
-- Morganite
-- Taaffeite
-- Pink Quartz
-- Euclase
-- Chrysolite
-- Sapphire
-- Heliodore
-- Ruby
-- Aquamarine
-- Tanzanite
-- Tsavorite
-- Verdelite
-- Indigolite
-- Opal
+### Download
 
-(_Disclaimer_: not all of these features are ready, the mod is still in active development).
+The mod is still _in development_, meaning there is no stable release available, however you can **try it out right now!**.
 
-The mod is planned to be released in **Q1-2022**, however you can **try it out right now!**\
-Experimental in-dev builds are available in this repository's
-[releases page](https://github.com/RedGrapefruit09/JustEnoughGems/releases).
+You can either:
+- Download an in-development build of the mod on [GitHub Releases](https://github.com/RedGrapefruit09/JustEnoughGems/releases).
+- Download a nightly build (untested) by going to the [Actions tab](https://github.com/RedGrapefruit09/JustEnoughGems/actions), clicking on the latest run, going to the Artifacts sections and clicking the artifact filename.
 
-There's also a [roadmap](https://github.com/RedGrapefruit09/JustEnoughGems/blob/1.18.x/ROADMAP.md)
-where you can find out about the plans regarding this mod and the current development status.
+### FAQ
+
+Q: Is there a Forge version of the mod?\
+A: No, I don't develop for the Forge platform and the mod will never be ported to Forge _by myself_.
+
+Q: Can I port this mod to Forge?\
+A: Absolutely, but use the same MIT license and credit the original mod on any platforms you publish to (e.g. [GitHub](https://github.com), [CurseForge](https://curseforge.com) or [Modrinth](https://modrinth.com)).
+
+Q: Can I contribute?\
+A: Yes, contributions are very welcome, but you need to have decent Java and good Kotlin skills.
+
+Q: Can I use this in my modpack/lets-play/review/anything:\
+A: Yes, but leave credit (link to this repository) in your video/modpack/etc.'s description.
+
+### Development
+
+The mod is planned to be released in **Q1-2022**, and is currently around 80% done.\
+The code is written in Java 17 and Kotlin 1.6.10 and runs on the [Fabric modloader](https://fabricmc.net) only!\
+You can track the development status at this [roadmap](https://github.com/RedGrapefruit09/JustEnoughGems/blob/1.18.x/ROADMAP.md).
