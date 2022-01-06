@@ -32,8 +32,6 @@ class ArmorMaterialScope(
     }
 
     fun durability(base: IntArray, ml: Int) {
-
-
         durabilityValues.init(base[3] * ml, base[2] * ml, base[1] * ml, base[0] * ml)
     }
 
