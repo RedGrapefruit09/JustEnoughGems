@@ -15,4 +15,15 @@ object JEGArmorMaterials {
         toughness = 3.5F
         noKnockbackResistance()
     }
+
+    val ANDALUSITE = armorMaterial {
+        durability(BASE_DURABILITY, 43)
+        protection(6, 9, 11, 6)
+        enchantability = 21
+        defaultEquipSound()
+        repairWith(JEGItems.ANDALUSITE_INGOT)
+        name = "andalusite"
+        toughness = 4.0F
+        noKnockbackResistance()
+    }
 }

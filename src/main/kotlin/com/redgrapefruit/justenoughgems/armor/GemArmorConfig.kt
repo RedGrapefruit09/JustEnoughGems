@@ -22,6 +22,21 @@ data class GemArmorConfig(
                 ArmorPiece.BOOTS to Chance(5)
             )
         )
+
+        val ANDALUSITE = GemArmorConfig(
+            mapOf(
+                ArmorPiece.HELMET to 35,
+                ArmorPiece.CHESTPLATE to 45,
+                ArmorPiece.LEGGINGS to 35,
+                ArmorPiece.BOOTS to 30
+            ),
+            mapOf(
+                ArmorPiece.HELMET to Chance(15),
+                ArmorPiece.CHESTPLATE to Chance(20),
+                ArmorPiece.LEGGINGS to Chance(15),
+                ArmorPiece.BOOTS to Chance(10)
+            )
+        )
     }
 }
 
