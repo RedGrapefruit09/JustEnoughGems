@@ -40,7 +40,7 @@ abstract class BaseGemArmorItem(
             .append(LiteralText(config.reflectPercentages[piece].toString()))
             .append(TranslatableText("misc.jeg.reflect_damage_pt2"))
             .append(TranslatableText("misc.jeg.reflect_damage_pt3"))
-            .append(LiteralText("${config.reflectChances[piece].toString()}%"))
+            .append(LiteralText("${config.reflectChances[piece]!!.format()}%"))
             .formatted(Formatting.DARK_GREEN)
     }
 }

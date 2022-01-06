@@ -1,8 +1,8 @@
-package com.redgrapefruit.justenoughgems.tool
+package com.redgrapefruit.justenoughgems.init
 
-import com.redgrapefruit.justenoughgems.init.JEGItems
+import com.redgrapefruit.justenoughgems.tool.toolMaterial
 
-object GemToolMaterials {
+object JEGToolMaterials {
     // Spec:
     // durability += 300
     // mining speed += 2.5f

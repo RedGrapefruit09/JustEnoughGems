@@ -14,6 +14,7 @@ object JEG : ModInitializer {
         JEGTools.initialize()
         JEGWeapons.initialize()
         JEGShields.initialize()
+        JEGArmor.initialize()
         JEGBlocks.initialize()
         JEGWorldgen.initialize()
 

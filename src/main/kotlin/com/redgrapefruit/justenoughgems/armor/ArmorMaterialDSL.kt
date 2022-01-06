@@ -2,6 +2,7 @@ package com.redgrapefruit.justenoughgems.armor
 
 import net.minecraft.entity.EquipmentSlot
 import net.minecraft.item.ArmorMaterial
+import net.minecraft.item.Item
 import net.minecraft.recipe.Ingredient
 import net.minecraft.sound.SoundEvent
 import net.minecraft.sound.SoundEvents
@@ -21,13 +22,19 @@ class ArmorMaterialScope(
     private var protectionValues: MutableMap<EquipmentSlot, Int> = mutableMapOf(),
     var enchantability: Int? = null,
     var equipSound: SoundEvent? = null,
-    var repairIngredient: Ingredient? = null,
+    private var repairIngredient: Ingredient? = null,
     var name: String? = null,
     var toughness: Float? = null,
     var knockbackResistance: Float? = null
 ) {
     fun durability(feet: Int, legs: Int, chest: Int, head: Int) {
         durabilityValues.init(feet, legs, chest, head)
+    }
+
+    fun durability(base: IntArray, ml: Int) {
+
+
+        durabilityValues.init(base[3] * ml, base[2] * ml, base[1] * ml, base[0] * ml)
     }
 
     fun protection(feet: Int, legs: Int, chest: Int, head: Int) {
@@ -40,6 +47,10 @@ class ArmorMaterialScope(
 
     fun noKnockbackResistance() {
         knockbackResistance = 0.0f
+    }
+
+    fun repairWith(item: Item) {
+        repairIngredient = Ingredient.ofItems(item)
     }
 
     fun create(): ArmorMaterial {

@@ -7,7 +7,6 @@ import net.minecraft.entity.player.PlayerInventory;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
-import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
@@ -16,7 +15,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class ArmorReflectionMixin {
     @Shadow @Final private PlayerInventory inventory;
 
-    @Inject(method = "damageArmor", at = @At("HEAD")) @Unique
+    @Inject(method = "damageArmor", at = @At("HEAD"))
     private void jeg$damageArmor(DamageSource source, float amount, CallbackInfo ci) {
         // the implementation is wrapped into native kotlin
         ArmorReflectionMixinImpl.INSTANCE.onArmorDamaged(inventory, source, amount, (PlayerEntity) (Object) this);
