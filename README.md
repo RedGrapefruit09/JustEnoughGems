@@ -44,11 +44,14 @@ A: Absolutely, but use the same MIT license and credit the original mod on any p
 Q: Can I contribute?\
 A: Yes, contributions are very welcome, but you need to have decent Java and good Kotlin skills.
 
-Q: Can I use this in my modpack/lets-play/review/anything:\
+Q: Can I use this in my modpack/lets-play/review/anything?\
 A: Yes, but leave credit (link to this repository) in your video/modpack/etc.'s description.
+
+Q: How can I contribute (report bugs, suggest features, implement stuff)?\
+A: If you want to report something or suggest something to be added to the mod, go to the [issue tracker](https://github.com/RedGrapefruit09/JustEnoughGems/issues). If you'd like to implement something yourself, open a [pull request](https://github.com/RedGrapefruit09/JustEnoughGems/pulls).
 
 ### Development
 
 The mod is planned to be released in **Q1-2022**, and is currently around 80% done.\
-The code is written in Java 17 and Kotlin 1.6.10 and runs on the [Fabric modloader](https://fabricmc.net) only!\
+The code is written in Kotlin and runs on the [Fabric modloader](https://fabricmc.net) only!\
 You can track the development status at this [roadmap](https://github.com/RedGrapefruit09/JustEnoughGems/blob/1.18.x/ROADMAP.md).

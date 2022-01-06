@@ -52,9 +52,26 @@ data class GemArmorConfig(
                 ArmorPiece.BOOTS to Chance(15)
             )
         )
+
+        val TAAFFEITE = GemArmorConfig(
+            mapOf(
+                ArmorPiece.HELMET to 65,
+                ArmorPiece.CHESTPLATE to 75,
+                ArmorPiece.LEGGINGS to 65,
+                ArmorPiece.BOOTS to 60
+            ),
+            mapOf(
+                ArmorPiece.HELMET to Chance(25),
+                ArmorPiece.CHESTPLATE to Chance(30),
+                ArmorPiece.LEGGINGS to Chance(25),
+                ArmorPiece.BOOTS to Chance(20)
+            )
+        )
     }
 }
 
+// A stripped-down version of EquipmentSlot with support for armor slots only, better names.
+// Can convert back to EquipmentSlot if needed
 enum class ArmorPiece(val slot: EquipmentSlot) {
     HELMET(EquipmentSlot.HEAD),
     CHESTPLATE(EquipmentSlot.CHEST),

@@ -37,4 +37,15 @@ object JEGArmorMaterials {
         toughness = 4.5F
         noKnockbackResistance()
     }
+
+    val TAAFFEITE = armorMaterial {
+        durability(BASE_DURABILITY, 49)
+        protection(10, 13, 15, 10)
+        enchantability = 27
+        defaultEquipSound()
+        repairWith(JEGItems.TAAFFEITE_INGOT)
+        name = "taaffeite"
+        toughness = 5.0F
+        noKnockbackResistance()
+    }
 }
