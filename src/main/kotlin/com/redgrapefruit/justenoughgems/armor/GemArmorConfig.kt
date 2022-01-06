@@ -37,6 +37,21 @@ data class GemArmorConfig(
                 ArmorPiece.BOOTS to Chance(10)
             )
         )
+
+        val MORGANITE = GemArmorConfig(
+            mapOf(
+                ArmorPiece.HELMET to 50,
+                ArmorPiece.CHESTPLATE to 60,
+                ArmorPiece.LEGGINGS to 50,
+                ArmorPiece.BOOTS to 45
+            ),
+            mapOf(
+                ArmorPiece.HELMET to Chance(20),
+                ArmorPiece.CHESTPLATE to Chance(25),
+                ArmorPiece.LEGGINGS to Chance(20),
+                ArmorPiece.BOOTS to Chance(15)
+            )
+        )
     }
 }
 

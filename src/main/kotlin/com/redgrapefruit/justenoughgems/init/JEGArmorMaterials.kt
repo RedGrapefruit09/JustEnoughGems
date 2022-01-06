@@ -26,4 +26,15 @@ object JEGArmorMaterials {
         toughness = 4.0F
         noKnockbackResistance()
     }
+
+    val MORGANITE = armorMaterial {
+        durability(BASE_DURABILITY, 46)
+        protection(8, 11, 13, 8)
+        enchantability = 24
+        defaultEquipSound()
+        repairWith(JEGItems.MORGANITE_INGOT)
+        name = "morganite"
+        toughness = 4.5F
+        noKnockbackResistance()
+    }
 }

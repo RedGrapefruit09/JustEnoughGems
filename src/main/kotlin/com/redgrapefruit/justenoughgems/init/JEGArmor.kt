@@ -17,6 +17,12 @@ object JEGArmor : IInitializer {
     val ANDALUSITE_CHESTPLATE = GemChestplateItem(JEGArmorMaterials.ANDALUSITE, GemArmorConfig.ANDALUSITE, 2)
     val ANDALUSITE_HELMET = GemHelmetItem(JEGArmorMaterials.ANDALUSITE, GemArmorConfig.ANDALUSITE, 2)
 
+    // Morganite
+    val MORGANITE_BOOTS = GemBootsItem(JEGArmorMaterials.MORGANITE, GemArmorConfig.MORGANITE, 3)
+    val MORGANITE_LEGGINGS = GemLeggingsItem(JEGArmorMaterials.MORGANITE, GemArmorConfig.MORGANITE, 3)
+    val MORGANITE_CHESTPLATE = GemChestplateItem(JEGArmorMaterials.MORGANITE, GemArmorConfig.MORGANITE, 3)
+    val MORGANITE_HELMET = GemHelmetItem(JEGArmorMaterials.MORGANITE, GemArmorConfig.MORGANITE, 3)
+
     override fun initialize() {
         register("quartz_boots", QUARTZ_BOOTS)
         register("quartz_leggings", QUARTZ_LEGGINGS)
@@ -27,5 +33,10 @@ object JEGArmor : IInitializer {
         register("andalusite_leggings", ANDALUSITE_LEGGINGS)
         register("andalusite_chestplate", ANDALUSITE_CHESTPLATE)
         register("andalusite_helmet", ANDALUSITE_HELMET)
+
+        register("morganite_boots", MORGANITE_BOOTS)
+        register("morganite_leggings", MORGANITE_LEGGINGS)
+        register("morganite_chestplate", MORGANITE_CHESTPLATE)
+        register("morganite_helmet", MORGANITE_HELMET)
     }
 }
