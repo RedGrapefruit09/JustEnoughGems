@@ -76,10 +76,25 @@ data class GemArmorConfig(
                 ArmorPiece.BOOTS to 17
             ),
             mapOf(
-                ArmorPiece.HELMET  to Chance(30),
+                ArmorPiece.HELMET to Chance(30),
                 ArmorPiece.CHESTPLATE to Chance(35),
                 ArmorPiece.LEGGINGS to Chance(30),
                 ArmorPiece.BOOTS to Chance(25)
+            )
+        )
+
+        val EUCLASE = GemArmorConfig(
+            mapOf(
+                ArmorPiece.HELMET to 20,
+                ArmorPiece.CHESTPLATE to 30,
+                ArmorPiece.LEGGINGS to 25,
+                ArmorPiece.BOOTS to 20
+            ),
+            mapOf(
+                ArmorPiece.HELMET to Chance(35),
+                ArmorPiece.CHESTPLATE to Chance(40),
+                ArmorPiece.LEGGINGS to Chance(35),
+                ArmorPiece.BOOTS to Chance(30)
             )
         )
     }

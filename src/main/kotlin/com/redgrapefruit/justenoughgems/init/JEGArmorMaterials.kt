@@ -23,7 +23,7 @@ object JEGArmorMaterials {
         defaultEquipSound()
         repairWith(JEGItems.ANDALUSITE_INGOT)
         name = "andalusite"
-        toughness = 4.0F
+        toughness = 3.75F
         noKnockbackResistance()
     }
 
@@ -34,7 +34,7 @@ object JEGArmorMaterials {
         defaultEquipSound()
         repairWith(JEGItems.MORGANITE_INGOT)
         name = "morganite"
-        toughness = 4.5F
+        toughness = 4.0F
         noKnockbackResistance()
     }
 
@@ -45,7 +45,7 @@ object JEGArmorMaterials {
         defaultEquipSound()
         repairWith(JEGItems.TAAFFEITE_INGOT)
         name = "taaffeite"
-        toughness = 5.0F
+        toughness = 4.25F
         noKnockbackResistance()
     }
 
@@ -56,7 +56,18 @@ object JEGArmorMaterials {
         defaultEquipSound()
         repairWith(JEGItems.PINK_QUARTZ_INGOT)
         name = "pink_quartz"
-        toughness = 5.5F
+        toughness = 4.5F
+        noKnockbackResistance()
+    }
+
+    val EUCLASE = armorMaterial {
+        durability(BASE_DURABILITY, 55)
+        protection(14, 17, 19, 14)
+        enchantability = 33
+        defaultEquipSound()
+        repairWith(JEGItems.EUCLASE_INGOT)
+        name = "euclase"
+        toughness = 4.75F
         noKnockbackResistance()
     }
 }
