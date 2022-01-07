@@ -81,4 +81,15 @@ object JEGArmorMaterials {
         toughness = 5.0F
         noKnockbackResistance()
     }
+
+    val SAPPHIRE = armorMaterial {
+        durability(BASE_DURABILITY, 61)
+        protection(18, 21, 23, 18)
+        enchantability = 39
+        defaultEquipSound()
+        repairWith(JEGItems.SAPPHIRE_INGOT)
+        name = "sapphire"
+        toughness = 5.25F
+        noKnockbackResistance()
+    }
 }

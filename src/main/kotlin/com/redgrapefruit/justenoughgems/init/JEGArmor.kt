@@ -47,6 +47,12 @@ object JEGArmor : IInitializer {
     val CHRYSOLITE_CHESTPLATE = GemChestplateItem(JEGArmorMaterials.CHRYSOLITE, GemArmorConfig.CHRYSOLITE, 7)
     val CHRYSOLITE_HELMET = GemHelmetItem(JEGArmorMaterials.CHRYSOLITE, GemArmorConfig.CHRYSOLITE, 7)
 
+    // Sapphire
+    val SAPPHIRE_BOOTS = GemBootsItem(JEGArmorMaterials.SAPPHIRE, GemArmorConfig.SAPPHIRE, 8)
+    val SAPPHIRE_LEGGINGS = GemLeggingsItem(JEGArmorMaterials.SAPPHIRE, GemArmorConfig.SAPPHIRE, 8)
+    val SAPPHIRE_CHESTPLATE = GemChestplateItem(JEGArmorMaterials.SAPPHIRE, GemArmorConfig.SAPPHIRE, 8)
+    val SAPPHIRE_HELMET = GemHelmetItem(JEGArmorMaterials.SAPPHIRE, GemArmorConfig.SAPPHIRE, 8)
+
     override fun initialize() {
         register("quartz_boots", QUARTZ_BOOTS)
         register("quartz_leggings", QUARTZ_LEGGINGS)
@@ -82,5 +88,10 @@ object JEGArmor : IInitializer {
         register("chrysolite_leggings", CHRYSOLITE_LEGGINGS)
         register("chrysolite_chestplate", CHRYSOLITE_CHESTPLATE)
         register("chrysolite_helmet", CHRYSOLITE_HELMET)
+
+        register("sapphire_boots", SAPPHIRE_BOOTS)
+        register("sapphire_leggings", SAPPHIRE_LEGGINGS)
+        register("sapphire_chestplate", SAPPHIRE_CHESTPLATE)
+        register("sapphire_helmet", SAPPHIRE_HELMET)
     }
 }

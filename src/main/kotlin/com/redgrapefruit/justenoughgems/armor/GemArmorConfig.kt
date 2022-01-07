@@ -112,6 +112,21 @@ data class GemArmorConfig(
                 ArmorPiece.BOOTS to Chance(35)
             )
         )
+
+        val SAPPHIRE = GemArmorConfig(
+            mapOf(
+                ArmorPiece.HELMET to 26,
+                ArmorPiece.CHESTPLATE to 36,
+                ArmorPiece.LEGGINGS to 31,
+                ArmorPiece.BOOTS to 26
+            ),
+            mapOf(
+                ArmorPiece.HELMET to Chance(45),
+                ArmorPiece.CHESTPLATE to Chance(50),
+                ArmorPiece.LEGGINGS to Chance(45),
+                ArmorPiece.BOOTS to Chance(40)
+            )
+        )
     }
 }
 
