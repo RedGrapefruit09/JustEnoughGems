@@ -29,6 +29,12 @@ object JEGArmor : IInitializer {
     val TAAFFEITE_CHESTPLATE = GemChestplateItem(JEGArmorMaterials.TAAFFEITE, GemArmorConfig.TAAFFEITE, 4)
     val TAAFFEITE_HELMET = GemHelmetItem(JEGArmorMaterials.TAAFFEITE, GemArmorConfig.TAAFFEITE, 4)
 
+    // Pink Quartz
+    val PINK_QUARTZ_BOOTS = GemBootsItem(JEGArmorMaterials.PINK_QUARTZ, GemArmorConfig.PINK_QUARTZ, 5)
+    val PINK_QUARTZ_LEGGINGS = GemLeggingsItem(JEGArmorMaterials.PINK_QUARTZ, GemArmorConfig.PINK_QUARTZ, 5)
+    val PINK_QUARTZ_CHESTPLATE = GemChestplateItem(JEGArmorMaterials.PINK_QUARTZ, GemArmorConfig.PINK_QUARTZ, 5)
+    val PINK_QUARTZ_HELMET = GemHelmetItem(JEGArmorMaterials.PINK_QUARTZ, GemArmorConfig.PINK_QUARTZ, 5)
+
     override fun initialize() {
         register("quartz_boots", QUARTZ_BOOTS)
         register("quartz_leggings", QUARTZ_LEGGINGS)
@@ -49,5 +55,10 @@ object JEGArmor : IInitializer {
         register("taaffeite_leggings", TAAFFEITE_LEGGINGS)
         register("taaffeite_chestplate", TAAFFEITE_CHESTPLATE)
         register("taaffeite_helmet", TAAFFEITE_HELMET)
+
+        register("pink_quartz_boots", PINK_QUARTZ_BOOTS)
+        register("pink_quartz_leggings", PINK_QUARTZ_LEGGINGS)
+        register("pink_quartz_chestplate", PINK_QUARTZ_CHESTPLATE)
+        register("pink_quartz_helmet", PINK_QUARTZ_HELMET)
     }
 }

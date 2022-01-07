@@ -48,4 +48,15 @@ object JEGArmorMaterials {
         toughness = 5.0F
         noKnockbackResistance()
     }
+
+    val PINK_QUARTZ = armorMaterial {
+        durability(BASE_DURABILITY, 52)
+        protection(12, 15, 17, 12)
+        enchantability = 30
+        defaultEquipSound()
+        repairWith(JEGItems.PINK_QUARTZ_INGOT)
+        name = "pink_quartz"
+        toughness = 5.5F
+        noKnockbackResistance()
+    }
 }

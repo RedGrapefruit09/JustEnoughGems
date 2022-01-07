@@ -10,10 +10,10 @@ data class GemArmorConfig(
     companion object {
         val QUARTZ = GemArmorConfig(
             mapOf(
-                ArmorPiece.HELMET to 20,
-                ArmorPiece.CHESTPLATE to 30,
-                ArmorPiece.LEGGINGS to 20,
-                ArmorPiece.BOOTS to 15
+                ArmorPiece.HELMET to 5,
+                ArmorPiece.CHESTPLATE to 15,
+                ArmorPiece.LEGGINGS to 10,
+                ArmorPiece.BOOTS to 5
             ),
             mapOf(
                 ArmorPiece.HELMET to Chance(10),
@@ -25,10 +25,10 @@ data class GemArmorConfig(
 
         val ANDALUSITE = GemArmorConfig(
             mapOf(
-                ArmorPiece.HELMET to 35,
-                ArmorPiece.CHESTPLATE to 45,
-                ArmorPiece.LEGGINGS to 35,
-                ArmorPiece.BOOTS to 30
+                ArmorPiece.HELMET to 8,
+                ArmorPiece.CHESTPLATE to 18,
+                ArmorPiece.LEGGINGS to 13,
+                ArmorPiece.BOOTS to 8
             ),
             mapOf(
                 ArmorPiece.HELMET to Chance(15),
@@ -40,10 +40,10 @@ data class GemArmorConfig(
 
         val MORGANITE = GemArmorConfig(
             mapOf(
-                ArmorPiece.HELMET to 50,
-                ArmorPiece.CHESTPLATE to 60,
-                ArmorPiece.LEGGINGS to 50,
-                ArmorPiece.BOOTS to 45
+                ArmorPiece.HELMET to 11,
+                ArmorPiece.CHESTPLATE to 21,
+                ArmorPiece.LEGGINGS to 16,
+                ArmorPiece.BOOTS to 11
             ),
             mapOf(
                 ArmorPiece.HELMET to Chance(20),
@@ -55,16 +55,31 @@ data class GemArmorConfig(
 
         val TAAFFEITE = GemArmorConfig(
             mapOf(
-                ArmorPiece.HELMET to 65,
-                ArmorPiece.CHESTPLATE to 75,
-                ArmorPiece.LEGGINGS to 65,
-                ArmorPiece.BOOTS to 60
+                ArmorPiece.HELMET to 14,
+                ArmorPiece.CHESTPLATE to 24,
+                ArmorPiece.LEGGINGS to 19,
+                ArmorPiece.BOOTS to 14
             ),
             mapOf(
                 ArmorPiece.HELMET to Chance(25),
                 ArmorPiece.CHESTPLATE to Chance(30),
                 ArmorPiece.LEGGINGS to Chance(25),
                 ArmorPiece.BOOTS to Chance(20)
+            )
+        )
+
+        val PINK_QUARTZ = GemArmorConfig(
+            mapOf(
+                ArmorPiece.HELMET to 17,
+                ArmorPiece.CHESTPLATE to 27,
+                ArmorPiece.LEGGINGS to 22,
+                ArmorPiece.BOOTS to 17
+            ),
+            mapOf(
+                ArmorPiece.HELMET  to Chance(30),
+                ArmorPiece.CHESTPLATE to Chance(35),
+                ArmorPiece.LEGGINGS to Chance(30),
+                ArmorPiece.BOOTS to Chance(25)
             )
         )
     }
