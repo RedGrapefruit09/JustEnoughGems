@@ -41,6 +41,12 @@ object JEGArmor : IInitializer {
     val EUCLASE_CHESTPLATE = GemChestplateItem(JEGArmorMaterials.EUCLASE, GemArmorConfig.EUCLASE, 6)
     val EUCLASE_HELMET = GemHelmetItem(JEGArmorMaterials.EUCLASE, GemArmorConfig.EUCLASE, 6)
 
+    // Chrysolite
+    val CHRYSOLITE_BOOTS = GemBootsItem(JEGArmorMaterials.CHRYSOLITE, GemArmorConfig.CHRYSOLITE, 7)
+    val CHRYSOLITE_LEGGINGS = GemLeggingsItem(JEGArmorMaterials.CHRYSOLITE, GemArmorConfig.CHRYSOLITE, 7)
+    val CHRYSOLITE_CHESTPLATE = GemChestplateItem(JEGArmorMaterials.CHRYSOLITE, GemArmorConfig.CHRYSOLITE, 7)
+    val CHRYSOLITE_HELMET = GemHelmetItem(JEGArmorMaterials.CHRYSOLITE, GemArmorConfig.CHRYSOLITE, 7)
+
     override fun initialize() {
         register("quartz_boots", QUARTZ_BOOTS)
         register("quartz_leggings", QUARTZ_LEGGINGS)
@@ -71,5 +77,10 @@ object JEGArmor : IInitializer {
         register("euclase_leggings", EUCLASE_LEGGINGS)
         register("euclase_chestplate", EUCLASE_CHESTPLATE)
         register("euclase_helmet", EUCLASE_HELMET)
+
+        register("chrysolite_boots", CHRYSOLITE_BOOTS)
+        register("chrysolite_leggings", CHRYSOLITE_LEGGINGS)
+        register("chrysolite_chestplate", CHRYSOLITE_CHESTPLATE)
+        register("chrysolite_helmet", CHRYSOLITE_HELMET)
     }
 }

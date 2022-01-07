@@ -70,4 +70,15 @@ object JEGArmorMaterials {
         toughness = 4.75F
         noKnockbackResistance()
     }
+
+    val CHRYSOLITE = armorMaterial {
+        durability(BASE_DURABILITY, 58)
+        protection(16, 19, 21, 16)
+        enchantability = 36
+        defaultEquipSound()
+        repairWith(JEGItems.CHRYSOLITE_INGOT)
+        name = "chrysolite"
+        toughness = 5.0F
+        noKnockbackResistance()
+    }
 }

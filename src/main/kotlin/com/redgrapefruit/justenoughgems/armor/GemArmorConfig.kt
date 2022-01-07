@@ -97,6 +97,21 @@ data class GemArmorConfig(
                 ArmorPiece.BOOTS to Chance(30)
             )
         )
+
+        val CHRYSOLITE = GemArmorConfig(
+            mapOf(
+                ArmorPiece.HELMET to 23,
+                ArmorPiece.CHESTPLATE to 33,
+                ArmorPiece.LEGGINGS to 28,
+                ArmorPiece.BOOTS to 23
+            ),
+            mapOf(
+                ArmorPiece.HELMET to Chance(40),
+                ArmorPiece.CHESTPLATE to Chance(45),
+                ArmorPiece.LEGGINGS to Chance(40),
+                ArmorPiece.BOOTS to Chance(35)
+            )
+        )
     }
 }
 
