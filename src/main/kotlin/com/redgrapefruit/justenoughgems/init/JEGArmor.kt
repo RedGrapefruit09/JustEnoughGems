@@ -65,6 +65,12 @@ object JEGArmor : IInitializer {
     val RUBY_CHESTPLATE = GemChestplateItem(JEGArmorMaterials.RUBY, GemArmorConfig.RUBY, 10)
     val RUBY_HELMET = GemHelmetItem(JEGArmorMaterials.RUBY, GemArmorConfig.RUBY, 10)
 
+    // Aquamarine
+    val AQUAMARINE_BOOTS = GemBootsItem(JEGArmorMaterials.AQUAMARINE, GemArmorConfig.AQUAMARINE, 11)
+    val AQUAMARINE_LEGGINGS = GemLeggingsItem(JEGArmorMaterials.AQUAMARINE, GemArmorConfig.AQUAMARINE, 11)
+    val AQUAMARINE_CHESTPLATE = GemChestplateItem(JEGArmorMaterials.AQUAMARINE, GemArmorConfig.AQUAMARINE, 11)
+    val AQUAMARINE_HELMET = GemHelmetItem(JEGArmorMaterials.AQUAMARINE, GemArmorConfig.AQUAMARINE, 11)
+
     override fun initialize() {
         register("quartz_boots", QUARTZ_BOOTS)
         register("quartz_leggings", QUARTZ_LEGGINGS)
@@ -115,5 +121,10 @@ object JEGArmor : IInitializer {
         register("ruby_leggings", RUBY_LEGGINGS)
         register("ruby_chestplate", RUBY_CHESTPLATE)
         register("ruby_helmet", RUBY_HELMET)
+
+        register("aquamarine_boots", AQUAMARINE_BOOTS)
+        register("aquamarine_leggings", AQUAMARINE_LEGGINGS)
+        register("aquamarine_chestplate", AQUAMARINE_CHESTPLATE)
+        register("aquamarine_helmet", AQUAMARINE_HELMET)
     }
 }

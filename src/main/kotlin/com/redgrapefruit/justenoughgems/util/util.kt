@@ -13,13 +13,13 @@ import net.minecraft.text.LiteralText
 import net.minecraft.text.Text
 import net.minecraft.util.Identifier
 import org.apache.logging.log4j.LogManager
+import org.apache.logging.log4j.Logger
 import java.io.IOException
 import java.net.MalformedURLException
 import java.net.URL
 import kotlin.random.Random
 
-
-val logger = LogManager.getLogger("JEG")
+val logger: Logger = LogManager.getLogger("JEG")
 
 val MOD_ITEM_GROUP: ItemGroup by lazy {
     FabricItemGroupBuilder

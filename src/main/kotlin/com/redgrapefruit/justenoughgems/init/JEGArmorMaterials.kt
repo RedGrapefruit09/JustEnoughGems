@@ -114,4 +114,15 @@ object JEGArmorMaterials {
         toughness = 5.75F
         noKnockbackResistance()
     }
+
+    val AQUAMARINE = armorMaterial {
+        durability(BASE_DURABILITY, 70)
+        protection(24, 27, 29, 24)
+        enchantability = 48
+        defaultEquipSound()
+        repairWith(JEGItems.AQUAMARINE_INGOT)
+        name = "aquamarine"
+        toughness = 6.0F
+        noKnockbackResistance()
+    }
 }

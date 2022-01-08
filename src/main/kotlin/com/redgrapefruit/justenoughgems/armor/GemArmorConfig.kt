@@ -157,6 +157,21 @@ data class GemArmorConfig(
                 ArmorPiece.BOOTS to Chance(50)
             )
         )
+
+        val AQUAMARINE = GemArmorConfig(
+            mapOf(
+                ArmorPiece.HELMET to 35,
+                ArmorPiece.CHESTPLATE to 45,
+                ArmorPiece.LEGGINGS to 40,
+                ArmorPiece.BOOTS to 35
+            ),
+            mapOf(
+                ArmorPiece.HELMET to Chance(60),
+                ArmorPiece.CHESTPLATE to Chance(65),
+                ArmorPiece.LEGGINGS to Chance(60),
+                ArmorPiece.BOOTS to Chance(55)
+            )
+        )
     }
 }
 
