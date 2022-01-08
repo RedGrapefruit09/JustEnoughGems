@@ -59,6 +59,12 @@ object JEGArmor : IInitializer {
     val HELIODORE_CHESTPLATE = GemChestplateItem(JEGArmorMaterials.HELIODORE, GemArmorConfig.HELIODORE, 9)
     val HELIODORE_HELMET = GemHelmetItem(JEGArmorMaterials.HELIODORE, GemArmorConfig.HELIODORE, 9)
 
+    // Ruby
+    val RUBY_BOOTS = GemBootsItem(JEGArmorMaterials.RUBY, GemArmorConfig.RUBY, 10)
+    val RUBY_LEGGINGS = GemLeggingsItem(JEGArmorMaterials.RUBY, GemArmorConfig.RUBY, 10)
+    val RUBY_CHESTPLATE = GemChestplateItem(JEGArmorMaterials.RUBY, GemArmorConfig.RUBY, 10)
+    val RUBY_HELMET = GemHelmetItem(JEGArmorMaterials.RUBY, GemArmorConfig.RUBY, 10)
+
     override fun initialize() {
         register("quartz_boots", QUARTZ_BOOTS)
         register("quartz_leggings", QUARTZ_LEGGINGS)
@@ -104,5 +110,10 @@ object JEGArmor : IInitializer {
         register("heliodore_leggings", HELIODORE_LEGGINGS)
         register("heliodore_chestplate", HELIODORE_CHESTPLATE)
         register("heliodore_helmet", HELIODORE_HELMET)
+
+        register("ruby_boots", RUBY_BOOTS)
+        register("ruby_leggings", RUBY_LEGGINGS)
+        register("ruby_chestplate", RUBY_CHESTPLATE)
+        register("ruby_helmet", RUBY_HELMET)
     }
 }

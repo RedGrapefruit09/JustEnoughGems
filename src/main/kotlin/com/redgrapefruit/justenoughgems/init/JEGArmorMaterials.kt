@@ -103,4 +103,15 @@ object JEGArmorMaterials {
         toughness = 5.5F
         noKnockbackResistance()
     }
+
+    val RUBY = armorMaterial {
+        durability(BASE_DURABILITY, 67)
+        protection(22, 25, 27, 22)
+        enchantability = 45
+        defaultEquipSound()
+        repairWith(JEGItems.RUBY_INGOT)
+        name = "ruby"
+        toughness = 5.75F
+        noKnockbackResistance()
+    }
 }

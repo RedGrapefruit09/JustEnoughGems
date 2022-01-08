@@ -142,6 +142,21 @@ data class GemArmorConfig(
                 ArmorPiece.BOOTS to Chance(45)
             )
         )
+
+        val RUBY = GemArmorConfig(
+            mapOf(
+                ArmorPiece.HELMET to 32,
+                ArmorPiece.CHESTPLATE to 42,
+                ArmorPiece.LEGGINGS to 37,
+                ArmorPiece.BOOTS to 32
+            ),
+            mapOf(
+                ArmorPiece.HELMET to Chance(55),
+                ArmorPiece.CHESTPLATE to Chance(60),
+                ArmorPiece.LEGGINGS to Chance(55),
+                ArmorPiece.BOOTS to Chance(50)
+            )
+        )
     }
 }
 
