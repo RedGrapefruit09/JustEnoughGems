@@ -172,6 +172,21 @@ data class GemArmorConfig(
                 ArmorPiece.BOOTS to Chance(55)
             )
         )
+
+        val TANZANITE = GemArmorConfig(
+            mapOf(
+                ArmorPiece.HELMET to 38,
+                ArmorPiece.CHESTPLATE to 48,
+                ArmorPiece.LEGGINGS to 43,
+                ArmorPiece.BOOTS to 38
+            ),
+            mapOf(
+                ArmorPiece.HELMET to Chance(65),
+                ArmorPiece.CHESTPLATE to Chance(70),
+                ArmorPiece.LEGGINGS to Chance(65),
+                ArmorPiece.BOOTS to Chance(60)
+            )
+        )
     }
 }
 

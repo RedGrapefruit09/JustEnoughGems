@@ -125,4 +125,15 @@ object JEGArmorMaterials {
         toughness = 6.0F
         noKnockbackResistance()
     }
+
+    val TANZANITE = armorMaterial {
+        durability(BASE_DURABILITY, 73)
+        protection(26, 29, 31, 26)
+        enchantability = 51
+        defaultEquipSound()
+        repairWith(JEGItems.TANZANITE_INGOT)
+        name = "tanzanite"
+        toughness = 6.25F
+        noKnockbackResistance()
+    }
 }
