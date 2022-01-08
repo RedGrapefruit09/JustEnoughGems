@@ -127,6 +127,21 @@ data class GemArmorConfig(
                 ArmorPiece.BOOTS to Chance(40)
             )
         )
+
+        val HELIODORE = GemArmorConfig(
+            mapOf(
+                ArmorPiece.HELMET to 29,
+                ArmorPiece.CHESTPLATE to 39,
+                ArmorPiece.LEGGINGS to 34,
+                ArmorPiece.BOOTS to 29
+            ),
+            mapOf(
+                ArmorPiece.HELMET to Chance(50),
+                ArmorPiece.CHESTPLATE to Chance(55),
+                ArmorPiece.LEGGINGS to Chance(50),
+                ArmorPiece.BOOTS to Chance(45)
+            )
+        )
     }
 }
 

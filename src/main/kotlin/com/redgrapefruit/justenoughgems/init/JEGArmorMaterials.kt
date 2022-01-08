@@ -92,4 +92,15 @@ object JEGArmorMaterials {
         toughness = 5.25F
         noKnockbackResistance()
     }
+
+    val HELIODORE = armorMaterial {
+        durability(BASE_DURABILITY, 64)
+        protection(20, 23, 25, 20)
+        enchantability = 42
+        defaultEquipSound()
+        repairWith(JEGItems.HELIODORE_INGOT)
+        name = "heliodore"
+        toughness = 5.5F
+        noKnockbackResistance()
+    }
 }
