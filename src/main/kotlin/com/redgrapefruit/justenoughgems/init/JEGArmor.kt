@@ -77,6 +77,12 @@ object JEGArmor : IInitializer {
     val TANZANITE_CHESTPLATE = GemChestplateItem(JEGArmorMaterials.TANZANITE, GemArmorConfig.TANZANITE, 12)
     val TANZANITE_HELMET = GemHelmetItem(JEGArmorMaterials.TANZANITE, GemArmorConfig.TANZANITE, 12)
 
+    // Tsavorite
+    val TSAVORITE_BOOTS = GemBootsItem(JEGArmorMaterials.TSAVORITE, GemArmorConfig.TSAVORITE, 13)
+    val TSAVORITE_LEGGINGS = GemLeggingsItem(JEGArmorMaterials.TSAVORITE, GemArmorConfig.TSAVORITE, 13)
+    val TSAVORITE_CHESTPLATE = GemChestplateItem(JEGArmorMaterials.TSAVORITE, GemArmorConfig.TSAVORITE, 13)
+    val TSAVORITE_HELMET = GemHelmetItem(JEGArmorMaterials.TSAVORITE, GemArmorConfig.TSAVORITE, 13)
+
     override fun initialize() {
         register("quartz_boots", QUARTZ_BOOTS)
         register("quartz_leggings", QUARTZ_LEGGINGS)
@@ -137,5 +143,10 @@ object JEGArmor : IInitializer {
         register("tanzanite_leggings", TANZANITE_LEGGINGS)
         register("tanzanite_chestplate", TANZANITE_CHESTPLATE)
         register("tanzanite_helmet", TANZANITE_HELMET)
+
+        register("tsavorite_boots", TSAVORITE_BOOTS)
+        register("tsavorite_leggings", TSAVORITE_LEGGINGS)
+        register("tsavorite_chestplate", TSAVORITE_CHESTPLATE)
+        register("tsavorite_helmet", TSAVORITE_HELMET)
     }
 }

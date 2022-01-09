@@ -136,4 +136,15 @@ object JEGArmorMaterials {
         toughness = 6.25F
         noKnockbackResistance()
     }
+
+    val TSAVORITE = armorMaterial {
+        durability(BASE_DURABILITY, 76)
+        protection(28, 31, 33, 28)
+        enchantability = 54
+        defaultEquipSound()
+        repairWith(JEGItems.TSAVORITE_INGOT)
+        name = "tsavorite"
+        toughness = 6.5F
+        noKnockbackResistance()
+    }
 }
