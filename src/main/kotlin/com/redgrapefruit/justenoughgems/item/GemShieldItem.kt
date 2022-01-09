@@ -14,8 +14,6 @@ import net.minecraft.text.TranslatableText
 import net.minecraft.util.Formatting
 import net.minecraft.world.World
 
-// TODO: add repair items in v0.5
-
 class GemShieldItem(
     private val tier: Int,
     val reflectPercent: Int,

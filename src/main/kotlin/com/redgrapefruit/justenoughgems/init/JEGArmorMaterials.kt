@@ -158,4 +158,15 @@ object JEGArmorMaterials {
         toughness = 6.75F
         noKnockbackResistance()
     }
+
+    val INDIGOLITE = armorMaterial {
+        durability(BASE_DURABILITY, 82)
+        protection(32, 35, 37, 32)
+        enchantability = 60
+        defaultEquipSound()
+        repairWith(JEGItems.INDIGOLITE_INGOT)
+        name = "indigolite"
+        toughness = 7.0F
+        noKnockbackResistance()
+    }
 }

@@ -208,13 +208,28 @@ data class GemArmorConfig(
                 ArmorPiece.HELMET to 44,
                 ArmorPiece.CHESTPLATE to 54,
                 ArmorPiece.LEGGINGS to 49,
-                ArmorPiece.BOOTS to 4
+                ArmorPiece.BOOTS to 44
             ),
             mapOf(
                 ArmorPiece.HELMET to Chance(75),
                 ArmorPiece.CHESTPLATE to Chance(80),
                 ArmorPiece.LEGGINGS to Chance(75),
                 ArmorPiece.BOOTS to Chance(70)
+            )
+        )
+
+        val INDIGOLITE = GemArmorConfig(
+            mapOf(
+                ArmorPiece.HELMET to 47,
+                ArmorPiece.CHESTPLATE to 57,
+                ArmorPiece.LEGGINGS to 52,
+                ArmorPiece.BOOTS to 47
+            ),
+            mapOf(
+                ArmorPiece.HELMET to Chance(80),
+                ArmorPiece.CHESTPLATE to Chance(85),
+                ArmorPiece.LEGGINGS to Chance(80),
+                ArmorPiece.BOOTS to Chance(75)
             )
         )
     }
