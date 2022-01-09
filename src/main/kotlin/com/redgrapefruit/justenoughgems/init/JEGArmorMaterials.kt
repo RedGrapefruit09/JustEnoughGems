@@ -147,4 +147,15 @@ object JEGArmorMaterials {
         toughness = 6.5F
         noKnockbackResistance()
     }
+
+    val VERDELITE = armorMaterial {
+        durability(BASE_DURABILITY, 79)
+        protection(30, 33, 35, 30)
+        enchantability = 57
+        defaultEquipSound()
+        repairWith(JEGItems.VERDELITE_INGOT)
+        name = "verdelite"
+        toughness = 6.75F
+        noKnockbackResistance()
+    }
 }

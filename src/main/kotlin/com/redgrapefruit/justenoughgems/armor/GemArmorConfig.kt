@@ -202,6 +202,21 @@ data class GemArmorConfig(
                 ArmorPiece.BOOTS to Chance(65)
             )
         )
+
+        val VERDELITE = GemArmorConfig(
+            mapOf(
+                ArmorPiece.HELMET to 44,
+                ArmorPiece.CHESTPLATE to 54,
+                ArmorPiece.LEGGINGS to 49,
+                ArmorPiece.BOOTS to 4
+            ),
+            mapOf(
+                ArmorPiece.HELMET to Chance(75),
+                ArmorPiece.CHESTPLATE to Chance(80),
+                ArmorPiece.LEGGINGS to Chance(75),
+                ArmorPiece.BOOTS to Chance(70)
+            )
+        )
     }
 }
 
