@@ -232,6 +232,21 @@ data class GemArmorConfig(
                 ArmorPiece.BOOTS to Chance(75)
             )
         )
+
+        val OPAL = GemArmorConfig(
+            mapOf(
+                ArmorPiece.HELMET to 50,
+                ArmorPiece.CHESTPLATE to 60,
+                ArmorPiece.LEGGINGS to 55,
+                ArmorPiece.BOOTS to 50
+            ),
+            mapOf(
+                ArmorPiece.HELMET to Chance(85),
+                ArmorPiece.CHESTPLATE to Chance(90),
+                ArmorPiece.LEGGINGS to Chance(85),
+                ArmorPiece.BOOTS to Chance(80)
+            )
+        )
     }
 }
 

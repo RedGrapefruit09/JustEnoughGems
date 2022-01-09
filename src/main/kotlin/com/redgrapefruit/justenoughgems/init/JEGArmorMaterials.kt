@@ -169,4 +169,15 @@ object JEGArmorMaterials {
         toughness = 7.0F
         noKnockbackResistance()
     }
+
+    val OPAL = armorMaterial {
+        durability(BASE_DURABILITY, 85)
+        protection(34, 37, 39, 34)
+        enchantability = 63
+        defaultEquipSound()
+        repairWith(JEGItems.OPAL_INGOT)
+        name = "opal"
+        toughness = 7.25F
+        noKnockbackResistance()
+    }
 }
