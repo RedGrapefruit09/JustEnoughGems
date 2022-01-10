@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "I I",
+        "III",
+        "III"
+    ],
+    "key": {
+        "I": {
+            "item": "jeg:chrysolite_ingot"
+        }
+    },
+    "result": {
+        "item": "jeg:chrysolite_chestplate",
+        "count": 1
+    }
+}

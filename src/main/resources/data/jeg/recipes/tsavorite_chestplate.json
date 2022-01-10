@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "I I",
+        "III",
+        "III"
+    ],
+    "key": {
+        "I": {
+            "item": "jeg:tsavorite_ingot"
+        }
+    },
+    "result": {
+        "item": "jeg:tsavorite_chestplate",
+        "count": 1
+    }
+}

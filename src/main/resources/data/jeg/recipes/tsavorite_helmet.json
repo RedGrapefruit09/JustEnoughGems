@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "III",
+        "I I",
+        "   "
+    ],
+    "key": {
+        "I": {
+            "item": "jeg:tsavorite_ingot"
+        }
+    },
+    "result": {
+        "item": "jeg:tsavorite_helmet",
+        "count": 1
+    }
+}

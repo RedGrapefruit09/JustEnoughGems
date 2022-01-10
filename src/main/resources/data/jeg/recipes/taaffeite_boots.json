@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        "I I",
+        "I I"
+    ],
+    "key": {
+        "I": {
+            "item": "jeg:taaffeite_ingot"
+        }
+    },
+    "result": {
+        "item": "jeg:taaffeite_boots",
+        "count": 1
+    }
+}

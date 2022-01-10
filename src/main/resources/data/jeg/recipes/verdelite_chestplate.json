@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "I I",
+        "III",
+        "III"
+    ],
+    "key": {
+        "I": {
+            "item": "jeg:verdelite_ingot"
+        }
+    },
+    "result": {
+        "item": "jeg:verdelite_chestplate",
+        "count": 1
+    }
+}

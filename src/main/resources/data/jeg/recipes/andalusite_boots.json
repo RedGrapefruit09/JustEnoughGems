@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        "I I",
+        "I I"
+    ],
+    "key": {
+        "I": {
+            "item": "jeg:andalusite_ingot"
+        }
+    },
+    "result": {
+        "item": "jeg:andalusite_boots",
+        "count": 1
+    }
+}

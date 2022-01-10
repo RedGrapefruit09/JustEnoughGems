@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "III",
+        "I I",
+        "I I"
+    ],
+    "key": {
+        "I": {
+            "item": "jeg:tanzanite_ingot"
+        }
+    },
+    "result": {
+        "item": "jeg:tanzanite_leggings",
+        "count": 1
+    }
+}

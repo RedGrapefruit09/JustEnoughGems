@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "III",
+        "I I",
+        "   "
+    ],
+    "key": {
+        "I": {
+            "item": "jeg:heliodore_ingot"
+        }
+    },
+    "result": {
+        "item": "jeg:heliodore_helmet",
+        "count": 1
+    }
+}
