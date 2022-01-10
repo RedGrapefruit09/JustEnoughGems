@@ -113,7 +113,7 @@ class ArmorMaterialScope(
 
 private fun MutableMap<EquipmentSlot, Int>.init(a: Int, b: Int, c: Int, d: Int) {
     put(EquipmentSlot.FEET, a)
-    put(EquipmentSlot.LEGS, d)
+    put(EquipmentSlot.LEGS, b)
     put(EquipmentSlot.CHEST, c)
     put(EquipmentSlot.HEAD, d)
 }
