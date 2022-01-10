@@ -14,8 +14,7 @@ object JEG : ModInitializer {
         JEGTools.initialize()
         JEGWeapons.initialize()
         JEGArmor.initialize()
-        JEGBlocks.initialize()
-        JEGWorldgen.initialize()
+        JEGOres.initialize()
 
         // Log version data
         val version = FabricLoader.getInstance().getModContainer("jeg").get().metadata.version.friendlyString
