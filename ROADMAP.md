@@ -14,6 +14,6 @@ Here's the full status on releases:
 | v0.4 | Shields | :white_check_mark: |
 | v0.5 | Ores, Mining system | :white_check_mark: |
 | v0.6 | Tools | :white_check_mark: |
-| v0.7 | Armor | 🚧 |
-| v0.8 | Food | :x: |
+| v0.7 | Armor | :white_check_mark: |
+| v0.8 | Food | 🚧 |
 | v1.0 | **Stable release** | :x: |
