@@ -11,6 +11,7 @@ object JEG : ModInitializer {
     override fun onInitialize() {
         // Register content
         JEGItems.initialize()
+        JEGFood.initialize()
         JEGTools.initialize()
         JEGWeapons.initialize()
         JEGArmor.initialize()

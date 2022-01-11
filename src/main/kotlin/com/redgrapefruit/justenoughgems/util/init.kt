@@ -33,7 +33,11 @@ fun registerOrbModelPredicateProviders() {
 
 fun register(name: String, block: Block) {
     Registry.register(Registry.BLOCK, name.toId(), block)
-    Registry.register(Registry.ITEM, name.toId(), BlockItem(block, Item.Settings().group(MOD_ITEM_GROUP)))
+
+    val blockItem = BlockItem(block, Item.Settings().group(MOD_ITEM_GROUP))
+
+    Registry.register(Registry.ITEM, name.toId(), blockItem)
+    Item.BLOCK_ITEMS[block] = blockItem
 }
 
 fun register(name: String, config: OreConfiguration) {

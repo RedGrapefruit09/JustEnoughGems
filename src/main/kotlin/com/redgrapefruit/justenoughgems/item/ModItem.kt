@@ -13,10 +13,11 @@ import net.minecraft.world.World
 
 open class ModItem(
     private val tier: Int,
-    notStackable: Boolean = false)
-    : Item(Settings()
+    notStackable: Boolean = false,
+    setting: Settings = Settings()
         .group(MOD_ITEM_GROUP)
-        .maxCount(if (notStackable) 1 else 64)) {
+        .maxCount(if (notStackable) 1 else 64))
+    : Item(setting) {
 
     override fun appendTooltip(
         stack: ItemStack,
