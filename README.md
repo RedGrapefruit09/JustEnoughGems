@@ -9,9 +9,7 @@
   </a>
 </p>
 
-### About
-
-**JustEnoughGems** is a _Fabric_ 1.18 mod in development that adds tons of new gem-related contents:
+**JustEnoughGems** is a _Fabric_ 1.18 mod that adds tons of new gem-related contents:
 
 - Gems
 - Amulets
@@ -21,17 +19,10 @@
 - Fragments
 - Tools
 - Armor
-- Food
 
-For **16 different gems**.
+For 16 different gems.
 
-### Download
-
-The mod is still _in development_, meaning there is no stable release available, however you can **try it out right now!**.
-
-You can either:
-- Download an in-development build of the mod on [GitHub Releases](https://github.com/RedGrapefruit09/JustEnoughGems/releases).
-- Download a nightly build (untested) by going to the [Actions tab](https://github.com/RedGrapefruit09/JustEnoughGems/actions), clicking on the latest run, going to the Artifacts sections and clicking the artifact filename.
+**Download the mod at [GitHub Releases](https://github.com/RedGrapefruit09/JustEnoughGems/releases).**
 
 ### FAQ
 
@@ -49,9 +40,3 @@ A: Yes, but leave credit (link to this repository) in your video/modpack/etc.'s 
 
 Q: How can I contribute (report bugs, suggest features, implement stuff)?\
 A: If you want to report something or suggest something to be added to the mod, go to the [issue tracker](https://github.com/RedGrapefruit09/JustEnoughGems/issues). If you'd like to implement something yourself, open a [pull request](https://github.com/RedGrapefruit09/JustEnoughGems/pulls).
-
-### Development
-
-The mod is planned to be released in **Q1-2022**, and is currently around 80% done.\
-The code is written in Kotlin and runs on the [Fabric modloader](https://fabricmc.net) only!\
-You can track the development status at this [roadmap](https://github.com/RedGrapefruit09/JustEnoughGems/blob/1.18.x/ROADMAP.md).
