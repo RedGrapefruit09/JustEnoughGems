@@ -6,10 +6,11 @@ import com.redgrapefruit.justenoughgems.util.register
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
 import net.minecraft.block.Block
 import net.minecraft.block.Material
+import net.minecraft.util.registry.RegistryEntry
 import net.minecraft.world.gen.YOffset
-import net.minecraft.world.gen.decorator.CountPlacementModifier
-import net.minecraft.world.gen.decorator.HeightRangePlacementModifier
-import net.minecraft.world.gen.decorator.SquarePlacementModifier
+import net.minecraft.world.gen.placementmodifier.CountPlacementModifier
+import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier
+import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier
 import net.minecraft.world.gen.feature.*
 
 object JEGOres : IInitializer {
@@ -92,7 +93,7 @@ data class OreConfiguration(
 )
 
 fun createOreConfig(block: Block, veinSize: Int, veinsPerChunk: Int, maxHeight: Int): OreConfiguration {
-    val configured = Feature.ORE.configure(
+    val configured = ConfiguredFeature(Feature.ORE,
         OreFeatureConfig(
             OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
             block.defaultState,
@@ -100,12 +101,11 @@ fun createOreConfig(block: Block, veinSize: Int, veinsPerChunk: Int, maxHeight: 
         )
     )
 
-    val placed = configured.withPlacement(
+    val placed = PlacedFeature(RegistryEntry.of(configured), listOf(
         CountPlacementModifier.of(veinsPerChunk),
         SquarePlacementModifier.of(),
         HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(maxHeight))
-    )
+    ))
 
     return OreConfiguration(configured, placed)
 }
-

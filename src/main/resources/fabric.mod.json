@@ -1,7 +1,7 @@
 {
     "schemaVersion": 1,
     "id": "jeg",
-    "version": "v1.0.0",
+    "version": "v1.1.0",
     "name": "JustEnoughGems",
     "description": "JustEnoughGems is a mod that adds a bunch of new gems with special abilities, armor, tools and food.",
     "authors": [
@@ -30,7 +30,7 @@
         "justenoughgems.mixins.json"
     ],
     "depends": {
-        "fabricloader": ">=0.12.12",
+        "fabricloader": ">=0.13.3",
         "fabric": "*",
         "minecraft": "1.18.x"
     }
