@@ -9,9 +9,7 @@ import net.minecraft.item.AxeItem
 import net.minecraft.item.ItemStack
 import net.minecraft.item.SwordItem
 import net.minecraft.item.ToolMaterial
-import net.minecraft.text.LiteralText
 import net.minecraft.text.Text
-import net.minecraft.text.TranslatableText
 import net.minecraft.util.Formatting
 import net.minecraft.world.World
 
@@ -19,40 +17,40 @@ private object GemWeaponCommons {
     fun renderTooltip(tooltip: MutableList<Text>, config: GemWeaponConfig, tier: Int) {
         tooltip.newLine()
 
-        tooltip += TranslatableText("misc.jeg.tier")
-            .append(LiteralText(RomanNumber.toRoman(tier)))
+        tooltip += Text.translatable("misc.jeg.tier")
+            .append(Text.literal(RomanNumber.toRoman(tier)))
             .formatted(Formatting.GREEN)
 
-        tooltip += TranslatableText("misc.jeg.chance_full")
-            .append(LiteralText("${config.attackerChance.format()}%"))
+        tooltip += Text.translatable("misc.jeg.chance_full")
+            .append(Text.literal("${config.attackerChance.format()}%"))
             .formatted(Formatting.DARK_BLUE)
 
         tooltip.newLine()
 
-        tooltip += TranslatableText("misc.jeg.effects_on_attacker")
-            .append(LiteralText(" (${config.attackerChance.format()}% "))
-            .append(TranslatableText("misc.jeg.chance"))
-            .append(LiteralText("):"))
+        tooltip += Text.translatable("misc.jeg.effects_on_attacker")
+            .append(Text.literal(" (${config.attackerChance.format()}% "))
+            .append(Text.translatable("misc.jeg.chance"))
+            .append(Text.literal("):"))
             .formatted(Formatting.GRAY)
 
         config.toAttacker.forEach { effect ->
-            tooltip += LiteralText("- ")
-                .append(TranslatableText(effect.effectType.translationKey))
-                .append(LiteralText(" (${effect.duration}, x${effect.amplifier + 1})"))
+            tooltip += Text.literal("- ")
+                .append(Text.translatable(effect.effectType.translationKey))
+                .append(Text.literal(" (${effect.duration}, x${effect.amplifier + 1})"))
         }
 
         tooltip.newLine()
 
-        tooltip += TranslatableText("misc.jeg.effects_on_mob")
-            .append(LiteralText(" (${config.targetChance.format()}% "))
-            .append(TranslatableText("misc.jeg.chance"))
-            .append(LiteralText("):"))
+        tooltip += Text.translatable("misc.jeg.effects_on_mob")
+            .append(Text.literal(" (${config.targetChance.format()}% "))
+            .append(Text.translatable("misc.jeg.chance"))
+            .append(Text.literal("):"))
             .formatted(Formatting.GRAY)
 
         config.toTarget.forEach { effect ->
-            tooltip += LiteralText("- ")
-                .append(TranslatableText(effect.effectType.translationKey))
-                .append(LiteralText(" (${effect.duration}, x${effect.amplifier + 1})"))
+            tooltip += Text.literal("- ")
+                .append(Text.translatable(effect.effectType.translationKey))
+                .append(Text.literal(" (${effect.duration}, x${effect.amplifier + 1})"))
         }
     }
 

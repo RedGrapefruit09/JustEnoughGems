@@ -11,9 +11,9 @@ import net.minecraft.entity.effect.StatusEffectInstance
 import net.minecraft.entity.player.PlayerEntity
 import net.minecraft.item.ItemStack
 import net.minecraft.nbt.NbtCompound
-import net.minecraft.text.LiteralText
+import net.minecraft.text.Text.literal
 import net.minecraft.text.Text
-import net.minecraft.text.TranslatableText
+import net.minecraft.text.Text.translatable
 import net.minecraft.util.Formatting
 import net.minecraft.util.Hand
 import net.minecraft.util.TypedActionResult
@@ -91,30 +91,30 @@ class GemOrbItem(private val config: GemOrbConfig, tier: Int) : ModItem(tier, tr
         super.appendTooltip(stack, world, tooltip, context)
 
         if (readyForUsage(stack)) {
-            tooltip += TranslatableText("misc.jeg.ready_to_use")
+            tooltip += Text.translatable("misc.jeg.ready_to_use")
                 .formatted(Formatting.GREEN)
         } else {
             DataClient.use(::GemItemState, stack) { state ->
-                tooltip += TranslatableText("misc.jeg.cooldown")
-                    .append(LiteralText("${state.reload}/${config.reloadTime}"))
+                tooltip += Text.translatable("misc.jeg.cooldown")
+                    .append(Text.literal("${state.reload}/${config.reloadTime}"))
                     .formatted(Formatting.RED)
             }
         }
 
         DataClient.use(::GemItemState, stack) { state ->
-            tooltip += TranslatableText("misc.jeg.uses_left")
-                .append(LiteralText("${state.uses}/4"))
+            tooltip += Text.translatable("misc.jeg.uses_left")
+                .append(Text.literal("${state.uses}/4"))
                 .formatted(Formatting.AQUA)
         }
 
-        tooltip += LiteralText("")
-        tooltip += TranslatableText("misc.jeg.effects")
+        tooltip += Text.literal("")
+        tooltip += Text.translatable("misc.jeg.effects")
             .formatted(Formatting.GRAY)
 
         config.effects.forEach { effect ->
-            tooltip += LiteralText("- ")
-                .append(TranslatableText(effect.statusEffect.translationKey))
-                .append(LiteralText(" (${effect.chance.format()}% chance)"))
+            tooltip += Text.literal("- ")
+                .append(Text.translatable(effect.statusEffect.translationKey))
+                .append(Text.literal(" (${effect.chance.format()}% chance)"))
         }
     }
 

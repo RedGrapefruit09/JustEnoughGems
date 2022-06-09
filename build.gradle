@@ -1,7 +1,7 @@
 plugins {
-    id 'fabric-loom' version '0.11.32'
+    id 'fabric-loom' version '0.12.47'
     id 'maven-publish'
-    id 'org.jetbrains.kotlin.jvm' version '1.6.10'
+    id 'org.jetbrains.kotlin.jvm' version '1.6.21'
 }
 
 version = project.mod_version
@@ -9,7 +9,7 @@ group = project.maven_group
 
 repositories {
     maven {
-        url = "https://redgrapefruit09.github.io/maven"
+        url = "https://kanpov.github.io/maven"
         content {
             includeGroup "com.redgrapefruit.itemnbt"
         }
@@ -33,6 +33,10 @@ repositories {
     maven {
         url = "https://maven.shedaniel.me/"
     }
+
+    maven {
+        url = "https://maven.terraformersmc.com/releases/"
+    }
 }
 
 dependencies {
@@ -48,9 +52,6 @@ dependencies {
     // ItemNBT. Item NBT serialization features
     modImplementation "com.redgrapefruit.itemnbt:itemnbt:${project.itemnbt_version}"
     include "com.redgrapefruit.itemnbt:itemnbt:${project.itemnbt_version}"
-    // Fabric Shield Lib. Create shields without conflicts.
-    modImplementation "com.github.CrimsonDawn45:Fabric-Shield-Lib:${project.shieldlib_version}"
-    include "com.github.CrimsonDawn45:Fabric-Shield-Lib:${project.shieldlib_version}"
     // ToolTipFix. A small third-party mod to fix some longer tooltips of this mod.
     // Uses CurseMaven because no official artifact is provided
     modRuntimeOnly "curse.maven:tooltipfix-${project.tooltipfix_pid}:${project.tooltipfix_fid}"

@@ -7,9 +7,9 @@ import net.minecraft.block.BlockState
 import net.minecraft.client.item.TooltipContext
 import net.minecraft.entity.LivingEntity
 import net.minecraft.item.*
-import net.minecraft.text.LiteralText
+import net.minecraft.text.Text.literal
 import net.minecraft.text.Text
-import net.minecraft.text.TranslatableText
+import net.minecraft.text.Text.translatable
 import net.minecraft.util.Formatting
 import net.minecraft.util.math.BlockPos
 import net.minecraft.world.World
@@ -18,22 +18,22 @@ private object GemToolCommons {
     fun renderTooltip(tooltip: MutableList<Text>, config: GemToolConfig, tier: Int) {
         tooltip.newLine()
 
-        tooltip += TranslatableText("misc.jeg.tier")
-            .append(LiteralText(RomanNumber.toRoman(tier)))
+        tooltip += Text.translatable("misc.jeg.tier")
+            .append(Text.literal(RomanNumber.toRoman(tier)))
             .formatted(Formatting.GREEN)
 
         tooltip.newLine()
 
-        tooltip += TranslatableText("misc.jeg.effects_on_miner")
-            .append(LiteralText(" (${config.chance.format()}% "))
-            .append(TranslatableText("misc.jeg.chance"))
-            .append(LiteralText("):"))
+        tooltip += Text.translatable("misc.jeg.effects_on_miner")
+            .append(Text.literal(" (${config.chance.format()}% "))
+            .append(Text.translatable("misc.jeg.chance"))
+            .append(Text.literal("):"))
             .formatted(Formatting.GRAY)
 
         config.effects.forEach { effect ->
-            tooltip += LiteralText("- ")
-                .append(TranslatableText(effect.effectType.translationKey))
-                .append(LiteralText(" (${effect.duration}, x${effect.amplifier + 1})"))
+            tooltip += Text.literal("- ")
+                .append(Text.translatable(effect.effectType.translationKey))
+                .append(Text.literal(" (${effect.duration}, x${effect.amplifier + 1})"))
         }
     }
 

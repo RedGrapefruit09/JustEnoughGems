@@ -10,9 +10,9 @@ import net.minecraft.entity.effect.StatusEffectInstance
 import net.minecraft.entity.player.PlayerEntity
 import net.minecraft.item.ItemStack
 import net.minecraft.nbt.NbtCompound
-import net.minecraft.text.LiteralText
+import net.minecraft.text.Text.literal
 import net.minecraft.text.Text
-import net.minecraft.text.TranslatableText
+import net.minecraft.text.Text.translatable
 import net.minecraft.util.Formatting
 import net.minecraft.world.World
 
@@ -58,18 +58,18 @@ class GemAmuletItem(val config: GemAmuletConfig, tier: Int) : ModItem(tier, true
         super.appendTooltip(stack, world, tooltip, context)
 
         DataClient.use(::GemAmuletState, stack) { state ->
-            tooltip += TranslatableText("misc.jeg.durability")
-                .append(LiteralText("${config.initialDurability - state.decreaseInDurability}/${config.initialDurability}"))
+            tooltip += Text.translatable("misc.jeg.durability")
+                .append(Text.literal("${config.initialDurability - state.decreaseInDurability}/${config.initialDurability}"))
                 .formatted(getDurabilityColoring(stack))
         }
 
-        tooltip += LiteralText("")
-        tooltip += TranslatableText("misc.jeg.effects").formatted(Formatting.GRAY)
+        tooltip += Text.literal("")
+        tooltip += Text.translatable("misc.jeg.effects").formatted(Formatting.GRAY)
 
         config.effects.forEach { (effect, amplifier) ->
-            tooltip += LiteralText("- ")
-                .append(TranslatableText(effect.translationKey))
-                .append(LiteralText(" ${RomanNumber.toRoman(amplifier + 1)}"))
+            tooltip += Text.literal("- ")
+                .append(Text.translatable(effect.translationKey))
+                .append(Text.literal(" ${RomanNumber.toRoman(amplifier + 1)}"))
         }
     }
 

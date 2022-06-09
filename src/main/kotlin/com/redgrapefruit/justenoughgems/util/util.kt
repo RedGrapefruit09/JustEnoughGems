@@ -9,7 +9,6 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.fabricmc.loader.api.FabricLoader
 import net.minecraft.item.ItemGroup
 import net.minecraft.item.ItemStack
-import net.minecraft.text.LiteralText
 import net.minecraft.text.Text
 import net.minecraft.util.Identifier
 import org.apache.logging.log4j.LogManager
@@ -74,7 +73,7 @@ fun avg(r: Range) = avg(r.min, r.max)
 fun ticksToSeconds(t: Int) = t / 20
 
 fun MutableList<Text>.newLine() {
-    add(LiteralText(""))
+    add(Text.literal(""))
 }
 
 fun download(link: String): String {

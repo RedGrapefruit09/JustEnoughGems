@@ -10,9 +10,7 @@ import net.minecraft.entity.player.PlayerInventory
 import net.minecraft.item.ArmorItem
 import net.minecraft.item.ArmorMaterial
 import net.minecraft.item.ItemStack
-import net.minecraft.text.LiteralText
 import net.minecraft.text.Text
-import net.minecraft.text.TranslatableText
 import net.minecraft.util.Formatting
 import net.minecraft.world.World
 
@@ -30,17 +28,17 @@ abstract class BaseGemArmorItem(
     ) {
         tooltip.newLine()
 
-        tooltip += TranslatableText("misc.jeg.tier")
-            .append(LiteralText(RomanNumber.toRoman(tier)))
+        tooltip += Text.translatable("misc.jeg.tier")
+            .append(Text.literal(RomanNumber.toRoman(tier)))
             .formatted(Formatting.GREEN)
 
         tooltip.newLine()
 
-        tooltip += TranslatableText("misc.jeg.reflect_damage_pt1")
-            .append(LiteralText(config.reflectPercentages[piece].toString()))
-            .append(TranslatableText("misc.jeg.reflect_damage_pt2"))
-            .append(TranslatableText("misc.jeg.reflect_damage_pt3"))
-            .append(LiteralText("${config.reflectChances[piece]!!.format()}%"))
+        tooltip += Text.translatable("misc.jeg.reflect_damage_pt1")
+            .append(Text.literal(config.reflectPercentages[piece].toString()))
+            .append(Text.translatable("misc.jeg.reflect_damage_pt2"))
+            .append(Text.translatable("misc.jeg.reflect_damage_pt3"))
+            .append(Text.literal("${config.reflectChances[piece]!!.format()}%"))
             .formatted(Formatting.DARK_GREEN)
     }
 }

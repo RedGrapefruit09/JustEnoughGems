@@ -5,9 +5,9 @@ import com.redgrapefruit.justenoughgems.util.RomanNumber
 import net.minecraft.client.item.TooltipContext
 import net.minecraft.item.Item
 import net.minecraft.item.ItemStack
-import net.minecraft.text.LiteralText
+import net.minecraft.text.Text.literal
 import net.minecraft.text.Text
-import net.minecraft.text.TranslatableText
+import net.minecraft.text.Text.translatable
 import net.minecraft.util.Formatting
 import net.minecraft.world.World
 
@@ -24,8 +24,8 @@ open class ModItem(
         tooltip: MutableList<Text>,
         context: TooltipContext
     ) {
-        tooltip += TranslatableText("misc.jeg.tier")
-            .append(LiteralText(RomanNumber.toRoman(tier)))
+        tooltip += Text.translatable("misc.jeg.tier")
+            .append(Text.literal(RomanNumber.toRoman(tier)))
             .formatted(Formatting.BLUE)
     }
 }
